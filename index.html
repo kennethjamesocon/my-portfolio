@@ -1,1433 +1,1282 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" class="scroll-smooth">
 <head>
-  <title>Kenneth James Ocon | Proactive Executive Assistant</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kenneth James Ocon — Operations &amp; Systems Lead</title>
+  <meta name="description" content="Executive portfolio of Kenneth James Ocon. Re-architecting operational loops, high-integrity CRM schemas, and multi-entity automations. Built for remote scale.">
+  
+  <!-- Font Integration -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
+  
   <script>
     tailwind.config = {
+      darkMode: 'class',
       theme: {
         extend: {
           colors: {
-            primary: '#0A1527',
-            secondary: '#1E3A6E',
-            accent: '#3B82F6',
-            dark: '#050B17'
+            brandGold: {
+              50: '#FDFBF7',
+              100: '#FCF7E8',
+              200: '#F6E9C4',
+              500: '#D4AF37', // Premium Gold Accent
+              600: '#C5A028',
+              700: '#9E7E1D',
+              900: '#695310'
+            },
+            executiveSlate: {
+              50: '#FAFAFA',
+              100: '#F4F4F5',
+              200: '#E4E4E7',
+              300: '#D4D4D8',
+              400: '#A1A1AA',
+              500: '#71717A',
+              600: '#52525B',
+              700: '#3F3F46',
+              800: '#27272A',
+              900: '#18181B',
+              950: '#09090B' // Pitch-black zinc base
+            }
           },
           fontFamily: {
-            sans: ['Inter', 'sans-serif'],
-            display: ['Poppins', 'sans-serif']
-          },
-          boxShadow: {
-            'glow': '0 0 15px rgba(59, 130, 246, 0.5)'
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
           },
           borderRadius: {
-            'xl': '1rem',
-            '2xl': '1.5rem',
-            '3xl': '2rem'
+            'xl': '16px',
+            '2xl': '24px',
+            '3xl': '32px',
+            '4xl': '40px',
+          },
+          animation: {
+            'infinite-scroll': 'infinite-scroll 45s linear infinite',
+          },
+          keyframes: {
+            'infinite-scroll': {
+              from: { transform: 'translateX(0)' },
+              to: { transform: 'translateX(-50%)' },
+            }
           }
         }
       }
     }
   </script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
   <style>
-        body {
-            background-color: #050B17;
-            color: #FFFFFF;
-            scroll-behavior: smooth;
-        }
-        
-        .gradient-bg {
-            background: linear-gradient(135deg, #050B17 0%, #0A1527 50%, #1E3A6E 100%);
-        }
-        
-        .section-divider {
-            height: 150px;
-            background: linear-gradient(180deg, rgba(5,11,23,0) 0%, #050B17 100%);
-        }
-        
-        .hero-image {
-            background-image: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-        }
-        
-        .card-hover {
-            transition: all 0.3s ease;
-            border-radius: 1rem;
-        }
-        
-        .card-hover:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-        }
-        
-        .skill-bar {
-            height: 8px;
-            background-color: rgba(255, 255, 255, 0.1);
-            border-radius: 4px;
-            overflow: hidden;
-        }
-        
-        .skill-progress {
-            height: 100%;
-            background: linear-gradient(90deg, #3B82F6 0%, #1D4ED8 100%);
-            border-radius: 4px;
-            transition: width 1s ease-in-out;
-        }
-        
-        .timeline-item::before {
-            content: '';
-            position: absolute;
-            left: -24px;
-            top: 0;
-            width: 16px;
-            height: 16px;
-            border-radius: 50%;
-            background-color: #3B82F6;
-            border: 4px solid #0A1527;
-        }
-        
-        .timeline::before {
-            content: '';
-            position: absolute;
-            left: -16px;
-            top: 0;
-            bottom: 0;
-            width: 2px;
-            background-color: rgba(255, 255, 255, 0.1);
-        }
-        
-        .contact-input {
-            background-color: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            transition: all 0.3s ease;
-            border-radius: 0.75rem;
-        }
-        
-        .contact-input:focus {
-            border-color: #3B82F6;
-            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
-        }
-        
-        .nav-link {
-            position: relative;
-        }
-        
-        .nav-link::after {
-            content: '';
-            position: absolute;
-            bottom: -2px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background-color: #3B82F6;
-            transition: width 0.3s ease;
-        }
-        
-        .nav-link:hover::after {
-            width: 100%;
-        }
-        
-        .nav-link.active::after {
-            width: 100%;
-        }
-        
-        .scroll-progress {
-            position: fixed;
-            top: 0;
-            left: 0;
-            height: 4px;
-            background: linear-gradient(90deg, #3B82F6 0%, #1D4ED8 100%);
-            z-index: 1000;
-            transition: width 0.1s ease;
-        }
-        
-        
-        .animate-on-scroll {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: opacity 0.6s ease, transform 0.6s ease;
-        }
-        
-        .animate-on-scroll.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        
-        .loading-screen {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: #050B17;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            z-index: 9999;
-            border-radius: 0;
-        }
-        
-        .loading-spinner {
-            width: 50px;
-            height: 50px;
-            border: 5px solid rgba(255, 255, 255, 0.1);
-            border-radius: 50%;
-            border-top-color: #3B82F6;
-            animation: spin 1s linear infinite;
-        }
-        
-        @keyframes spin {
-            to { transform: rotate(360deg); }
-        }
-        
-        .fade-in {
-            animation: fadeIn 1s ease forwards;
-        }
-        
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        
-        .stagger-delay-1 { transition-delay: 0.1s; }
-        .stagger-delay-2 { transition-delay: 0.2s; }
-        .stagger-delay-3 { transition-delay: 0.3s; }
-        .stagger-delay-4 { transition-delay: 0.4s; }
-        .stagger-delay-5 { transition-delay: 0.5s; }
-        
-        .workplace-bg {
-            background-image: 
-                linear-gradient(rgba(5, 11, 23, 0.7), rgba(5, 11, 23, 0.7)),
-                url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-        }
-
-        /* Enhanced rounded corners for modern look */
-        .rounded-modern {
-            border-radius: 1.25rem;
-        }
-
-        .rounded-modern-lg {
-            border-radius: 1.5rem;
-        }
-
-        .rounded-modern-xl {
-            border-radius: 2rem;
-        }
-
-        .btn-rounded {
-            border-radius: 2rem;
-        }
-    </style>
+    .scrollbar-none::-webkit-scrollbar {
+      display: none;
+    }
+    .scrollbar-none {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+    .transition-premium {
+      transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    /* Infinite ticker gradient overlay mask */
+    .ticker-container::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background: linear-gradient(90deg, #FFFFFF 0%, transparent 15%, transparent 85%, #FFFFFF 100%);
+    }
+    .dark .ticker-container::after {
+      background: linear-gradient(90deg, #09090B 0%, transparent 15%, transparent 85%, #09090B 100%);
+    }
+  </style>
 </head>
-<body class="font-sans">
-    <!-- Loading Screen -->
-    <div class="loading-screen">
-        <div class="loading-spinner mb-4"></div>
-        <h2 class="text-xl font-display text-white">Loading Portfolio...</h2>
-    </div>
-    
-    <!-- Scroll Progress Bar -->
-    <div class="scroll-progress" id="scrollProgress"></div>
-    
-    <!-- Back to Top Button -->
-    <div class="back-to-top" id="backToTop">
-        <i class="fas fa-arrow-up"></i>
-    </div>
-    
-   <header class="fixed top-0 left-0 right-0 bg-dark bg-opacity-70 backdrop-blur-md z-50 shadow-md border-b border-white/10">
-  <div class="container mx-auto px-6 py-4">
-    <div class="flex justify-between items-center">
+<body class="bg-white text-executiveSlate-800 font-sans transition-colors duration-500 dark:bg-executiveSlate-950 dark:text-executiveSlate-100 antialiased">
 
-      <!-- Gradient Title with Hero Font -->
-      <a href="#"
-         class="font-display font-bold text-xl md:text-2xl bg-gradient-to-r from-blue-300 via-white to-blue-300 bg-clip-text text-transparent">
-        Collaboration Within Reach
+<a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-brandGold-500 text-white px-5 py-3 rounded-xl z-50 shadow-lg">Skip to content</a>
+
+<!-- STICKY HEADER -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-white/50 dark:bg-executiveSlate-950/50 backdrop-blur-md border-b border-executiveSlate-100 dark:border-executiveSlate-900 transition-premium">
+  <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+    <!-- Brand Logo Left -->
+    <a href="#top" class="text-xl font-bold tracking-tight text-executiveSlate-950 dark:text-white flex items-center gap-2 group">
+      <span class="w-8 h-8 rounded-full bg-brandGold-500/10 dark:bg-brandGold-500/20 flex items-center justify-center text-brandGold-600 dark:text-brandGold-500 text-sm font-extrabold group-hover:scale-105 transition-premium">K</span>
+      <span class="font-bold tracking-wider text-sm">KJO</span>
+    </a>
+
+    <!-- Centered Nav Menu -->
+    <nav class="hidden md:flex items-center gap-8 bg-executiveSlate-50/50 dark:bg-executiveSlate-900/50 px-8 py-2.5 rounded-full border border-executiveSlate-100 dark:border-executiveSlate-800/80 shadow-sm shadow-black/[0.01]">
+      <a href="#about" class="text-xs font-bold uppercase tracking-wider text-executiveSlate-600 dark:text-executiveSlate-300 hover:text-brandGold-500 dark:hover:text-brandGold-500 transition-premium">Intro</a>
+      <a href="#experience" class="text-xs font-bold uppercase tracking-wider text-executiveSlate-600 dark:text-executiveSlate-300 hover:text-brandGold-500 dark:hover:text-brandGold-500 transition-premium">Experience</a>
+      <a href="#projects" class="text-xs font-bold uppercase tracking-wider text-executiveSlate-600 dark:text-executiveSlate-300 hover:text-brandGold-500 dark:hover:text-brandGold-500 transition-premium">Projects</a>
+      <a href="#stack" class="text-xs font-bold uppercase tracking-wider text-executiveSlate-600 dark:text-executiveSlate-300 hover:text-brandGold-500 dark:hover:text-brandGold-500 transition-premium">Stack</a>
+      <a href="#credentials" class="text-xs font-bold uppercase tracking-wider text-executiveSlate-600 dark:text-executiveSlate-300 hover:text-brandGold-500 dark:hover:text-brandGold-500 transition-premium">Credentials</a>
+      <a href="#testimonials" class="text-xs font-bold uppercase tracking-wider text-executiveSlate-600 dark:text-executiveSlate-300 hover:text-brandGold-500 dark:hover:text-brandGold-500 transition-premium">Reviews</a>
+    </nav>
+
+    <!-- Top Right Call to Action & Theme -->
+    <div class="flex items-center gap-4">
+      <button id="themeToggleBtnHeader" class="p-2.5 rounded-full border border-executiveSlate-200 dark:border-executiveSlate-800 text-executiveSlate-700 dark:text-executiveSlate-300 hover:border-brandGold-500 hover:text-brandGold-500 transition-premium bg-white dark:bg-executiveSlate-900" aria-label="Toggle dark mode">
+        <!-- Sun Icon -->
+        <svg class="w-4 h-4 hidden dark:block" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m12.728 0l-.707-.707M6.343 6.343l-.707-.707m12.728 12.728L12 12z"></path></svg>
+        <!-- Moon Icon -->
+        <svg class="w-4 h-4 block dark:hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+      </button>
+
+      <a href="https://calendly.com/kennethjamesocon3/new-meeting" target="_blank" rel="noopener" class="bg-brandGold-500 hover:bg-brandGold-600 active:scale-95 text-white font-bold text-[11px] uppercase tracking-wider py-3.5 px-6 rounded-full transition-premium shadow-md shadow-brandGold-500/15 flex items-center gap-2">
+        <span>Book a strategy call</span>
+        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
       </a>
 
-      <!-- Desktop Navigation Inside Glassy Card with Margin -->
-      <div class="hidden md:flex items-center">
-        <div class="ml-4 backdrop-blur-lg bg-white/5 border border-blue-300/40 rounded-2xl shadow-xl px-6 py-3">
-          <nav class="flex items-center space-x-6">
-            <a href="#home" class="text-white hover:text-sky-400 text-sm font-medium uppercase tracking-wider">Home</a>
-            <a href="#about" class="text-white hover:text-sky-400 text-sm font-medium uppercase tracking-wider">About</a>
-            <a href="#services" class="text-white hover:text-sky-400 text-sm font-medium uppercase tracking-wider">Services</a>
-            <a href="#contact" class="text-white hover:text-sky-400 text-sm font-medium uppercase tracking-wider">Contact</a>
-          </nav>
-        </div>
-      </div>
-
-      <!-- Mobile Menu Button -->
-      <button class="md:hidden text-white focus:outline-none" id="mobileMenuButton">
-        <i class="fas fa-bars text-2xl"></i>
+      <!-- Mobile Burger -->
+      <button id="burgerBtn" class="md:hidden p-2 text-executiveSlate-600 dark:text-executiveSlate-300 hover:text-executiveSlate-950 dark:hover:text-white focus:outline-none" aria-label="Toggle Navigation Menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path></svg>
       </button>
-    </div>
-  </div>
-
-  <!-- Mobile Menu Glassy Dropdown -->
-  <div class="md:hidden mt-2 backdrop-blur-lg bg-white/5 border-t border-blue-300/40 rounded-b-2xl px-6 py-4 shadow-xl hidden" id="mobileMenu">
-    <div class="flex flex-col space-y-4">
-      <a href="#home" class="text-white hover:text-sky-400 text-sm font-medium uppercase tracking-wider">Home</a>
-      <a href="#about" class="text-white hover:text-sky-400 text-sm font-medium uppercase tracking-wider">About</a>
-      <a href="#services" class="text-white hover:text-sky-400 text-sm font-medium uppercase tracking-wider">Services</a>
-      <a href="#contact" class="text-white hover:text-sky-400 text-sm font-medium uppercase tracking-wider">Contact</a>
     </div>
   </div>
 </header>
 
-    
-   <!-- Hero Section -->
-<section id="home" class="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
-    <div class="workplace-bg absolute inset-0"></div>
-    <div class="absolute inset-0 bg-gradient-to-r from-dark to-transparent"></div>
-    <div class="container mx-auto px-6 relative z-10">
-        <div class="max-w-4xl mx-auto text-center animate-on-scroll">
-            <h1 class="text-4xl md:text-6xl font-display font-bold mb-6 leading-tight">
-                <span class="text-white">Kenneth James Ocon</span>
-                <span class="block mt-2 text-sky-600">
-                    <div class="flex items-center justify-center text-2xl md:text-3xl">
-                        <span class="text-sky-400">Microsoft-Certified</span>
-                        <!-- Facebook-style verified badge -->
-                        <span class="ml-2 flex items-center justify-center w-6 h-6 rounded-full bg-blue-500">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-                            </svg>
-                        </span>
-                    </div>
-                    <div class="text-2xl md:text-3xl">Proactive Executive Assistant</div>
-                </span>
-            </h1>
-            
-            <p class="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-                Detail-oriented and reliable Administrative Assistant with hands-on experience supporting daily office operations.
+<div id="mobileMenu" class="fixed inset-0 z-40 bg-white/98 dark:bg-executiveSlate-950/98 backdrop-blur-lg flex flex-col justify-between p-8 transform translate-y-full transition-transform duration-500 ease-out md:hidden">
+  <div class="flex items-center justify-between mt-12">
+    <span class="text-sm font-extrabold text-executiveSlate-950 dark:text-white tracking-widest">KJO PORTFOLIO</span>
+    <button id="closeMenuBtn" class="p-2 text-executiveSlate-600 dark:text-executiveSlate-300" aria-label="Close Menu">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path></svg>
+    </button>
+  </div>
+  <div class="flex flex-col gap-6 text-center my-auto">
+    <a href="#about" class="mobile-nav-link text-2xl font-bold text-executiveSlate-800 dark:text-white hover:text-brandGold-500">Intro</a>
+    <a href="#experience" class="mobile-nav-link text-2xl font-bold text-executiveSlate-800 dark:text-white hover:text-brandGold-500">Timeline</a>
+    <a href="#projects" class="mobile-nav-link text-2xl font-bold text-executiveSlate-800 dark:text-white hover:text-brandGold-500">Projects</a>
+    <a href="#stack" class="mobile-nav-link text-2xl font-bold text-executiveSlate-800 dark:text-white hover:text-brandGold-500">Tech Stack</a>
+    <a href="#credentials" class="mobile-nav-link text-2xl font-bold text-executiveSlate-800 dark:text-white hover:text-brandGold-500">Credentials</a>
+    <a href="#testimonials" class="mobile-nav-link text-2xl font-bold text-executiveSlate-800 dark:text-white hover:text-brandGold-500">Reviews</a>
+    <a href="https://calendly.com/kennethjamesocon3/new-meeting" target="_blank" rel="noopener" class="bg-brandGold-500 text-white font-bold py-4 px-8 rounded-full inline-block mt-4 hover:bg-brandGold-600">Book a strategy call</a>
+  </div>
+  <div class="text-center text-xs text-executiveSlate-400">
+    Kenneth James Ocon &bull; Systems Infrastructure &bull; Remote Only
+  </div>
+</div>
+
+<!-- MAIN CONTAINER -->
+<main id="main" class="pt-20">
+
+  <!-- HERO SECTION -->
+  <section id="about" class="relative py-20 lg:py-32 overflow-hidden bg-white dark:bg-executiveSlate-950">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+        
+        <!-- Left Side Hero Content -->
+        <div class="lg:col-span-7 flex flex-col justify-center">
+          <div class="inline-flex items-center gap-2.5 px-3 py-1 bg-brandGold-50 dark:bg-brandGold-900/20 text-brandGold-700 dark:text-brandGold-200 text-xs font-bold uppercase tracking-widest rounded-full w-max mb-6 border border-brandGold-200/40">
+            <span class="w-2 h-2 rounded-full bg-brandGold-500 animate-pulse"></span>
+            <span>Remote Operations &amp; Systems Lead</span>
+          </div>
+          
+          <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-executiveSlate-950 dark:text-white leading-none">
+            Kenneth James<br><span class="text-executiveSlate-950 dark:text-white">Ocon</span>
+          </h1>
+          
+          <p class="mt-6 text-base sm:text-lg text-executiveSlate-600 dark:text-executiveSlate-300 font-light leading-relaxed max-w-xl">
+            Hi, I’m Kenneth. I partner with fast-scaling organizations to engineer high-performance business architectures. I design and build <strong class="font-semibold text-executiveSlate-950 dark:text-white">robust databases, logical CRM structures, and automated workflows</strong> that run smoothly in the background. Built directly in the codebase, not drafted on abstract slide decks.
+          </p>
+
+          <p class="mt-4 text-xs text-brandGold-700 dark:text-brandGold-200 font-bold uppercase tracking-wider flex items-center gap-2 bg-brandGold-50/50 dark:bg-brandGold-900/10 py-2 px-4 rounded-lg w-max border border-brandGold-100 dark:border-brandGold-900/50">
+            <svg class="w-4 h-4 text-brandGold-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 0L10 18.9l-4.95-4.95zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"></path></svg>
+            <span>Available for Remote-Only Roles Worldwide</span>
+          </p>
+
+          <!-- CTAs -->
+          <div class="mt-8 flex flex-wrap gap-4 items-center">
+            <a href="https://calendly.com/kennethjamesocon3/new-meeting" target="_blank" rel="noopener" class="bg-brandGold-500 hover:bg-brandGold-600 text-white font-bold text-xs uppercase tracking-wider px-8 py-4 rounded-full transition-premium shadow-lg shadow-brandGold-500/20 flex items-center gap-2 hover:-translate-y-0.5">
+              <span>Book Strategy Call</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </a>
+            <a href="mailto:kennethjamesocon3@gmail.com" class="bg-white dark:bg-executiveSlate-900 border border-executiveSlate-200 dark:border-executiveSlate-800 hover:border-brandGold-500 dark:hover:border-brandGold-500 hover:text-brandGold-500 dark:text-executiveSlate-200 text-executiveSlate-800 font-bold text-xs uppercase tracking-wider px-8 py-4 rounded-full transition-premium hover:-translate-y-0.5 inline-flex items-center gap-2 shadow-sm">
+              <span>Email Lead</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Side Hero Image Block -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative bg-white dark:bg-executiveSlate-900 p-4 rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.02)] dark:shadow-[0_8px_30px_rgba(0,0,0,0.4)] border border-executiveSlate-100 dark:border-executiveSlate-800 transition-premium overflow-hidden group hover:shadow-[0_20px_50px_rgba(212,175,55,0.08)] hover:border-brandGold-500/40">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent pointer-events-none z-10 rounded-2xl"></div>
+            <!-- High-Fidelity Portfolio Photo Frame -->
+            <img 
+              src="https://lh3.googleusercontent.com/d/11G6WE6ZlF5MT4BRpOIwug5BvH8jMXBiK=w800" 
+              alt="Kenneth James Ocon — Portrait Photo" 
+              class="w-full aspect-[4/5] object-cover rounded-2xl transition-all duration-700 group-hover:scale-102"
+              onerror="this.onerror=null; this.src='https://placehold.co/600x750/FFFFFF/000000?text=Kenneth+James+Ocon';"
+            >
+            <!-- Overlay Metadata Badge -->
+            <div class="absolute bottom-8 left-8 right-8 z-20 bg-white/95 dark:bg-executiveSlate-950/95 backdrop-blur-md p-4 rounded-2xl border border-executiveSlate-200/50 dark:border-executiveSlate-800/80 flex items-center justify-between shadow-md">
+              <div>
+                <p class="text-[10px] font-bold uppercase tracking-wider text-brandGold-600 dark:text-brandGold-500">Remote Architect</p>
+                <p class="text-xs font-extrabold text-executiveSlate-950 dark:text-white mt-0.5">Systems &amp; Integrations</p>
+              </div>
+              <div class="text-right">
+                <span class="text-[9px] px-2 py-1 bg-green-100 dark:bg-green-950/40 text-green-700 dark:text-green-400 font-bold uppercase rounded">Active</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- INFINITE HORIZONTAL LOGO TICKER -->
+    <div class="w-full mt-24 border-y border-executiveSlate-100 dark:border-executiveSlate-900 py-8 bg-white dark:bg-executiveSlate-950 ticker-container relative">
+      <div class="max-w-7xl mx-auto px-6 mb-5">
+        <p class="text-center text-[10px] font-bold uppercase tracking-widest text-executiveSlate-400 dark:text-executiveSlate-500">
+          Core Operations &amp; Automated Pipeline Ecosystem
+        </p>
+      </div>
+      <div class="relative w-full overflow-hidden">
+        <div class="flex w-[200%] animate-infinite-scroll gap-12 items-center">
+          
+          <!-- Marquee Item List (Set 1) -->
+          <div class="flex justify-around items-center gap-16 text-executiveSlate-500 dark:text-executiveSlate-400 font-extrabold text-xs tracking-wider shrink-0">
+            <!-- GoHighLevel -->
+            <span class="flex items-center gap-2">
+              <svg class="w-5 h-5 text-brandGold-500" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2L2 22h20L12 2zm0 3.8L18.5 19H5.5L12 5.8z"/>
+              </svg> 
+              GOHIGHLEVEL
+            </span>
+            <!-- HubSpot -->
+            <span class="flex items-center gap-2">
+              <svg class="w-5 h-5 text-brandGold-500" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18.8 10.3c-.6 0-1.1.2-1.5.6l-2.4-1.1c.1-.3.1-.5.1-.8 0-1.7-1.4-3-3-3s-3 1.4-3 3c0 .3 0 .5.1.8L6.7 10.9c-.4-.4-.9-.6-1.5-.6-1.1 0-2 .9-2 2s.9 2 2 2c.6 0 1.1-.2 1.5-.6l2.4 1.1c-.1.3-.1.5-.1.8 0 1.7 1.4 3 3 3s3-1.4 3-3c0-.3 0-.5-.1-.8l2.4-1.1c.4.4.9.6 1.5.6 1.1 0 2-.9 2-2s-.9-2-2-2zm-6.8-1.5c.6 0 1 .4 1 1s-.4 1-1 1-1-.4-1-1 .4-1 1-1zm0 8.4c-.6 0-1-.4-1-1s.4-1 1-1 1 .4 1 1-.4 1-1 1z"/>
+              </svg> 
+              HUBSPOT
+            </span>
+            <!-- n8n -->
+            <span class="flex items-center gap-2">
+              <svg class="w-5 h-5 text-brandGold-500" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 14h-2v-2h2v2zm0-4h-2V7h2v5z"/>
+              </svg> 
+              N8N.IO
+            </span>
+            <!-- Make -->
+            <span class="flex items-center gap-2">
+              <svg class="w-5 h-5 text-brandGold-500" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19.5 3h-15C3.1 3 2 4.1 2 5.5v13C2 19.9 3.1 21 4.5 21h15c1.4 0 2.5-1.1 2.5-2.5v-13C22 4.1 20.9 3 19.5 3zm-9.2 12.8H7.7V8.2h2.6v7.6zm5.9 0H13.6V8.2h2.6v7.6z"/>
+              </svg> 
+              MAKE
+            </span>
+            <!-- Airtable -->
+            <span class="flex items-center gap-2">
+              <svg class="w-5 h-5 text-brandGold-500" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12.5 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5-10-3.1L2 17z"/>
+              </svg> 
+              AIRTABLE
+            </span>
+            <!-- Zapier -->
+            <span class="flex items-center gap-2">
+              <svg class="w-5 h-5 text-brandGold-500" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm1 11h3v-2h-3V8h-2v3H8v2h3v3h2v-3z"/>
+              </svg> 
+              ZAPIER
+            </span>
+            <!-- Clay -->
+            <span class="flex items-center gap-2">
+              <svg class="w-5 h-5 text-brandGold-500" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm3.1 13.5H8.9V8.5h6.2v7z"/>
+              </svg> 
+              CLAY
+            </span>
+            <!-- Stripe API -->
+            <span class="flex items-center gap-2">
+              <svg class="w-5 h-5 text-brandGold-500" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm-6 10H6v-2h8v2zm4-4H6V8h12v2z"/>
+              </svg> 
+              STRIPE API
+            </span>
+          </div>
+          
+          <!-- Marquee Item List (Set 2 Duplicated) -->
+          <div class="flex justify-around items-center gap-16 text-executiveSlate-500 dark:text-executiveSlate-400 font-extrabold text-xs tracking-wider shrink-0">
+            <span class="flex items-center gap-2">
+              <svg class="w-5 h-5 text-brandGold-500" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2L2 22h20L12 2zm0 3.8L18.5 19H5.5L12 5.8z"/>
+              </svg> 
+              GOHIGHLEVEL
+            </span>
+            <span class="flex items-center gap-2">
+              <svg class="w-5 h-5 text-brandGold-500" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18.8 10.3c-.6 0-1.1.2-1.5.6l-2.4-1.1c.1-.3.1-.5.1-.8 0-1.7-1.4-3-3-3s-3 1.4-3 3c0 .3 0 .5.1.8L6.7 10.9c-.4-.4-.9-.6-1.5-.6-1.1 0-2 .9-2 2s.9 2 2 2c.6 0 1.1-.2 1.5-.6l2.4 1.1c-.1.3-.1.5-.1.8 0 1.7 1.4 3 3 3s3-1.4 3-3c0-.3 0-.5-.1-.8l2.4-1.1c.4.4.9.6 1.5.6 1.1 0 2-.9 2-2s-.9-2-2-2zm-6.8-1.5c.6 0 1 .4 1 1s-.4 1-1 1-1-.4-1-1 .4-1 1-1zm0 8.4c-.6 0-1-.4-1-1s.4-1 1-1 1 .4 1 1-.4 1-1 1z"/>
+              </svg> 
+              HUBSPOT
+            </span>
+            <span class="flex items-center gap-2">
+              <svg class="w-5 h-5 text-brandGold-500" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 14h-2v-2h2v2zm0-4h-2V7h2v5z"/>
+              </svg> 
+              N8N.IO
+            </span>
+            <span class="flex items-center gap-2">
+              <svg class="w-5 h-5 text-brandGold-500" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19.5 3h-15C3.1 3 2 4.1 2 5.5v13C2 19.9 3.1 21 4.5 21h15c1.4 0 2.5-1.1 2.5-2.5v-13C22 4.1 20.9 3 19.5 3zm-9.2 12.8H7.7V8.2h2.6v7.6zm5.9 0H13.6V8.2h2.6v7.6z"/>
+              </svg> 
+              MAKE
+            </span>
+            <span class="flex items-center gap-2">
+              <svg class="w-5 h-5 text-brandGold-500" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12.5 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5-10-3.1L2 17z"/>
+              </svg> 
+              AIRTABLE
+            </span>
+            <span class="flex items-center gap-2">
+              <svg class="w-5 h-5 text-brandGold-500" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm1 11h3v-2h-3V8h-2v3H8v2h3v3h2v-3z"/>
+              </svg> 
+              ZAPIER
+            </span>
+            <span class="flex items-center gap-2">
+              <svg class="w-5 h-5 text-brandGold-500" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm3.1 13.5H8.9V8.5h6.2v7z"/>
+              </svg> 
+              CLAY
+            </span>
+            <span class="flex items-center gap-2">
+              <svg class="w-5 h-5 text-brandGold-500" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm-6 10H6v-2h8v2zm4-4H6V8h12v2z"/>
+              </svg> 
+              STRIPE API
+            </span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- METRICS AND STATISTICS -->
+  <section class="pb-20 bg-white dark:bg-executiveSlate-950">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Stat Item 1 -->
+        <div class="bg-white dark:bg-executiveSlate-900 p-8 rounded-3xl border border-executiveSlate-100 dark:border-executiveSlate-800 transition-premium hover:-translate-y-1 hover:shadow-lg hover:shadow-brandGold-500/[0.03]">
+          <p class="text-4xl lg:text-5xl font-extrabold text-brandGold-500 tracking-tight"><span class="count" data-target="100" data-suffix="%">0%</span></p>
+          <p class="text-[10px] font-bold uppercase tracking-wider text-executiveSlate-400 dark:text-executiveSlate-500 mt-4">Deliverable SLA Integrity</p>
+          <p class="text-xs font-semibold text-executiveSlate-700 dark:text-executiveSlate-300 mt-1">125+ concurrent milestones managed simultaneously</p>
+        </div>
+        <!-- Stat Item 2 -->
+        <div class="bg-white dark:bg-executiveSlate-900 p-8 rounded-3xl border border-executiveSlate-100 dark:border-executiveSlate-800 transition-premium hover:-translate-y-1 hover:shadow-lg hover:shadow-brandGold-500/[0.03]">
+          <p class="text-4xl lg:text-5xl font-extrabold text-brandGold-500 tracking-tight">$<span class="count" data-target="1.2" data-decimals="1" data-suffix="M+">0M+</span></p>
+          <p class="text-[10px] font-bold uppercase tracking-wider text-executiveSlate-400 dark:text-executiveSlate-500 mt-4">Annual Revenue Reconciled</p>
+          <p class="text-xs font-semibold text-executiveSlate-700 dark:text-executiveSlate-300 mt-1">Stripe-to-QBO errorless ledger matches</p>
+        </div>
+        <!-- Stat Item 3 -->
+        <div class="bg-white dark:bg-executiveSlate-900 p-8 rounded-3xl border border-executiveSlate-100 dark:border-executiveSlate-800 transition-premium hover:-translate-y-1 hover:shadow-lg hover:shadow-brandGold-500/[0.03]">
+          <p class="text-4xl lg:text-5xl font-extrabold text-brandGold-500 tracking-tight"><span class="count" data-target="99.8" data-decimals="1" data-suffix="%">0%</span></p>
+          <p class="text-[10px] font-bold uppercase tracking-wider text-executiveSlate-400 dark:text-executiveSlate-500 mt-4">Customer Data Integrity</p>
+          <p class="text-xs font-semibold text-executiveSlate-700 dark:text-executiveSlate-300 mt-1">Airtable &amp; CRM duplicate filtration index</p>
+        </div>
+        <!-- Stat Item 4 -->
+        <div class="bg-white dark:bg-executiveSlate-900 p-8 rounded-3xl border border-executiveSlate-100 dark:border-executiveSlate-800 transition-premium hover:-translate-y-1 hover:shadow-lg hover:shadow-brandGold-500/[0.03]">
+          <p class="text-4xl lg:text-5xl font-extrabold text-brandGold-500 tracking-tight"><span class="count" data-target="90" data-suffix="%">0%</span></p>
+          <p class="text-[10px] font-bold uppercase tracking-wider text-executiveSlate-400 dark:text-executiveSlate-500 mt-4">Lead Acceleration Metric</p>
+          <p class="text-xs font-semibold text-executiveSlate-700 dark:text-executiveSlate-300 mt-1">Faster handoff routing via webhook latency tuning</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTEGRATION SANDBOX -->
+  <section class="py-12 bg-white dark:bg-executiveSlate-950">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="bg-white dark:bg-executiveSlate-900 rounded-4xl p-8 sm:p-12 border border-executiveSlate-100 dark:border-executiveSlate-800 shadow-[0_8px_30px_rgb(0,0,0,0.01)] dark:shadow-[0_8px_30px_rgba(0,0,0,0.3)]">
+        <div class="flex flex-col lg:flex-row gap-12 items-center">
+          
+          <!-- Interactive Console Left -->
+          <div class="w-full lg:w-1/2">
+            <span class="inline-block py-1 px-3 bg-brandGold-50 dark:bg-brandGold-900/20 text-brandGold-700 dark:text-brandGold-200 text-[10px] font-bold uppercase tracking-wider rounded border border-brandGold-200/30 mb-4">Simulation Sandbox</span>
+            <h3 class="text-2xl sm:text-3xl font-extrabold text-executiveSlate-950 dark:text-white tracking-tight">Interactive Integration Sandbox</h3>
+            <p class="text-sm text-executiveSlate-500 dark:text-executiveSlate-400 mt-2 font-light">
+              See how Kenneth engineers redundant multi-step operational logic to prevent leads or records from falling between CRM structures.
             </p>
             
-            <div class="flex flex-wrap justify-center gap-4">
-                <a href="#contact" class="bg-accent hover:bg-blue-500 text-white font-medium py-3 px-8 btn-rounded transition-all duration-300 shadow-lg hover:shadow-glow">
-                    Contact Me
-                </a>
+            <div class="mt-8 flex flex-col gap-4">
+              <!-- Node Flow Visualizers -->
+              <div class="flex flex-col gap-3">
+                <!-- Node 1 -->
+                <div id="flowNode1" class="flex items-center gap-4 p-4 bg-white dark:bg-executiveSlate-950 rounded-2xl border border-executiveSlate-100 dark:border-executiveSlate-800 transition-premium">
+                  <span class="w-8 h-8 rounded-full bg-brandGold-100 dark:bg-brandGold-900/30 flex items-center justify-center text-brandGold-600 font-extrabold text-xs">1</span>
+                  <div>
+                    <p class="text-[10px] font-bold uppercase text-executiveSlate-400 dark:text-executiveSlate-500">Step 1 — Webhook Triggers</p>
+                    <p class="text-sm font-semibold text-executiveSlate-800 dark:text-executiveSlate-200">Parse Inbound Payload Schema</p>
+                  </div>
+                </div>
+                <!-- Node 2 -->
+                <div id="flowNode2" class="flex items-center gap-4 p-4 bg-white dark:bg-executiveSlate-950 rounded-2xl border border-executiveSlate-100 dark:border-executiveSlate-800 transition-premium">
+                  <span class="w-8 h-8 rounded-full bg-brandGold-100 dark:bg-brandGold-900/30 flex items-center justify-center text-brandGold-600 font-extrabold text-xs">2</span>
+                  <div>
+                    <p class="text-[10px] font-bold uppercase text-executiveSlate-400 dark:text-executiveSlate-500">Step 2 — Data Validation</p>
+                    <p class="text-sm font-semibold text-executiveSlate-800 dark:text-executiveSlate-200">Run Duplicate Schema Filter</p>
+                  </div>
+                </div>
+                <!-- Node 3 -->
+                <div id="flowNode3" class="flex items-center gap-4 p-4 bg-white dark:bg-executiveSlate-950 rounded-2xl border border-executiveSlate-100 dark:border-executiveSlate-800 transition-premium">
+                  <span class="w-8 h-8 rounded-full bg-brandGold-100 dark:bg-brandGold-900/30 flex items-center justify-center text-brandGold-600 font-extrabold text-xs">3</span>
+                  <div>
+                    <p class="text-[10px] font-bold uppercase text-executiveSlate-400 dark:text-executiveSlate-500">Step 3 — Metadata Enrichment</p>
+                    <p class="text-sm font-semibold text-executiveSlate-800 dark:text-executiveSlate-200">Push to GHL &amp; Slack Alert Routing</p>
+                  </div>
+                </div>
+              </div>
+
+              <button id="runPipelineBtn" class="bg-brandGold-500 hover:bg-brandGold-600 active:scale-95 text-white font-bold py-4 rounded-2xl transition-premium shadow-md shadow-brandGold-500/10 mt-2 text-xs uppercase tracking-wider">
+                Run Automated Pipeline
+              </button>
             </div>
+          </div>
+
+          <!-- Live Output Window -->
+          <div class="w-full lg:w-1/2 self-stretch flex flex-col">
+            <div class="bg-executiveSlate-950 text-emerald-400 p-6 rounded-3xl font-mono text-xs flex-1 min-h-[320px] flex flex-col justify-between border border-executiveSlate-800 shadow-xl">
+              <div>
+                <div class="flex items-center justify-between border-b border-executiveSlate-800 pb-3 mb-4">
+                  <span class="text-executiveSlate-500 font-bold uppercase tracking-wider text-[10px]">INTEGRATION_LOGS</span>
+                  <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                </div>
+                <div id="terminalScreen" class="flex flex-col gap-2">
+                  <p class="text-executiveSlate-500">// System active. Click button to execute simulated n8n operational workflow.</p>
+                </div>
+              </div>
+              <div class="text-right text-executiveSlate-600 text-[9px] mt-4 uppercase tracking-widest">
+                SYSTEMS ARCHITECT v2.5.0
+              </div>
+            </div>
+          </div>
+
         </div>
+      </div>
     </div>
-    
-    <div class="absolute bottom-0 left-0 right-0 flex justify-center pb-8 animate-on-scroll stagger-delay-1">
-        <a href="#about" class="text-white animate-bounce">
-            <i class="fas fa-chevron-down text-2xl"></i>
+  </section>
+
+  <!-- EXPERIENCE SECTION -->
+  <section id="experience" class="py-24 border-t border-executiveSlate-100 dark:border-executiveSlate-900 bg-white dark:bg-executiveSlate-950">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="max-w-3xl mb-16">
+        <p class="text-xs font-extrabold uppercase tracking-widest text-brandGold-500">01 / Career Timeline</p>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-executiveSlate-950 dark:text-white mt-4 tracking-tight leading-none">
+          Operational infrastructure built for scale.
+        </h2>
+        <p class="text-sm sm:text-md text-executiveSlate-500 dark:text-executiveSlate-400 mt-4 font-light leading-relaxed">
+          Transitioning fragmented manual processes into standardized, robust, and automated environments.
+        </p>
+      </div>
+
+      <!-- Experience Cards -->
+      <div class="flex flex-col gap-8">
+        
+        <!-- Experience Item 1 -->
+        <div class="p-8 sm:p-10 bg-white dark:bg-executiveSlate-900 rounded-3xl border border-executiveSlate-100 dark:border-executiveSlate-800/80 transition-premium hover:shadow-lg dark:hover:shadow-brandGold-500/[0.02] hover:border-brandGold-200/50 dark:hover:border-brandGold-500/30 flex flex-col md:flex-row gap-8 justify-between">
+          <div class="md:w-1/4">
+            <span class="inline-block py-1 px-3 bg-brandGold-50 dark:bg-brandGold-900/10 text-brandGold-700 dark:text-brandGold-200 text-xs font-bold uppercase rounded border border-brandGold-200/20">2025 — 2026</span>
+            <p class="text-xs font-extrabold text-executiveSlate-400 dark:text-executiveSlate-500 mt-3">SalesElite Consulting Group LLC</p>
+          </div>
+          <div class="md:w-3/4">
+            <h3 class="text-xl sm:text-2xl font-extrabold text-executiveSlate-950 dark:text-white leading-tight">Operations &amp; Systems Specialist</h3>
+            <ul class="mt-6 flex flex-col gap-4 text-sm sm:text-md text-executiveSlate-600 dark:text-executiveSlate-300 font-light leading-relaxed">
+              <li class="flex items-start gap-3">
+                <span class="w-1.5 h-1.5 rounded-full bg-brandGold-500 mt-2 shrink-0"></span>
+                <span>Standardized daily execution routines across decentralized teams, <strong class="font-semibold text-executiveSlate-950 dark:text-white">reducing corporate overhead by 20%</strong> and building highly scalable operational structures.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="w-1.5 h-1.5 rounded-full bg-brandGold-500 mt-2 shrink-0"></span>
+                <span>Monitored and tracked over <strong class="font-semibold text-executiveSlate-950 dark:text-white">125 concurrent deliverables</strong> across multi-disciplinary domains, maintaining a flawless 100% on-time SLA.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="w-1.5 h-1.5 rounded-full bg-brandGold-500 mt-2 shrink-0"></span>
+                <span>Architected automated client-journey pipelines that reclaimed <strong class="font-semibold text-executiveSlate-950 dark:text-white">15+ hours weekly</strong> of executive cognitive bandwidth from administrative tasks.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="w-1.5 h-1.5 rounded-full bg-brandGold-500 mt-2 shrink-0"></span>
+                <span>Audited multi-platform integration layers, recovering over <strong class="font-semibold text-executiveSlate-950 dark:text-white">$8,000 in leaking revenue</strong> by correcting broken webhooks and API syncs with zero downtime.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="w-1.5 h-1.5 rounded-full bg-brandGold-500 mt-2 shrink-0"></span>
+                <span>Engineered rigid database schemas across GHL and proprietary CRMs, eliminating duplicate profiles to lock down <strong class="font-semibold text-executiveSlate-950 dark:text-white">99.8% customer data integrity</strong>.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Experience Item 2 -->
+        <div class="p-8 sm:p-10 bg-white dark:bg-executiveSlate-900 rounded-3xl border border-executiveSlate-100 dark:border-executiveSlate-800/80 transition-premium hover:shadow-lg dark:hover:shadow-brandGold-500/[0.02] hover:border-brandGold-200/50 dark:hover:border-brandGold-500/30 flex flex-col md:flex-row gap-8 justify-between">
+          <div class="md:w-1/4">
+            <span class="inline-block py-1 px-3 bg-brandGold-50 dark:bg-brandGold-900/10 text-brandGold-700 dark:text-brandGold-200 text-xs font-bold uppercase rounded border border-brandGold-200/20">2023 — 2025</span>
+            <p class="text-xs font-extrabold text-executiveSlate-400 dark:text-executiveSlate-500 mt-3">Independent Contractor</p>
+          </div>
+          <div class="md:w-3/4">
+            <h3 class="text-xl sm:text-2xl font-extrabold text-executiveSlate-950 dark:text-white leading-tight">Social Media Manager &amp; Operations Coordinator</h3>
+            <ul class="mt-6 flex flex-col gap-4 text-sm sm:text-md text-executiveSlate-600 dark:text-executiveSlate-300 font-light leading-relaxed">
+              <li class="flex items-start gap-3">
+                <span class="w-1.5 h-1.5 rounded-full bg-brandGold-500 mt-2 shrink-0"></span>
+                <span>Engineered an end-to-end digital pipeline, deploying <strong class="font-semibold text-executiveSlate-950 dark:text-white">500+ multi-channel creative assets</strong> with a flawless 100% on-time SLA.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="w-1.5 h-1.5 rounded-full bg-brandGold-500 mt-2 shrink-0"></span>
+                <span>Maintained corporate web ecosystems across WordPress and Squarespace while designing high-converting graphic assets via Canva.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="w-1.5 h-1.5 rounded-full bg-brandGold-500 mt-2 shrink-0"></span>
+                <span>Designed responsive, high-converting newsletter templates and automated distribution routing pipelines across core marketing CRMs.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="w-1.5 h-1.5 rounded-full bg-brandGold-500 mt-2 shrink-0"></span>
+                <span>Evaluated weekly content performance metrics to reallocate budgets, optimizing marketing spend efficiency by <strong class="font-semibold text-executiveSlate-950 dark:text-white">15%</strong>.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Experience Item 3 -->
+        <div class="p-8 sm:p-10 bg-white dark:bg-executiveSlate-900 rounded-3xl border border-executiveSlate-100 dark:border-executiveSlate-800/80 transition-premium hover:shadow-lg dark:hover:shadow-brandGold-500/[0.02] hover:border-brandGold-200/50 dark:hover:border-brandGold-500/30 flex flex-col md:flex-row gap-8 justify-between">
+          <div class="md:w-1/4">
+            <span class="inline-block py-1 px-3 bg-brandGold-50 dark:bg-brandGold-900/10 text-brandGold-700 dark:text-brandGold-200 text-xs font-bold uppercase rounded border border-brandGold-200/20">2022 — 2023</span>
+            <p class="text-xs font-extrabold text-executiveSlate-400 dark:text-executiveSlate-500 mt-3">Independent Contractor</p>
+          </div>
+          <div class="md:w-3/4">
+            <h3 class="text-xl sm:text-2xl font-extrabold text-executiveSlate-950 dark:text-white leading-tight">Digital Growth Specialist</h3>
+            <ul class="mt-6 flex flex-col gap-4 text-sm sm:text-md text-executiveSlate-600 dark:text-executiveSlate-300 font-light leading-relaxed">
+              <li class="flex items-start gap-3">
+                <span class="w-1.5 h-1.5 rounded-full bg-brandGold-500 mt-2 shrink-0"></span>
+                <span>Developed and deployed conversion-optimized WordPress funnel frameworks, boosting visitor-to-lead landing page conversions by <strong class="font-semibold text-executiveSlate-950 dark:text-white">22%</strong>.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="w-1.5 h-1.5 rounded-full bg-brandGold-500 mt-2 shrink-0"></span>
+                <span>Synced secure automated pipelines between web environments and relational databases, cutting lead-routing latency down to <strong class="font-semibold text-executiveSlate-950 dark:text-white">zero</strong>.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="w-1.5 h-1.5 rounded-full bg-brandGold-500 mt-2 shrink-0"></span>
+                <span>Analyzed user journey drop-offs to implement layout optimizations, securing a <strong class="font-semibold text-executiveSlate-950 dark:text-white">14% improvement</strong> in pipeline conversion efficiency.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="w-1.5 h-1.5 rounded-full bg-brandGold-500 mt-2 shrink-0"></span>
+                <span>Formulated technical SOPs and handoff documentation for client teams, achieving an average system adoption rate of <strong class="font-semibold text-executiveSlate-950 dark:text-white">95%+</strong>.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="w-1.5 h-1.5 rounded-full bg-brandGold-500 mt-2 shrink-0"></span>
+                <span>Audited and maintained clean tracking configurations (Meta Pixel, Google Tag Manager) to preserve <strong class="font-semibold text-executiveSlate-950 dark:text-white">100% attribution accuracy</strong>.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section id="projects" class="py-24 border-t border-executiveSlate-100 dark:border-executiveSlate-900 bg-white dark:bg-executiveSlate-950">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+        <div>
+          <p class="text-xs font-extrabold uppercase tracking-widest text-brandGold-500">02 / Technical Blueprints</p>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-executiveSlate-950 dark:text-white mt-4 tracking-tight leading-none">
+            Infrastructure Builds
+          </h2>
+          <p class="text-xs sm:text-sm text-executiveSlate-500 mt-2 dark:text-executiveSlate-400">
+            Swipe or use controls to browse through highly-structured system builds.
+          </p>
+        </div>
+        
+        <!-- Navigation Buttons -->
+        <div class="flex items-center gap-3 mt-6 md:mt-0">
+          <button id="scrollLeftBtn" class="w-12 h-12 rounded-full border border-executiveSlate-200 dark:border-executiveSlate-800 flex items-center justify-center text-executiveSlate-700 dark:text-executiveSlate-300 hover:border-brandGold-500 hover:text-brandGold-500 active:scale-95 transition-premium bg-white dark:bg-executiveSlate-900 shadow-sm" aria-label="Scroll Left">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"></path></svg>
+          </button>
+          <button id="scrollRightBtn" class="w-12 h-12 rounded-full border border-executiveSlate-200 dark:border-executiveSlate-800 flex items-center justify-center text-executiveSlate-700 dark:text-executiveSlate-300 hover:border-brandGold-500 hover:text-brandGold-500 active:scale-95 transition-premium bg-white dark:bg-executiveSlate-900 shadow-sm" aria-label="Scroll Right">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Horizontal scroll container -->
+      <div id="projectsContainer" class="flex gap-8 overflow-x-auto scroll-smooth scrollbar-none pb-8">
+        
+        <!-- Card P1 -->
+        <article class="min-w-[300px] sm:min-w-[420px] max-w-[450px] bg-white dark:bg-executiveSlate-900 p-8 sm:p-10 rounded-3xl border border-executiveSlate-100 dark:border-executiveSlate-800 flex flex-col justify-between shrink-0 hover:shadow-lg dark:hover:shadow-brandGold-500/[0.02] hover:border-brandGold-500/30 transition-premium">
+          <div>
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold uppercase tracking-wider text-brandGold-500">Project P.01</span>
+              <span class="text-[10px] px-2.5 py-1 bg-brandGold-50 dark:bg-brandGold-900/20 text-brandGold-700 dark:text-brandGold-200 font-extrabold rounded">Validated</span>
+            </div>
+            <h3 class="text-xl sm:text-2xl font-extrabold text-executiveSlate-950 dark:text-white mt-4 leading-tight">Real-Time Lead Enrichment &amp; Standardized Validation Engine</h3>
+            
+            <dl class="mt-8 flex flex-col gap-4">
+              <div class="border-b border-executiveSlate-100 dark:border-executiveSlate-800 pb-3">
+                <dt class="text-[10px] font-bold uppercase tracking-wider text-executiveSlate-400 dark:text-executiveSlate-500">Role &amp; Tech Stack</dt>
+                <dd class="text-sm font-semibold text-executiveSlate-800 dark:text-executiveSlate-200 mt-1">Lead Architect &amp; Workflow Engineer | n8n, GoHighLevel API, Clay API, Slack API, Custom JavaScript, Regex</dd>
+              </div>
+              <div class="border-b border-executiveSlate-100 dark:border-executiveSlate-800 pb-3">
+                <dt class="text-[10px] font-bold uppercase tracking-wider text-executiveSlate-400 dark:text-executiveSlate-500">Objective</dt>
+                <dd class="text-sm font-light text-executiveSlate-600 dark:text-executiveSlate-300 mt-1">Automate lead validation and data enrichment in real time to accelerate sales pipeline velocity and eliminate manual profiling.</dd>
+              </div>
+              <div class="border-b border-executiveSlate-100 dark:border-executiveSlate-800 pb-3">
+                <dt class="text-[10px] font-bold uppercase tracking-wider text-executiveSlate-400 dark:text-executiveSlate-500">Execution</dt>
+                <dd class="text-sm font-light text-executiveSlate-600 dark:text-executiveSlate-300 mt-1">Engineered n8n webhooks capturing raw payloads, parsing data via custom JavaScript/Regex, and routing queries to Clay API for metadata.</dd>
+              </div>
+              <div>
+                <dt class="text-[10px] font-bold uppercase tracking-wider text-executiveSlate-400 dark:text-executiveSlate-500">Impact</dt>
+                <dd class="text-sm font-semibold text-brandGold-600 dark:text-brandGold-400 mt-1">Standardized CRM fields, accelerated lead response times by 90% via automated alerts, and initiated targeted sequences with zero latency.</dd>
+              </div>
+            </dl>
+          </div>
+        </article>
+
+        <!-- Card P2 -->
+        <article class="min-w-[300px] sm:min-w-[420px] max-w-[450px] bg-white dark:bg-executiveSlate-900 p-8 sm:p-10 rounded-3xl border border-executiveSlate-100 dark:border-executiveSlate-800 flex flex-col justify-between shrink-0 hover:shadow-lg dark:hover:shadow-brandGold-500/[0.02] hover:border-brandGold-500/30 transition-premium">
+          <div>
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold uppercase tracking-wider text-brandGold-500">Project P.02</span>
+              <span class="text-[10px] px-2.5 py-1 bg-brandGold-50 dark:bg-brandGold-900/20 text-brandGold-700 dark:text-brandGold-200 font-extrabold rounded">Error-Free</span>
+            </div>
+            <h3 class="text-xl sm:text-2xl font-extrabold text-executiveSlate-950 dark:text-white mt-4 leading-tight">Zero-Loss Stripe-to-QuickBooks Reconciliation Pipeline</h3>
+            
+            <dl class="mt-8 flex flex-col gap-4">
+              <div class="border-b border-executiveSlate-100 dark:border-executiveSlate-800 pb-3">
+                <dt class="text-[10px] font-bold uppercase tracking-wider text-executiveSlate-400 dark:text-executiveSlate-500">Role &amp; Tech Stack</dt>
+                <dd class="text-sm font-semibold text-executiveSlate-800 dark:text-executiveSlate-200 mt-1">Systems Integrator | Make, Stripe Webhook API, QuickBooks Online API, Slack</dd>
+              </div>
+              <div class="border-b border-executiveSlate-100 dark:border-executiveSlate-800 pb-3">
+                <dt class="text-[10px] font-bold uppercase tracking-wider text-executiveSlate-400 dark:text-executiveSlate-500">Objective</dt>
+                <dd class="text-sm font-light text-executiveSlate-600 dark:text-executiveSlate-300 mt-1">Automate transactional reconciliation and eliminate manual ledger entry errors across recurring revenue streams.</dd>
+              </div>
+              <div class="border-b border-executiveSlate-100 dark:border-executiveSlate-800 pb-3">
+                <dt class="text-[10px] font-bold uppercase tracking-wider text-executiveSlate-400 dark:text-executiveSlate-500">Execution</dt>
+                <dd class="text-sm font-light text-executiveSlate-600 dark:text-executiveSlate-300 mt-1">Mapped dynamic Stripe event metadata directly to QuickBooks Chart of Accounts via Make, building error-tolerant billing routes.</dd>
+              </div>
+              <div>
+                <dt class="text-[10px] font-bold uppercase tracking-wider text-executiveSlate-400 dark:text-executiveSlate-500">Impact</dt>
+                <dd class="text-sm font-semibold text-brandGold-600 dark:text-brandGold-400 mt-1">Reconciled $1.2M+ in annual transactional revenue with 0% margin error while preserving real-time financial ledger integrity.</dd>
+              </div>
+            </dl>
+          </div>
+        </article>
+
+        <!-- Card P3 -->
+        <article class="min-w-[300px] sm:min-w-[420px] max-w-[450px] bg-white dark:bg-executiveSlate-900 p-8 sm:p-10 rounded-3xl border border-executiveSlate-100 dark:border-executiveSlate-800 flex flex-col justify-between shrink-0 hover:shadow-lg dark:hover:shadow-brandGold-500/[0.02] hover:border-brandGold-500/30 transition-premium">
+          <div>
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold uppercase tracking-wider text-brandGold-500">Project P.03</span>
+              <span class="text-[10px] px-2.5 py-1 bg-brandGold-50 dark:bg-brandGold-900/20 text-brandGold-700 dark:text-brandGold-200 font-extrabold rounded">Optimized</span>
+            </div>
+            <h3 class="text-xl sm:text-2xl font-extrabold text-executiveSlate-950 dark:text-white mt-4 leading-tight">Multi-Entity Real Estate &amp; Construction Database Blueprint</h3>
+            
+            <dl class="mt-8 flex flex-col gap-4">
+              <div class="border-b border-executiveSlate-100 dark:border-executiveSlate-800 pb-3">
+                <dt class="text-[10px] font-bold uppercase tracking-wider text-executiveSlate-400 dark:text-executiveSlate-500">Role &amp; Tech Stack</dt>
+                <dd class="text-sm font-semibold text-executiveSlate-800 dark:text-executiveSlate-200 mt-1">Relational Database Architect | Airtable, Follow Up Boss, QuickBooks Online, n8n</dd>
+              </div>
+              <div class="border-b border-executiveSlate-100 dark:border-executiveSlate-800 pb-3">
+                <dt class="text-[10px] font-bold uppercase tracking-wider text-executiveSlate-400 dark:text-executiveSlate-500">Objective</dt>
+                <dd class="text-sm font-light text-executiveSlate-600 dark:text-executiveSlate-300 mt-1">Centralize complex, multi-entity operations (real estate, land development, and construction) into a single operational command center.</dd>
+              </div>
+              <div class="border-b border-executiveSlate-100 dark:border-executiveSlate-800 pb-3">
+                <dt class="text-[10px] font-bold uppercase tracking-wider text-executiveSlate-400 dark:text-executiveSlate-500">Execution</dt>
+                <dd class="text-sm font-light text-executiveSlate-600 dark:text-executiveSlate-300 mt-1">Designed relational database schemas in Airtable with structured, nested tagging taxonomies across integrated tools.</dd>
+              </div>
+              <div>
+                <dt class="text-[10px] font-bold uppercase tracking-wider text-executiveSlate-400 dark:text-executiveSlate-500">Impact</dt>
+                <dd class="text-sm font-semibold text-brandGold-600 dark:text-brandGold-400 mt-1">Synced construction schedules with vendor payment status, saving managers 12+ hours weekly and tracking real-time margin variances.</dd>
+              </div>
+            </dl>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- INFRASTRUCTURE STACK -->
+  <section id="stack" class="py-24 border-t border-executiveSlate-100 dark:border-executiveSlate-900 bg-white dark:bg-executiveSlate-950">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+        
+        <div class="lg:col-span-12">
+          <p class="text-xs font-extrabold uppercase tracking-widest text-brandGold-500">03 / Tools &amp; Methodologies</p>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-executiveSlate-950 dark:text-white mt-4 tracking-tight leading-none mb-12">
+            Core Expertise
+          </h2>
+          
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Systems -->
+            <div class="p-8 bg-white dark:bg-executiveSlate-900 rounded-3xl border border-executiveSlate-100 dark:border-executiveSlate-800 shadow-[0_8px_30px_rgb(0,0,0,0.01)] hover:border-brandGold-500/40 transition-premium flex flex-col justify-between">
+              <div>
+                <p class="text-[10px] font-bold uppercase tracking-wider text-brandGold-600 dark:text-brandGold-400 mb-4">Systems &amp; Integrations</p>
+                <h4 class="text-lg font-bold text-executiveSlate-950 dark:text-white mb-2">Automations &amp; Databases</h4>
+                <p class="text-xs text-executiveSlate-500 dark:text-executiveSlate-400 font-light leading-relaxed mb-6">Connecting systems with rigid API/Webhook standards and clean database hierarchies.</p>
+              </div>
+              <div class="flex flex-wrap gap-2">
+                <span class="text-[11px] font-medium px-2.5 py-1 bg-executiveSlate-50 dark:bg-executiveSlate-950 text-executiveSlate-800 dark:text-executiveSlate-200 rounded-full border border-executiveSlate-100 dark:border-executiveSlate-800/80">GHL</span>
+                <span class="text-[11px] font-medium px-2.5 py-1 bg-executiveSlate-50 dark:bg-executiveSlate-950 text-executiveSlate-800 dark:text-executiveSlate-200 rounded-full border border-executiveSlate-100 dark:border-executiveSlate-800/80">HubSpot</span>
+                <span class="text-[11px] font-medium px-2.5 py-1 bg-executiveSlate-50 dark:bg-executiveSlate-950 text-executiveSlate-800 dark:text-executiveSlate-200 rounded-full border border-executiveSlate-100 dark:border-executiveSlate-800/80">n8n</span>
+                <span class="text-[11px] font-medium px-2.5 py-1 bg-executiveSlate-50 dark:bg-executiveSlate-950 text-executiveSlate-800 dark:text-executiveSlate-200 rounded-full border border-executiveSlate-100 dark:border-executiveSlate-800/80">Make</span>
+                <span class="text-[11px] font-medium px-2.5 py-1 bg-executiveSlate-50 dark:bg-executiveSlate-950 text-executiveSlate-800 dark:text-executiveSlate-200 rounded-full border border-executiveSlate-100 dark:border-executiveSlate-800/80">Airtable</span>
+                <span class="text-[11px] font-medium px-2.5 py-1 bg-executiveSlate-50 dark:bg-executiveSlate-950 text-executiveSlate-800 dark:text-executiveSlate-200 rounded-full border border-executiveSlate-100 dark:border-executiveSlate-800/80">ClickUp</span>
+                <span class="text-[11px] font-medium px-2.5 py-1 bg-executiveSlate-50 dark:bg-executiveSlate-950 text-executiveSlate-800 dark:text-executiveSlate-200 rounded-full border border-executiveSlate-100 dark:border-executiveSlate-800/80">Zapier</span>
+                <span class="text-[11px] font-medium px-2.5 py-1 bg-executiveSlate-50 dark:bg-executiveSlate-950 text-executiveSlate-800 dark:text-executiveSlate-200 rounded-full border border-executiveSlate-100 dark:border-executiveSlate-800/80">Logic-Based Automation</span>
+              </div>
+            </div>
+
+            <!-- Web & CMS -->
+            <div class="p-8 bg-white dark:bg-executiveSlate-900 rounded-3xl border border-executiveSlate-100 dark:border-executiveSlate-800 shadow-[0_8px_30px_rgb(0,0,0,0.01)] hover:border-brandGold-500/40 transition-premium flex flex-col justify-between">
+              <div>
+                <p class="text-[10px] font-bold uppercase tracking-wider text-brandGold-600 dark:text-brandGold-400 mb-4">Web &amp; CMS Platforms</p>
+                <h4 class="text-lg font-bold text-executiveSlate-950 dark:text-white mb-2">Web Design &amp; Mapping</h4>
+                <p class="text-xs text-executiveSlate-500 dark:text-executiveSlate-400 font-light leading-relaxed mb-6">Designing clean structures and establishing secure integrations with domains and hostings.</p>
+              </div>
+              <div class="flex flex-wrap gap-2">
+                <span class="text-[11px] font-medium px-2.5 py-1 bg-executiveSlate-50 dark:bg-executiveSlate-950 text-executiveSlate-800 dark:text-executiveSlate-200 rounded-full border border-executiveSlate-100 dark:border-executiveSlate-800/80">WordPress</span>
+                <span class="text-[11px] font-medium px-2.5 py-1 bg-executiveSlate-50 dark:bg-executiveSlate-950 text-executiveSlate-800 dark:text-executiveSlate-200 rounded-full border border-executiveSlate-100 dark:border-executiveSlate-800/80">Squarespace</span>
+                <span class="text-[11px] font-medium px-2.5 py-1 bg-executiveSlate-50 dark:bg-executiveSlate-950 text-executiveSlate-800 dark:text-executiveSlate-200 rounded-full border border-executiveSlate-100 dark:border-executiveSlate-800/80">Webhook &amp; API Sync</span>
+                <span class="text-[11px] font-medium px-2.5 py-1 bg-executiveSlate-50 dark:bg-executiveSlate-950 text-executiveSlate-800 dark:text-executiveSlate-200 rounded-full border border-executiveSlate-100 dark:border-executiveSlate-800/80">Domain Mapping</span>
+              </div>
+            </div>
+
+            <!-- AI Engine & Prompt Eng -->
+            <div class="p-8 bg-white dark:bg-executiveSlate-900 rounded-3xl border border-executiveSlate-100 dark:border-executiveSlate-800 shadow-[0_8px_30px_rgb(0,0,0,0.01)] hover:border-brandGold-500/40 transition-premium flex flex-col justify-between">
+              <div>
+                <p class="text-[10px] font-bold uppercase tracking-wider text-brandGold-600 dark:text-brandGold-400 mb-4">AI Engineering &amp; Media</p>
+                <h4 class="text-lg font-bold text-executiveSlate-950 dark:text-white mb-2">Advanced Optimization</h4>
+                <p class="text-xs text-executiveSlate-500 dark:text-executiveSlate-400 font-light leading-relaxed mb-6">Leveraging advanced prompt designs, LLM integrations, and generative AI search indexing (GEO/AIO).</p>
+              </div>
+              <div class="flex flex-wrap gap-2">
+                <span class="text-[11px] font-medium px-2.5 py-1 bg-executiveSlate-50 dark:bg-executiveSlate-950 text-executiveSlate-800 dark:text-executiveSlate-200 rounded-full border border-executiveSlate-100 dark:border-executiveSlate-800/80">Claude</span>
+                <span class="text-[11px] font-medium px-2.5 py-1 bg-executiveSlate-50 dark:bg-executiveSlate-950 text-executiveSlate-800 dark:text-executiveSlate-200 rounded-full border border-executiveSlate-100 dark:border-executiveSlate-800/80">Gemini</span>
+                <span class="text-[11px] font-medium px-2.5 py-1 bg-executiveSlate-50 dark:bg-executiveSlate-950 text-executiveSlate-800 dark:text-executiveSlate-200 rounded-full border border-executiveSlate-100 dark:border-executiveSlate-800/80">OpenAI</span>
+                <span class="text-[11px] font-medium px-2.5 py-1 bg-executiveSlate-50 dark:bg-executiveSlate-950 text-executiveSlate-800 dark:text-executiveSlate-200 rounded-full border border-executiveSlate-100 dark:border-executiveSlate-800/80">GEO / AI SEO</span>
+                <span class="text-[11px] font-medium px-2.5 py-1 bg-executiveSlate-50 dark:bg-executiveSlate-950 text-executiveSlate-800 dark:text-executiveSlate-200 rounded-full border border-executiveSlate-100 dark:border-executiveSlate-800/80">HeyGen</span>
+                <span class="text-[11px] font-medium px-2.5 py-1 bg-executiveSlate-50 dark:bg-executiveSlate-950 text-executiveSlate-800 dark:text-executiveSlate-200 rounded-full border border-executiveSlate-100 dark:border-executiveSlate-800/80">CapCut</span>
+              </div>
+            </div>
+
+            <!-- Operations Strategy -->
+            <div class="p-8 bg-white dark:bg-executiveSlate-900 rounded-3xl border border-executiveSlate-100 dark:border-executiveSlate-800 shadow-[0_8px_30px_rgb(0,0,0,0.01)] hover:border-brandGold-500/40 transition-premium flex flex-col justify-between">
+              <div>
+                <p class="text-[10px] font-bold uppercase tracking-wider text-brandGold-600 dark:text-brandGold-400 mb-4">Operations Strategy</p>
+                <h4 class="text-lg font-bold text-executiveSlate-950 dark:text-white mb-2">SOPs &amp; KPI Administration</h4>
+                <p class="text-xs text-executiveSlate-500 dark:text-executiveSlate-400 font-light leading-relaxed mb-6">Building operational documentation templates to keep organizational processes clean and secure.</p>
+              </div>
+              <div class="flex flex-wrap gap-2">
+                <span class="text-[11px] font-medium px-2.5 py-1 bg-executiveSlate-50 dark:bg-executiveSlate-950 text-executiveSlate-800 dark:text-executiveSlate-200 rounded-full border border-executiveSlate-100 dark:border-executiveSlate-800/80">SOP Designing</span>
+                <span class="text-[11px] font-medium px-2.5 py-1 bg-executiveSlate-50 dark:bg-executiveSlate-950 text-executiveSlate-800 dark:text-executiveSlate-200 rounded-full border border-executiveSlate-100 dark:border-executiveSlate-800/80">SLA Management</span>
+                <span class="text-[11px] font-medium px-2.5 py-1 bg-executiveSlate-50 dark:bg-executiveSlate-950 text-executiveSlate-800 dark:text-executiveSlate-200 rounded-full border border-executiveSlate-100 dark:border-executiveSlate-800/80">KPI Audits</span>
+                <span class="text-[11px] font-medium px-2.5 py-1 bg-executiveSlate-50 dark:bg-executiveSlate-950 text-executiveSlate-800 dark:text-executiveSlate-200 rounded-full border border-executiveSlate-100 dark:border-executiveSlate-800/80">Contracts</span>
+              </div>
+            </div>
+
+            <!-- Marketing Ecosystem -->
+            <div class="p-8 bg-white dark:bg-executiveSlate-900 rounded-3xl border border-executiveSlate-100 dark:border-executiveSlate-800 shadow-[0_8px_30px_rgb(0,0,0,0.01)] hover:border-brandGold-500/40 transition-premium flex flex-col justify-between">
+              <div>
+                <p class="text-[10px] font-bold uppercase tracking-wider text-brandGold-600 dark:text-brandGold-400 mb-4">Marketing Infrastructure</p>
+                <h4 class="text-lg font-bold text-executiveSlate-950 dark:text-white mb-2">Campaigns &amp; Socials</h4>
+                <p class="text-xs text-executiveSlate-500 dark:text-executiveSlate-400 font-light leading-relaxed mb-6">Configuring high-leverage paid search structures and tracking user-journey attribution rules.</p>
+              </div>
+              <div class="flex flex-wrap gap-2">
+                <span class="text-[11px] font-medium px-2.5 py-1 bg-executiveSlate-50 dark:bg-executiveSlate-950 text-executiveSlate-800 dark:text-executiveSlate-200 rounded-full border border-executiveSlate-100 dark:border-executiveSlate-800/80">Meta Ads Manager</span>
+                <span class="text-[11px] font-medium px-2.5 py-1 bg-executiveSlate-50 dark:bg-executiveSlate-950 text-executiveSlate-800 dark:text-executiveSlate-200 rounded-full border border-executiveSlate-100 dark:border-executiveSlate-800/80">Social Media</span>
+                <span class="text-[11px] font-medium px-2.5 py-1 bg-executiveSlate-50 dark:bg-executiveSlate-950 text-executiveSlate-800 dark:text-executiveSlate-200 rounded-full border border-executiveSlate-100 dark:border-executiveSlate-800/80">Meta Suite</span>
+                <span class="text-[11px] font-medium px-2.5 py-1 bg-executiveSlate-50 dark:bg-executiveSlate-950 text-executiveSlate-800 dark:text-executiveSlate-200 rounded-full border border-executiveSlate-100 dark:border-executiveSlate-800/80">Attribution GTM</span>
+              </div>
+            </div>
+
+            <!-- Soft Leadership -->
+            <div class="p-8 bg-white dark:bg-executiveSlate-900 rounded-3xl border border-executiveSlate-100 dark:border-executiveSlate-800 shadow-[0_8px_30px_rgb(0,0,0,0.01)] hover:border-brandGold-500/40 transition-premium flex flex-col justify-between">
+              <div>
+                <p class="text-[10px] font-bold uppercase tracking-wider text-brandGold-600 dark:text-brandGold-400 mb-4">Communication Core</p>
+                <h4 class="text-lg font-bold text-executiveSlate-950 dark:text-white mb-2">Leadership Core</h4>
+                <p class="text-xs text-executiveSlate-500 dark:text-executiveSlate-400 font-light leading-relaxed mb-6">Guiding distributed global engineering teams and translating complex technical plans into clear logic maps.</p>
+              </div>
+              <div class="flex flex-wrap gap-2">
+                <span class="text-[11px] font-medium px-2.5 py-1 bg-executiveSlate-50 dark:bg-executiveSlate-950 text-executiveSlate-800 dark:text-executiveSlate-200 rounded-full border border-executiveSlate-100 dark:border-executiveSlate-800/80">English Proficiency</span>
+                <span class="text-[11px] font-medium px-2.5 py-1 bg-executiveSlate-50 dark:bg-executiveSlate-950 text-executiveSlate-800 dark:text-executiveSlate-200 rounded-full border border-executiveSlate-100 dark:border-executiveSlate-800/80">Distributed Teams</span>
+                <span class="text-[11px] font-medium px-2.5 py-1 bg-executiveSlate-50 dark:bg-executiveSlate-950 text-executiveSlate-800 dark:text-executiveSlate-200 rounded-full border border-executiveSlate-100 dark:border-executiveSlate-800/80">Visual Design</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION & CREDENTIALS -->
+  <section id="credentials" class="py-24 border-t border-executiveSlate-100 dark:border-executiveSlate-900 bg-white dark:bg-executiveSlate-950">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+        
+        <div class="lg:col-span-12">
+          <p class="text-xs font-extrabold uppercase tracking-widest text-brandGold-500">04 / Credentials</p>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-executiveSlate-950 dark:text-white mt-4 tracking-tight leading-none mb-12">
+            Education &amp; Professional Badges
+          </h2>
+          
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+            
+            <!-- School Block -->
+            <div class="p-8 bg-white dark:bg-executiveSlate-900 rounded-3xl border border-executiveSlate-100 dark:border-executiveSlate-800 flex items-center gap-6 shadow-[0_8px_30px_rgb(0,0,0,0.01)]">
+              <img 
+                src="https://lh3.googleusercontent.com/d/1MIpkUC1RmknT-YeoxcKFnowy7zMJMMNH=w200" 
+                alt="University of Mindanao Logo" 
+                class="w-16 h-16 object-contain rounded-2xl bg-white p-2 border border-executiveSlate-100"
+                onerror="this.onerror=null; this.src='https://placehold.co/100x100/FFFFFF/000000?text=UM';"
+              >
+              <div>
+                <p class="text-[10px] font-bold uppercase tracking-wider text-executiveSlate-400 dark:text-executiveSlate-500">University of Mindanao</p>
+                <p class="text-base font-extrabold text-executiveSlate-950 dark:text-white mt-0.5">B.S. Business Administration</p>
+                <p class="text-xs text-executiveSlate-500 dark:text-executiveSlate-400 font-light mt-0.5">Major in Marketing Management (2021 — 2024)</p>
+              </div>
+            </div>
+
+            <!-- Credentials list with handcrafted logos inside rounded corners -->
+            <div class="flex flex-col gap-4">
+              
+              <!-- Microsoft badge -->
+              <div class="flex items-center justify-between p-4 bg-white dark:bg-executiveSlate-900 rounded-2xl border border-executiveSlate-100 dark:border-executiveSlate-800/80 shadow-[0_8px_30px_rgb(0,0,0,0.01)] hover:border-brandGold-200/50 transition-premium">
+                <div class="flex items-center gap-4">
+                  <!-- Microsoft & LinkedIn SVG -->
+                  <div class="w-10 h-10 rounded-xl bg-blue-50/50 dark:bg-blue-950/20 flex items-center justify-center shrink-0">
+                    <svg class="w-5 h-5 fill-current text-blue-600" viewBox="0 0 24 24">
+                      <path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.27c-.97 0-1.75-.79-1.75-1.76s.78-1.76 1.75-1.76 1.75.79 1.75 1.76-.78 1.76-1.75 1.76zm13.5 12.27h-3v-5.6c0-3.37-4-3.11-4 0v5.6h-3v-11h3v1.77c1.4-2.58 7-2.78 7 2.48v6.75z"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <p class="text-xs font-extrabold text-executiveSlate-950 dark:text-white">Career Essentials in Administrative Assistance</p>
+                    <p class="text-[10px] text-executiveSlate-400 dark:text-executiveSlate-500">Microsoft &amp; LinkedIn &bull; 2025</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- HubSpot badge -->
+              <div class="flex items-center justify-between p-4 bg-white dark:bg-executiveSlate-900 rounded-2xl border border-executiveSlate-100 dark:border-executiveSlate-800/80 shadow-[0_8px_30px_rgb(0,0,0,0.01)] hover:border-brandGold-200/50 transition-premium">
+                <div class="flex items-center gap-4">
+                  <!-- HubSpot Orange SVG -->
+                  <div class="w-10 h-10 rounded-xl bg-orange-50/50 dark:bg-orange-950/20 flex items-center justify-center shrink-0">
+                    <svg class="w-5 h-5 fill-current text-orange-500" viewBox="0 0 24 24">
+                      <path d="M18.8 10.3c-.6 0-1.1.2-1.5.6l-2.4-1.1c.1-.3.1-.5.1-.8 0-1.7-1.4-3-3-3s-3 1.4-3 3c0 .3 0 .5.1.8L6.7 10.9c-.4-.4-.9-.6-1.5-.6-1.1 0-2 .9-2 2s.9 2 2 2c.6 0 1.1-.2 1.5-.6l2.4 1.1c-.1.3-.1.5-.1.8 0 1.7 1.4 3 3 3s3-1.4 3-3c0-.3 0-.5-.1-.8l2.4-1.1c.4.4.9.6 1.5.6 1.1 0 2-.9 2-2s-.9-2-2-2zm-6.8-1.5c.6 0 1 .4 1 1s-.4 1-1 1-1-.4-1-1 .4-1 1-1zm0 8.4c-.6 0-1-.4-1-1s.4-1 1-1 1 .4 1 1-.4 1-1 1z"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <p class="text-xs font-extrabold text-executiveSlate-950 dark:text-white">Social Media &amp; Digital Marketing Certification</p>
+                    <p class="text-[10px] text-executiveSlate-400 dark:text-executiveSlate-500">HubSpot Academy &bull; 2025</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Google Analytics badge -->
+              <div class="flex items-center justify-between p-4 bg-white dark:bg-executiveSlate-900 rounded-2xl border border-executiveSlate-100 dark:border-executiveSlate-800/80 shadow-[0_8px_30px_rgb(0,0,0,0.01)] hover:border-brandGold-200/50 transition-premium">
+                <div class="flex items-center gap-4">
+                  <!-- Google Analytics SVG -->
+                  <div class="w-10 h-10 rounded-xl bg-amber-50/50 dark:bg-amber-950/20 flex items-center justify-center shrink-0">
+                    <svg class="w-5 h-5 fill-current text-amber-500" viewBox="0 0 24 24">
+                      <path d="M12.24 10.285V14.4h6.887c-.648 2.41-2.519 4.12-5.136 4.12A5.85 5.85 0 018.1 12.67a5.85 5.85 0 015.891-5.85c2.447 0 4.12 1.1 4.966 1.944l3.15-3.15C20.17 3.737 16.924 2 13.991 2 7.92 2 3 6.92 3 13s4.92 11 10.991 11c6.333 0 10.518-4.444 10.518-10.713 0-.742-.081-1.3-.18-1.714l-11.09.012z"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <p class="text-xs font-extrabold text-executiveSlate-950 dark:text-white">Google Analytics Individual Qualification</p>
+                    <p class="text-[10px] text-executiveSlate-400 dark:text-executiveSlate-500">Google Academy &bull; 2025</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS SECTION (Directly after Credentials) -->
+  <section id="testimonials" class="py-24 border-t border-executiveSlate-100 dark:border-executiveSlate-900 bg-white dark:bg-executiveSlate-950">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="max-w-3xl mb-16">
+        <p class="text-xs font-extrabold uppercase tracking-widest text-brandGold-500">05 / Executive References</p>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-executiveSlate-950 dark:text-white mt-4 tracking-tight leading-none">
+          Trusted by operations leads and founders.
+        </h2>
+        <p class="text-sm sm:text-md text-executiveSlate-500 mt-4 dark:text-executiveSlate-400 font-light">
+          Real references from previous engagements.
+        </p>
+      </div>
+
+      <!-- Testimonial Grid with symmetrical cards -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-start">
+        
+        <!-- Review 1 (Marcel) -->
+        <div class="p-8 bg-white dark:bg-executiveSlate-900 rounded-3xl border border-executiveSlate-100 dark:border-executiveSlate-800 transition-premium hover:-translate-y-1 hover:shadow-lg dark:hover:shadow-brandGold-500/[0.02] flex flex-col justify-between h-full">
+          <div>
+            <div class="flex items-center gap-1 text-brandGold-500">
+              <!-- 5 Stars -->
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+            </div>
+            <blockquote class="mt-6 text-xs text-executiveSlate-700 dark:text-executiveSlate-300 font-light italic leading-relaxed">
+              "Kenneth is a rare operations architect who doesn't just manage systems; he engineers predictable business growth. By auditing our multi-platform integration layers, he single-handedly recovered over $8K in leaking revenue by fixing broken webhooks and API syncs with zero downtime. His automation of our client-journey pipelines was a game-changer, reclaiming over 15 hours of my executive cognitive bandwidth every week."
+            </blockquote>
+          </div>
+          <div class="mt-8 flex items-center gap-4">
+            <div class="w-10 h-10 rounded-full bg-brandGold-500/10 text-brandGold-600 dark:text-brandGold-500 flex items-center justify-center font-extrabold text-xs">
+              M
+            </div>
+            <div>
+              <p class="text-xs font-bold text-executiveSlate-950 dark:text-white">Marcel &bull; CEO &amp; Founder</p>
+              <p class="text-[9px] text-brandGold-600 dark:text-brandGold-400 font-semibold uppercase tracking-wider">SalesElite Consulting (Miami, FL)</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 (Jeff) -->
+        <div class="p-8 bg-white dark:bg-executiveSlate-900 rounded-3xl border border-executiveSlate-100 dark:border-executiveSlate-800 transition-premium hover:-translate-y-1 hover:shadow-lg dark:hover:shadow-brandGold-500/[0.02] flex flex-col justify-between h-full">
+          <div>
+            <div class="flex items-center gap-1 text-brandGold-500">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+            </div>
+            <blockquote class="mt-6 text-xs text-executiveSlate-700 dark:text-executiveSlate-300 font-light italic leading-relaxed">
+              "Bringing Kenneth into our operational layer was one of the highest-leverage decisions we made this year. He standardized daily execution routines across decentralized teams, cutting overhead costs by 20% while building highly scalable operational structures. Managing 125 concurrent deliverables is immense, yet he maintained a flawless 100% SLA."
+            </blockquote>
+          </div>
+          <div class="mt-8 flex items-center gap-4">
+            <div class="w-10 h-10 rounded-full bg-brandGold-500/10 text-brandGold-600 dark:text-brandGold-500 flex items-center justify-center font-extrabold text-xs">
+              J
+            </div>
+            <div>
+              <p class="text-xs font-bold text-executiveSlate-950 dark:text-white">Jeff &bull; Head of Operations</p>
+              <p class="text-[9px] text-brandGold-600 dark:text-brandGold-400 font-semibold uppercase tracking-wider">SalesElite Consulting Group</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 (Lewis) -->
+        <div class="p-8 bg-white dark:bg-executiveSlate-900 rounded-3xl border border-executiveSlate-100 dark:border-executiveSlate-800 transition-premium hover:-translate-y-1 hover:shadow-lg dark:hover:shadow-brandGold-500/[0.02] flex flex-col justify-between h-full">
+          <div>
+            <div class="flex items-center gap-1 text-brandGold-500">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+            </div>
+            <blockquote class="mt-6 text-xs text-executiveSlate-700 dark:text-executiveSlate-300 font-light italic leading-relaxed">
+              "Kenneth acts as the vital connective tissue between high-level creative vision and rigorous technical execution. He successfully engineered our end-to-end digital pipeline, seamlessly deploying over 500 multi-channel creative assets with a flawless 100% on-time SLA."
+            </blockquote>
+          </div>
+          <div class="mt-8 flex items-center gap-4">
+            <div class="w-10 h-10 rounded-full bg-brandGold-500/10 text-brandGold-600 dark:text-brandGold-500 flex items-center justify-center font-extrabold text-xs">
+              L
+            </div>
+            <div>
+              <p class="text-xs font-bold text-executiveSlate-950 dark:text-white">Lewis &bull; Director of Marketing Operations</p>
+              <p class="text-[9px] text-brandGold-600 dark:text-brandGold-400 font-semibold uppercase tracking-wider">Creative &amp; Operations Contract Hub</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 4 (Max Emillian) -->
+        <div class="p-8 bg-white dark:bg-executiveSlate-900 rounded-3xl border border-executiveSlate-100 dark:border-executiveSlate-800 transition-premium hover:-translate-y-1 hover:shadow-lg dark:hover:shadow-brandGold-500/[0.02] flex flex-col justify-between h-full">
+          <div>
+            <div class="flex items-center gap-1 text-brandGold-500">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+            </div>
+            <blockquote class="mt-6 text-xs text-executiveSlate-700 dark:text-executiveSlate-300 font-light italic leading-relaxed">
+              "Kenneth fundamentally transformed our digital acquisition frameworks from the ground up. He developed and deployed conversion-optimized WordPress funnel frameworks that immediately boosted our visitor-to-lead landing page conversions by 22%. By syncing secure, automated pipelines between our web environments and relational databases, he successfully eliminated all lead-routing latency."
+            </blockquote>
+          </div>
+          <div class="mt-8 flex items-center gap-4">
+            <div class="w-10 h-10 rounded-full bg-brandGold-500/10 text-brandGold-600 dark:text-brandGold-500 flex items-center justify-center font-extrabold text-xs">
+              M
+            </div>
+            <div>
+              <p class="text-xs font-bold text-executiveSlate-950 dark:text-white">Max Emillian &bull; CEO &amp; Founder</p>
+              <p class="text-[9px] text-brandGold-600 dark:text-brandGold-400 font-semibold uppercase tracking-wider">Digital Growth Systems</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 5 (Andrea) -->
+        <div class="p-8 bg-white dark:bg-executiveSlate-900 rounded-3xl border border-executiveSlate-100 dark:border-executiveSlate-800 transition-premium hover:-translate-y-1 hover:shadow-lg dark:hover:shadow-brandGold-500/[0.02] flex flex-col justify-between h-full">
+          <div>
+            <div class="flex items-center gap-1 text-brandGold-500">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+            </div>
+            <blockquote class="mt-6 text-xs text-executiveSlate-700 dark:text-executiveSlate-300 font-light italic leading-relaxed">
+              "Working alongside Kenneth was an absolute masterclass in technical execution and operational clarity. He brought immense precision to our data layers by auditing and maintaining clean tracking configurations across Meta Pixel and GTM to preserve 100% attribution accuracy. What truly sets him apart is his focus on scalability."
+            </blockquote>
+          </div>
+          <div class="mt-8 flex items-center gap-4">
+            <div class="w-10 h-10 rounded-full bg-brandGold-500/10 text-brandGold-600 dark:text-brandGold-500 flex items-center justify-center font-extrabold text-xs">
+              A
+            </div>
+            <div>
+              <p class="text-xs font-bold text-executiveSlate-950 dark:text-white">Andrea &bull; Operations &amp; Growth Manager</p>
+              <p class="text-[9px] text-brandGold-600 dark:text-brandGold-400 font-semibold uppercase tracking-wider">Digital Growth Consulting</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- STRATEGY BOOKING PANEL -->
+  <section class="py-24 bg-brandGold-50/20 dark:bg-executiveSlate-900/30 border-t border-executiveSlate-100 dark:border-executiveSlate-900">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <span class="inline-block py-1 px-3 bg-brandGold-50 dark:bg-brandGold-900/40 text-brandGold-700 dark:text-brandGold-200 text-xs font-bold uppercase rounded-md mb-6 border border-brandGold-200/30">Let's Work Together</span>
+      <h2 class="text-3xl sm:text-5xl font-extrabold text-executiveSlate-950 dark:text-white tracking-tight leading-tight">
+        Looking for a partner, or hiring for your next role?
+      </h2>
+      <p class="mt-4 text-sm sm:text-base text-executiveSlate-600 dark:text-executiveSlate-300 font-light leading-relaxed max-w-xl mx-auto">
+        Whether you're hiring for a full-time operations seat or looking for a partner to build and run your systems, let's talk through your goals and how I can help your team move faster.
+      </p>
+
+      <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <!-- Calendly Action button -->
+        <a href="https://calendly.com/kennethjamesocon3/new-meeting" target="_blank" rel="noopener" class="w-full sm:w-auto bg-brandGold-500 hover:bg-brandGold-600 text-white font-bold py-4 px-10 rounded-full transition-premium shadow-lg shadow-brandGold-500/10 flex items-center justify-center gap-3 hover:-translate-y-0.5">
+          <span>Book a Strategy Call</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
         </a>
+        <!-- Dynamic email anchor rendered as button -->
+        <a href="mailto:kennethjamesocon3@gmail.com" class="w-full sm:w-auto bg-white dark:bg-executiveSlate-950 border border-executiveSlate-200 dark:border-executiveSlate-800 text-executiveSlate-900 dark:text-white font-bold py-3.5 px-10 rounded-full hover:border-brandGold-500 dark:hover:border-brandGold-500 transition-premium hover:-translate-y-0.5 flex items-center justify-center gap-2">
+          <span>Contact via Email</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+        </a>
+      </div>
     </div>
-</section>
+  </section>
 
-    
-    <!-- About Section -->
-    <section id="about" class="py-20 gradient-bg">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16 animate-on-scroll">
-                <h2 class="text-3xl md:text-4xl font-display font-bold mb-4">About Me</h2>
-                <div class="w-20 h-1 bg-accent mx-auto mb-6 rounded-full"></div>
-                <p class="text-gray-400 max-w-2xl mx-auto">
-                    A dedicated professional with experience in administrative support, project coordination, and business administration.
-                </p>
-            </div>
-            
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <div class="animate-on-scroll">
-                    <div class="rounded-modern-xl overflow-hidden">
-                        <div class="animate-on-scroll">
-    <!-- Larger profile container with elegant proportions -->
-    <div class="relative w-full max-w-[320px] h-[400px] mx-auto rounded-[2rem] border border-white border-opacity-10 shadow-2xl overflow-hidden group transition-all duration-300 hover:shadow-[0_25px_50px_-12px_rgba(59,130,246,0.25)]">
-        <!-- High-resolution profile image -->
-        <img src="https://www.dropbox.com/scl/fi/1iw4krvfgznbpe2czc55t/ChatGPT-Image-May-21-2025-05_43_47-PM.png?rlkey=k2zmb8dp8vmbe02wepdv6qd75&st=b0cwx4j7&raw=1" 
-             alt="Kenneth James Ocon - Executive Assistant"
-             class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]"
-             loading="lazy">
+  <!-- RE-ENGINEERED CONTACT PLATFORMS -->
+  <section class="py-16 bg-white dark:bg-executiveSlate-950 border-t border-executiveSlate-100 dark:border-executiveSlate-900">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-8">
+      <div>
+        <p class="text-sm font-extrabold text-executiveSlate-950 dark:text-white">Kenneth James Ocon</p>
+        <p class="text-xs text-executiveSlate-500 dark:text-executiveSlate-400 mt-0.5">Architecting predictable automated corporate operations.</p>
+      </div>
+
+      <!-- Social platform linkages with clean SVGs -->
+      <div class="flex items-center gap-6">
+        <!-- Email Icon Link -->
+        <a href="mailto:kennethjamesocon3@gmail.com" class="w-12 h-12 rounded-2xl bg-white dark:bg-executiveSlate-900 border border-executiveSlate-200 dark:border-executiveSlate-800 flex items-center justify-center text-executiveSlate-600 dark:text-executiveSlate-300 hover:text-brandGold-500 dark:hover:text-brandGold-500 hover:border-brandGold-500 dark:hover:border-brandGold-500 transition-premium" aria-label="Mail Kenneth">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+        </a>
+
+        <!-- LinkedIn Icon Link -->
+        <a href="https://linkedin.com/in/kennethjamesocon" target="_blank" rel="noopener" class="w-12 h-12 rounded-2xl bg-white dark:bg-executiveSlate-900 border border-executiveSlate-200 dark:border-executiveSlate-800 flex items-center justify-center text-executiveSlate-600 dark:text-executiveSlate-300 hover:text-brandGold-500 dark:hover:text-brandGold-500 hover:border-brandGold-500 dark:hover:border-brandGold-500 transition-premium" aria-label="LinkedIn profile">
+          <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+        </a>
+
+        <!-- Upwork Profile Link -->
+        <a href="https://www.upwork.com/freelancers/~01b4a5f9c45641ba9c?mp_source=share" target="_blank" rel="noopener" class="w-12 h-12 rounded-2xl bg-white dark:bg-executiveSlate-900 border border-executiveSlate-200 dark:border-executiveSlate-800 flex items-center justify-center text-executiveSlate-600 dark:text-executiveSlate-300 hover:text-brandGold-500 dark:hover:text-brandGold-500 hover:border-brandGold-500 dark:hover:border-brandGold-500 transition-premium" aria-label="Upwork profile">
+          <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+            <path d="M18.571 3c-1.92 0-3.411 1.054-4.103 2.76-.841-1.394-1.517-3.155-1.944-4.76h-2.59v9.645c0 1.554-1.258 2.812-2.812 2.812-.907 0-1.713-.432-2.222-1.103-.509-.672-.741-1.543-.654-2.454.175-1.83 1.782-3.195 3.633-3.195.836 0 1.637.288 2.298.816l1.678-1.977C10.741 4.704 9.172 4.148 7.488 4.148 4.075 4.148.966 6.74.526 10.15c-.477 3.693 2.115 7.151 5.862 7.151 3.414 0 6.136-2.722 6.136-6.136V7.491c.216-.763.859-1.319 1.631-1.319 1.161 0 2.106.945 2.106 2.106v5.858h2.6V8.278c0-2.91-2.361-5.278-5.29-5.278z"/>
+          </svg>
+        </a>
+      </div>
     </div>
-</div>
-                    </div>
-                </div>
-        
-                <div class="animate-on-scroll stagger-delay-1">
-                    <h3 class="text-2xl font-display font-bold mb-6">Professional Profile</h3>
-                    
-                    <p class="text-gray-300 mb-6 text-justify">
-                        Detail-oriented and reliable Administrative Assistant with hands-on experience supporting daily office operations in an educational setting. 
-                        Proficient in managing schedules, maintaining records, and communicating effectively with staff and students.
-                    </p>
-                    
-                    <p class="text-gray-300 mb-8 text-justify">
-                        Adept at multitasking in fast-paced environments, preserving confidentiality, and delivering high-quality administrative support. 
-                        Committed to contributing to a well-organized and efficient workplace through strong organizational, time management, and problem-solving skills.
-                    </p>
-                    
-                    <!-- Core Competencies Section -->
-<div class="mb-8">
-    <h4 class="text-lg font-bold mb-4 text-white">Core Competencies</h4>
-    
-    <div class="space-y-4">
-        <!-- Administrative Support -->
-        <div class="skill-item" data-percent="95" data-animated="false">
-            <div class="flex justify-between mb-1">
-                <span class="text-sm font-medium text-gray-300">Administrative Support</span>
-                <span class="text-sm font-medium text-gray-300 skill-percent">95%</span>
-            </div>
-            <div class="skill-bar">
-                <div class="skill-progress bg-gradient-to-r from-blue-300 to-blue-400" style="width: 95%"></div>
-            </div>
-        </div>
-        
-        <!-- Calendar Management -->
-        <div class="skill-item" data-percent="90" data-animated="false">
-            <div class="flex justify-between mb-1">
-                <span class="text-sm font-medium text-gray-300">Calendar Management</span>
-                <span class="text-sm font-medium text-gray-300 skill-percent">90%</span>
-            </div>
-            <div class="skill-bar">
-                <div class="skill-progress bg-gradient-to-r from-blue-300 to-blue-400" style="width: 90%"></div>
-            </div>
-        </div>
-        
-        <!-- Communication -->
-        <div class="skill-item" data-percent="85" data-animated="false">
-            <div class="flex justify-between mb-1">
-                <span class="text-sm font-medium text-gray-300">Communication</span>
-                <span class="text-sm font-medium text-gray-300 skill-percent">85%</span>
-            </div>
-            <div class="skill-bar">
-                <div class="skill-progress bg-gradient-to-r from-blue-300 to-blue-400" style="width: 85%"></div>
-            </div>
-        </div>
-        
-        <!-- Tech Proficiency -->
-        <div class="skill-item" data-percent="88" data-animated="false">
-            <div class="flex justify-between mb-1">
-                <span class="text-sm font-medium text-gray-300">Tech Proficiency</span>
-                <span class="text-sm font-medium text-gray-300 skill-percent">88%</span>
-            </div>
-            <div class="skill-bar">
-                <div class="skill-progress bg-gradient-to-r from-blue-300 to-blue-400" style="width: 88%"></div>
-            </div>
-        </div>
+  </section>
+
+</main>
+
+<footer class="bg-white dark:bg-executiveSlate-950 border-t border-executiveSlate-100 dark:border-executiveSlate-900 py-12 transition-colors">
+  <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-6">
+    <div class="text-xs text-executiveSlate-500 dark:text-executiveSlate-400">
+      &copy; 2026 Kenneth James Ocon. All Rights Reserved &bull; <span class="font-bold">v2.5.0</span>
     </div>
-</div>                   
-<a href="https://www.dropbox.com/scl/fi/no4nj5jnlbfj343z1amgh/Kenneth_Ocon_Executive_Assistant_Resume.pdf?rlkey=7mg3qbec32pq805y4fzx6ua39&dl=1" 
-   class="inline-flex items-center bg-accent hover:bg-blue-500 text-white font-medium py-2 px-6 rounded-full transition-colors duration-300 shadow-lg hover:shadow-glow"
-   download="Kenneth-James-Ocon-Resume.pdf">
-    Download Resume
-    <i class="fas fa-download ml-2"></i>
-</a>
-    </section>
-    
-    <!-- Experience Section -->
-    <section class="py-20 bg-dark">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16 animate-on-scroll">
-                <h2 class="text-3xl md:text-4xl font-display font-bold mb-4">Professional Experience</h2>
-                <div class="w-20 h-1 bg-accent mx-auto mb-6 rounded-full"></div>
-                <p class="text-gray-400 max-w-2xl mx-auto">
-                    My career journey and the valuable experiences I've gained along the way.
-                </p>
-            </div>
-            
-            <div class="max-w-3xl mx-auto relative timeline animate-on-scroll">
-                <!-- Experience Item 1 -->
-                <div class="relative pl-8 pb-12 timeline-item">
-                    <div class="bg-white bg-opacity-5 rounded-xl p-6 backdrop-blur-sm border border-white border-opacity-10 card-hover">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="text-xl font-bold text-white">Administrative Assistant</h3>
-                            <span class="text-sm bg-accent text-white px-3 py-1 rounded-full">Feb 2023 - Jun 2024</span>
-                        </div>
-                        <h4 class="text-accent font-medium mb-4">New Cortez Elementary School, New Corella, Davao del Norte 8104</h4>
-                        <ul class="list-disc pl-5 space-y-2 text-gray-300 text-justify">
-                            <li>Coordinated over 50 daily emails and front-desk inquiries while managing 100+ appointments and meetings, reducing scheduling conflicts by 25% through effective use of Google Workspace and Microsoft Office.</li>
-                            <li>Maintained confidential records for 500+ students and staff, demonstrating precision in data management and strong organizational skills essential for executive-level support.</li>
-                            <li>Optimized operational workflows by streamlining inventory tracking and supply ordering, cutting shortages by 15% and improving turnaround time on requests by 30%.</li>
-                            <li>Assisted cross-functional teams with administrative tasks, boosting project speed by 20% and supporting remote collaboration via Zoom and shared drives.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Services Section with Original Box Styling + 3D Hover -->
-<!-- Services Section with Background Images -->
-<section id="services" class="py-20 gradient-bg">
-    <div class="container mx-auto px-6">
-        <div class="text-center mb-16 animate-on-scroll">
-            <h2 class="text-3xl md:text-4xl font-display font-bold mb-4">My Services</h2>
-            <div class="w-20 h-1 bg-accent mx-auto mb-6 rounded-full"></div>
-            <p class="text-gray-400 max-w-2xl mx-auto">
-                Comprehensive administrative support services tailored to meet your business needs.
-            </p>
-        </div>
-        
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Service 1 - Administrative Support -->
-            <div class="service-card animate-on-scroll relative overflow-hidden rounded-xl group">
-                <div class="service-image" style="background-image: url('https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80');"></div>
-                <div class="relative z-10 bg-black bg-opacity-50 p-8 h-full backdrop-blur-sm transition-all duration-300 group-hover:bg-opacity-60">
-                    <div class="w-14 h-14 bg-accent bg-opacity-20 rounded-xl flex items-center justify-center mb-6">
-                        <i class="fas fa-tasks text-accent text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-4 text-white">Administrative Support</h3>
-                    <p class="text-gray-300">
-                        Proficient in managing documents, data entry, travel arrangements, and providing reliable day-to-day support.
-                    </p>
-                </div>
-            </div>
-            
-            <!-- Service 2 - Calendar Management -->
-            <div class="service-card animate-on-scroll relative overflow-hidden rounded-xl group stagger-delay-1">
-                <div class="service-image" style="background-image: url('https://images.unsplash.com/photo-1547586696-ea22b4d4235d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80');"></div>
-                <div class="relative z-10 bg-black bg-opacity-50 p-8 h-full backdrop-blur-sm transition-all duration-300 group-hover:bg-opacity-60">
-                    <div class="w-14 h-14 bg-accent bg-opacity-20 rounded-xl flex items-center justify-center mb-6">
-                        <i class="fas fa-calendar-alt text-accent text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-4 text-white">Calendar Management</h3>
-                    <p class="text-gray-300">
-                        Skilled in organizing schedules, managing inboxes, coordinating meetings, and minimizing scheduling conflicts.
-                    </p>
-                </div>
-            </div>
-            
-            <!-- Service 3 - Communication -->
-            <div class="service-card animate-on-scroll relative overflow-hidden rounded-xl group stagger-delay-2">
-                <div class="service-image" style="background-image: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80');"></div>
-                <div class="relative z-10 bg-black bg-opacity-50 p-8 h-full backdrop-blur-sm transition-all duration-300 group-hover:bg-opacity-60">
-                    <div class="w-14 h-14 bg-accent bg-opacity-20 rounded-xl flex items-center justify-center mb-6">
-                        <i class="fas fa-comments text-accent text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-4 text-white">Communication</h3>
-                    <p class="text-gray-300">
-                        Effective in handling internal and external correspondence, preparing meeting materials, and ensuring timely updates.
-                    </p>
-                </div>
-            </div>
-            
-            <!-- Service 4 - Tech Proficiency -->
-            <div class="service-card animate-on-scroll relative overflow-hidden rounded-xl group">
-                <div class="service-image" style="background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80');"></div>
-                <div class="relative z-10 bg-black bg-opacity-50 p-8 h-full backdrop-blur-sm transition-all duration-300 group-hover:bg-opacity-60">
-                    <div class="w-14 h-14 bg-accent bg-opacity-20 rounded-xl flex items-center justify-center mb-6">
-                        <i class="fas fa-laptop-code text-accent text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-4 text-white">Tech Proficiency</h3>
-                    <p class="text-gray-300">
-                        Skilled in using tools like Google Workspace, Microsoft Office, Zoom, and CRM platforms.
-                    </p>
-                </div>
-            </div>
-            
-            <!-- Service 5 - Document Preparation -->
-            <div class="service-card animate-on-scroll relative overflow-hidden rounded-xl group stagger-delay-1">
-                <div class="service-image" style="background-image: url('https://images.unsplash.com/photo-1546410531-bb4caa6b424d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80');"></div>
-                <div class="relative z-10 bg-black bg-opacity-50 p-8 h-full backdrop-blur-sm transition-all duration-300 group-hover:bg-opacity-60">
-                    <div class="w-14 h-14 bg-accent bg-opacity-20 rounded-xl flex items-center justify-center mb-6">
-                        <i class="fas fa-file-alt text-accent text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-4 text-white">Document Preparation</h3>
-                    <p class="text-gray-300">
-                        Professional creation and formatting of reports, presentations, and confidential business documents.
-                    </p>
-                </div>
-            </div>
-            
-            <!-- Service 6 - Project Support -->
-            <div class="service-card animate-on-scroll relative overflow-hidden rounded-xl group stagger-delay-2">
-                <div class="service-image" style="background-image: url('https://images.unsplash.com/photo-1579389083078-4e7018379f7e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80');"></div>
-                <div class="relative z-10 bg-black bg-opacity-50 p-8 h-full backdrop-blur-sm transition-all duration-300 group-hover:bg-opacity-60">
-                    <div class="w-14 h-14 bg-accent bg-opacity-20 rounded-xl flex items-center justify-center mb-6">
-                        <i class="fas fa-project-diagram text-accent text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-4 text-white">Project Support</h3>
-                    <p class="text-gray-300">
-                        Comprehensive assistance with special projects, research, and executive initiatives.
-                    </p>
-                </div>
-            </div>
-        </div>
+
+    <div class="text-xs font-bold uppercase tracking-widest text-executiveSlate-400 dark:text-executiveSlate-500">
+      Created by Kenneth James Ocon
     </div>
-</section>
-
-<style>
-    .service-image {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-size: cover;
-        background-position: center;
-        opacity: 0.4;
-        transition: opacity 0.3s ease;
-    }
-    
-    .service-card:hover .service-image {
-        opacity: 0.3;
-    }
-    
-    .service-card {
-        min-height: 300px;
-        perspective: 1000px;
-    }
-</style>
-
-<style>
-    /* 3D Hover Effect */
-    .service-card {
-        perspective: 1000px;
-    }
-    
-    .card-content {
-        transform: translateZ(0);
-        transition: transform 0.4s ease, box-shadow 0.4s ease;
-    }
-    
-    .service-card:hover .card-content {
-        transform: translateZ(15px);
-        box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.2), 
-                    0 5px 10px -5px rgba(59, 130, 246, 0.1);
-    }
-    
-    /* Original Card Hover Effect (Retained) */
-    .card-hover:hover {
-        background: rgba(255, 255, 255, 0.08);
-    }
-</style>
-<!-- Tools & Technologies Section -->
-<section class="py-20 bg-primary relative overflow-hidden">
-    <div class="container mx-auto px-6 relative z-10">
-        <div class="text-center mb-16 animate-on-scroll">
-            <h2 class="text-3xl md:text-4xl font-display font-bold mb-4">Tools & Technologies</h2>
-            <div class="w-20 h-1 bg-accent mx-auto mb-6 rounded-full"></div>
-            <p class="text-gray-400 max-w-2xl mx-auto">
-                The digital tools and platforms I leverage to deliver comprehensive administrative and executive support.
-            </p>
-        </div>
-
-        <!-- Core Productivity & Office Tools -->
-        <div class="mb-12 animate-on-scroll">
-            <h3 class="text-2xl font-display font-bold mb-6 text-white border-b border-white border-opacity-20 pb-2">Core Productivity & Office Tools</h3>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Email Clients -->
-                <div class="bg-white/5 rounded-xl p-6 backdrop-blur-sm border border-white/10 card-hover relative overflow-hidden group">
-                    <div class="absolute inset-0 z-0 opacity-20">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/512px-Gmail_icon_%282020%29.svg.png" class="w-full h-full object-cover blur-md" alt="Gmail">
-                    </div>
-                    <div class="flex flex-col items-center text-center relative z-10">
-                        <h3 class="text-lg font-bold text-white mb-2">Gmail, Microsoft Outlook</h3>
-                        <p class="text-gray-300 text-sm">
-                            Managed professional emails, client correspondence, and meeting invites.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Cloud Storage -->
-                <div class="bg-white/5 rounded-xl p-6 backdrop-blur-sm border border-white/10 card-hover relative overflow-hidden group">
-                    <div class="absolute inset-0 z-0 opacity-20">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Google_Drive_icon_%282020%29.svg/512px-Google_Drive_icon_%282020%29.svg.png" class="w-full h-full object-cover blur-md" alt="Google Drive">
-                    </div>
-                    <div class="flex flex-col items-center text-center relative z-10">
-                        <h3 class="text-lg font-bold text-white mb-2">Google Drive, Dropbox</h3>
-                        <p class="text-gray-300 text-sm">
-                            Organized and shared digital files, including documents, spreadsheets, and media assets.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Spreadsheets -->
-                <div class="bg-white/5 rounded-xl p-6 backdrop-blur-sm border border-white/10 card-hover relative overflow-hidden group">
-                    <div class="absolute inset-0 z-0 opacity-20">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Google_Sheets_2020_Logo.svg/512px-Google_Sheets_2020_Logo.svg.png" class="w-full h-full object-cover blur-md" alt="Google Sheets">
-                    </div>
-                    <div class="flex flex-col items-center text-center relative z-10">
-                        <h3 class="text-lg font-bold text-white mb-2">Google Sheets, Excel</h3>
-                        <p class="text-gray-300 text-sm">
-                            Built trackers, handled basic reporting, and supported data entry tasks.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Calendar & Teams -->
-                <div class="bg-white/5 rounded-xl p-6 backdrop-blur-sm border border-white/10 card-hover relative overflow-hidden group">
-                    <div class="absolute inset-0 z-0 opacity-20">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Google_Calendar_icon_%282020%29.svg/512px-Google_Calendar_icon_%282020%29.svg.png" class="w-full h-full object-cover blur-md" alt="Google Calendar">
-                    </div>
-                    <div class="flex flex-col items-center text-center relative z-10">
-                        <h3 class="text-lg font-bold text-white mb-2">Google Calendar, Teams</h3>
-                        <p class="text-gray-300 text-sm">
-                            Scheduled meetings, coordinated project timelines, and participated in planning sessions.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Office Suite -->
-                <div class="bg-white/5 rounded-xl p-6 backdrop-blur-sm border border-white/10 card-hover relative overflow-hidden group">
-                    <div class="absolute inset-0 z-0 opacity-20">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Microsoft_Office_Word_%282019%E2%80%93present%29.svg/512px-Microsoft_Office_Word_%282019%E2%80%93present%29.svg.png" class="w-full h-full object-cover blur-md" alt="Word">
-                    </div>
-                    <div class="flex flex-col items-center text-center relative z-10">
-                        <h3 class="text-lg font-bold text-white mb-2">Word, PowerPoint</h3>
-                        <p class="text-gray-300 text-sm">
-                            Created structured documents and presentations for internal and client-facing use.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- AI & Writing Assistance -->
-        <div class="mb-12 animate-on-scroll stagger-delay-1">
-            <h3 class="text-2xl font-display font-bold mb-6 text-white border-b border-white border-opacity-20 pb-2">AI & Writing Assistance</h3>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div class="bg-white/5 rounded-xl p-6 backdrop-blur-sm border border-white/10 card-hover relative overflow-hidden group">
-                    <div class="absolute inset-0 z-0 opacity-20">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg" class="w-full h-full object-cover blur-md" alt="ChatGPT">
-                    </div>
-                    <div class="flex flex-col items-center text-center relative z-10">
-                        <h3 class="text-lg font-bold text-white mb-2">ChatGPT, Gemini</h3>
-                        <p class="text-gray-300 text-sm">
-                            Drafted content, summarized research, and generated ideas for administrative and marketing materials.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Project & Task Management -->
-        <div class="mb-12 animate-on-scroll stagger-delay-2">
-            <h3 class="text-2xl font-display font-bold mb-6 text-white border-b border-white border-opacity-20 pb-2">Project & Task Management</h3>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- PM Tools -->
-                <div class="bg-white/5 rounded-xl p-6 backdrop-blur-sm border border-white/10 card-hover relative overflow-hidden group">
-                    <div class="absolute inset-0 z-0 opacity-20">
-                        <img src="https://clickup.com/logo.svg" class="w-full h-full object-cover blur-md" alt="ClickUp">
-                    </div>
-                    <div class="flex flex-col items-center text-center relative z-10">
-                        <h3 class="text-lg font-bold text-white mb-2">ClickUp, Asana, Monday.com</h3>
-                        <p class="text-gray-300 text-sm">
-                            Assigned tasks, tracked progress, and maintained project timelines.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Notion -->
-                <div class="bg-white/5 rounded-xl p-6 backdrop-blur-sm border border-white/10 card-hover relative overflow-hidden group">
-                    <div class="absolute inset-0 z-0 opacity-20">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Notion_app_logo.png" class="w-full h-full object-cover blur-md" alt="Notion">
-                    </div>
-                    <div class="flex flex-col items-center text-center relative z-10">
-                        <h3 class="text-lg font-bold text-white mb-2">Notion</h3>
-                        <p class="text-gray-300 text-sm">
-                            Created and maintained centralized documentation including SOPs, meeting notes, and internal guides.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Zapier -->
-                <div class="bg-white/5 rounded-xl p-6 backdrop-blur-sm border border-white/10 card-hover relative overflow-hidden group">
-                    <div class="absolute inset-0 z-0 opacity-20">
-                        <img src="https://cdn.zapier.com/zapier/images/logos/zapier-logo.png" class="w-full h-full object-cover blur-md" alt="Zapier">
-                    </div>
-                    <div class="flex flex-col items-center text-center relative z-10">
-                        <h3 class="text-lg font-bold text-white mb-2">Zapier</h3>
-                        <p class="text-gray-300 text-sm">
-                            Implemented simple automations to reduce manual tasks and improve efficiency.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Communication & Support -->
-        <div class="mb-12 animate-on-scroll">
-            <h3 class="text-2xl font-display font-bold mb-6 text-white border-b border-white border-opacity-20 pb-2">Communication & Support</h3>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- Video Conferencing -->
-                <div class="bg-white/5 rounded-xl p-6 backdrop-blur-sm border border-white/10 card-hover relative overflow-hidden group">
-                    <div class="absolute inset-0 z-0 opacity-20">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Google_Meet_icon_%282020%29.svg/512px-Google_Meet_icon_%282020%29.svg.png" class="w-full h-full object-cover blur-md" alt="Google Meet">
-                    </div>
-                    <div class="flex flex-col items-center text-center relative z-10">
-                        <h3 class="text-lg font-bold text-white mb-2">Zoom, Meet, Teams</h3>
-                        <p class="text-gray-300 text-sm">
-                            Attended team meetings, client calls, and online training sessions.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Zendesk -->
-                <div class="bg-white/5 rounded-xl p-6 backdrop-blur-sm border border-white/10 card-hover relative overflow-hidden group">
-                    <div class="absolute inset-0 z-0 opacity-20">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Zendesk_logo.svg/512px-Zendesk_logo.svg.png" class="w-full h-full object-cover blur-md" alt="Zendesk">
-                    </div>
-                    <div class="flex flex-col items-center text-center relative z-10">
-                        <h3 class="text-lg font-bold text-white mb-2">Zendesk</h3>
-                        <p class="text-gray-300 text-sm">
-                            Assisted in managing customer support tickets, follow-ups, and resolutions with accuracy and professionalism.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- CRM & Analytics -->
-        <div class="mb-12 animate-on-scroll stagger-delay-1">
-            <h3 class="text-2xl font-display font-bold mb-6 text-white border-b border-white border-opacity-20 pb-2">CRM & Analytics</h3>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- HubSpot -->
-                <div class="bg-white/5 rounded-xl p-6 backdrop-blur-sm border border-white/10 card-hover relative overflow-hidden group">
-                    <div class="absolute inset-0 z-0 opacity-20">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/HubSpot_Logo.svg/512px-HubSpot_Logo.svg.png" class="w-full h-full object-cover blur-md" alt="HubSpot">
-                    </div>
-                    <div class="flex flex-col items-center text-center relative z-10">
-                        <h3 class="text-lg font-bold text-white mb-2">HubSpot</h3>
-                        <p class="text-gray-300 text-sm">
-                            Updated CRM records, tracked interactions, and supported marketing campaign monitoring.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Xero -->
-                <div class="bg-white/5 rounded-xl p-6 backdrop-blur-sm border border-white/10 card-hover relative overflow-hidden group">
-                    <div class="absolute inset-0 z-0 opacity-20">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Xero_logo.svg/512px-Xero_logo.svg.png" class="w-full h-full object-cover blur-md" alt="Xero">
-                    </div>
-                    <div class="flex flex-col items-center text-center relative z-10">
-                        <h3 class="text-lg font-bold text-white mb-2">Xero</h3>
-                        <p class="text-gray-300 text-sm">
-                            Helped organize billing information, prepare invoices, and update financial records.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Analytics -->
-                <div class="bg-white/5 rounded-xl p-6 backdrop-blur-sm border border-white/10 card-hover relative overflow-hidden group">
-                    <div class="absolute inset-0 z-0 opacity-20">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Google_Analytics_Logo.svg/512px-Google_Analytics_Logo.svg.png" class="w-full h-full object-cover blur-md" alt="Google Analytics">
-                    </div>
-                    <div class="flex flex-col items-center text-center relative z-10">
-                        <h3 class="text-lg font-bold text-white mb-2">Google Analytics</h3>
-                        <p class="text-gray-300 text-sm">
-                            Reviewed website metrics to inform content strategy and performance reporting.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Calendly -->
-                <div class="bg-white/5 rounded-xl p-6 backdrop-blur-sm border border-white/10 card-hover relative overflow-hidden group">
-                    <div class="absolute inset-0 z-0 opacity-20">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Calendly_logo.svg/512px-Calendly_logo.svg.png" class="w-full h-full object-cover blur-md" alt="Calendly">
-                    </div>
-                    <div class="flex flex-col items-center text-center relative z-10">
-                        <h3 class="text-lg font-bold text-white mb-2">Calendly</h3>
-                        <p class="text-gray-300 text-sm">
-                            Scheduled appointments and managed calendars across multiple time zones.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Design & Content -->
-        <div class="mb-12 animate-on-scroll stagger-delay-2">
-            <h3 class="text-2xl font-display font-bold mb-6 text-white border-b border-white border-opacity-20 pb-2">Design & Content</h3>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Canva -->
-                <div class="bg-white/5 rounded-xl p-6 backdrop-blur-sm border border-white/10 card-hover relative overflow-hidden group">
-                    <div class="absolute inset-0 z-0 opacity-20">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Canva_icon_2021.svg/512px-Canva_icon_2021.svg.png" class="w-full h-full object-cover blur-md" alt="Canva">
-                    </div>
-                    <div class="flex flex-col items-center text-center relative z-10">
-                        <h3 class="text-lg font-bold text-white mb-2">Canva</h3>
-                        <p class="text-gray-300 text-sm">
-                            Designed social media posts, proposals, and branded visuals in line with style guides.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Dropbox -->
-                <div class="bg-white/5 rounded-xl p-6 backdrop-blur-sm border border-white/10 card-hover relative overflow-hidden group">
-                    <div class="absolute inset-0 z-0 opacity-20">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Dropbox_Icon.svg/512px-Dropbox_Icon.svg.png" class="w-full h-full object-cover blur-md" alt="Dropbox">
-                    </div>
-                    <div class="flex flex-col items-center text-center relative z-10">
-                        <h3 class="text-lg font-bold text-white mb-2">Dropbox</h3>
-                        <p class="text-gray-300 text-sm">
-                            Shared large design files and media assets for collaborative reviews and final delivery.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Social Media -->
-        <div class="animate-on-scroll">
-            <h3 class="text-2xl font-display font-bold mb-6 text-white border-b border-white border-opacity-20 pb-2">Social Media</h3>
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
-                <!-- Facebook -->
-                <div class="bg-white/5 rounded-xl p-6 backdrop-blur-sm border border-white/10 card-hover relative overflow-hidden group">
-                    <div class="absolute inset-0 z-0 opacity-20">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/512px-Facebook_f_logo_%282019%29.svg.png" class="w-full h-full object-cover blur-md" alt="Facebook">
-                    </div>
-                    <div class="flex flex-col items-center text-center relative z-10">
-                        <h3 class="text-lg font-bold text-white mb-2">Facebook</h3>
-                        <p class="text-gray-300 text-sm">
-                            Supported post creation, scheduling, and audience engagement aligned with brand goals.
-                        </p>
-                    </div>
-                </div>
-                
-                <!-- Instagram -->
-                <div class="bg-white/5 rounded-xl p-6 backdrop-blur-sm border border-white/10 card-hover relative overflow-hidden group">
-                    <div class="absolute inset-0 z-0 opacity-20">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/512px-Instagram_logo_2016.svg.png" class="w-full h-full object-cover blur-md" alt="Instagram">
-                    </div>
-                    <div class="flex flex-col items-center text-center relative z-10">
-                        <h3 class="text-lg font-bold text-white mb-2">Instagram</h3>
-                        <p class="text-gray-300 text-sm">
-                            Supported post creation, scheduling, and audience engagement aligned with brand goals.
-                        </p>
-                    </div>
-                </div>
-                
-                <!-- LinkedIn -->
-                <div class="bg-white/5 rounded-xl p-6 backdrop-blur-sm border border-white/10 card-hover relative overflow-hidden group">
-                    <div class="absolute inset-0 z-0 opacity-20">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/512px-LinkedIn_logo_initials.png" class="w-full h-full object-cover blur-md" alt="LinkedIn">
-                    </div>
-                    <div class="flex flex-col items-center text-center relative z-10">
-                        <h3 class="text-lg font-bold text-white mb-2">LinkedIn</h3>
-                        <p class="text-gray-300 text-sm">
-                            Supported post creation, scheduling, and audience engagement aligned with brand goals.
-                        </p>
-                    </div>
-                </div>
-                
-                <!-- TikTok -->
-                <div class="bg-white/5 rounded-xl p-6 backdrop-blur-sm border border-white/10 card-hover relative overflow-hidden group">
-                    <div class="absolute inset-0 z-0 opacity-20">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/TikTok_logo.svg/512px-TikTok_logo.svg.png" class="w-full h-full object-cover blur-md" alt="TikTok">
-                    </div>
-                    <div class="flex flex-col items-center text-center relative z-10">
-                        <h3 class="text-lg font-bold text-white mb-2">TikTok</h3>
-                        <p class="text-gray-300 text-sm">
-                            Supported post creation, scheduling, and audience engagement aligned with brand goals.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-    <!-- Education & Certifications -->
-<section class="py-12 bg-dark">
-    <div class="container mx-auto px-6">
-        <div class="text-center mb-10 animate-on-scroll">
-            <h2 class="text-3xl md:text-4xl font-display font-bold mb-3">Education & Certification</h2>
-            <div class="w-20 h-1 bg-accent mx-auto mb-4 rounded-full"></div>
-            <p class="text-gray-400 max-w-2xl mx-auto">
-                My academic background and professional certification.
-            </p>
-        </div>
-        
-        <div class="max-w-3xl mx-auto relative timeline animate-on-scroll">
-            <!-- Education Item 1 -->
-            <div class="relative pl-8 pb-8 timeline-item">
-                <div class="bg-white bg-opacity-5 rounded-xl p-5 backdrop-blur-sm border border-white border-opacity-10 card-hover">
-                    <div class="flex justify-between items-start mb-1.5">
-                        <h3 class="text-xl font-bold text-white">BS Business Administration, Marketing Management</h3>
-                        <span class="text-sm bg-accent text-white px-3 py-0.5 rounded-full">2023 - 2027</span>
-                    </div>
-                    <h4 class="text-accent font-medium mb-3">University of Mindanao - Tagum Campus, Tagum City, Davao del Norte 8100</h4>
-                    
-                    <div class="text-gray-300 mt-3 space-y-3 text-justify">
-                        <p>
-                            Currently pursuing my degree in Business Administration with a major in Marketing Management, 
-                            I am building a strong foundation in core business areas such as management, finance, operations, 
-                            organizational behavior, and strategic planning. While my major focuses on marketing, my education 
-                            covers a wide scope of business functions that are essential in any corporate setting.
-                        </p>
-                        
-                        <p>
-                            Through this program, I have developed transferable skills in problem-solving, communication, 
-                            decision-making, and teamwork. I've also learned how to analyze data, understand business systems, 
-                            and support company goals through well-informed strategies and efficient processes.
-                        </p>
-                        
-                        <p>
-                            I am highly adaptable, eager to learn, and comfortable working in dynamic environments. My ability 
-                            to quickly understand new tools and business practices allows me to contribute effectively in various 
-                            roles, especially in administrative, operations, or management support within a corporate structure.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Education Item 2 -->
-            <div class="relative pl-8 pb-8 timeline-item">
-                <div class="bg-white bg-opacity-5 rounded-xl p-5 backdrop-blur-sm border border-white border-opacity-10 card-hover">
-                    <div class="flex justify-between items-start mb-1.5">
-                        <h3 class="text-xl font-bold text-white">Humanities and Social Sciences – Senior High School</h3>
-                        <span class="text-sm bg-accent text-white px-3 py-0.5 rounded-full">2023</span>
-                    </div>
-                    <h4 class="text-accent font-medium mb-3">New Corella National High School — New Corella, Davao del Norte 8104</h4>
-                    <h4 class="text-accent font-medium mb-3">Academic Distinction: <em>With Honors</em></h4>
-                    
-                    <div class="text-gray-300 mt-3 space-y-3 text-justify">
-                        <p>
-                            Graduated with a focus on Humanities and Social Sciences, I developed a strong understanding of human behavior,
-                            societal structures, and cultural dynamics. This background has equipped me with critical thinking skills. I consistently achieved high academic performance,
-                            demonstrating my commitment to excellence and strong work ethic.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Certification Item 1 -->
-            <div class="relative pl-8 pb-6 timeline-item">
-                <div class="bg-white bg-opacity-5 rounded-xl p-5 backdrop-blur-sm border border-white border-opacity-10 card-hover">
-                    <div class="flex justify-between items-start mb-1.5">
-                        <h3 class="text-xl font-bold text-white">Career Essentials in Administrative Assistance</h3>
-                        <span class="text-sm bg-accent text-white px-3 py-0.5 rounded-full">May 2025</span>
-                    </div>
-                    <h4 class="text-accent font-medium mb-3">Microsoft and LinkedIn</h4>
-                    
-                    <div class="text-gray-300 mt-3 space-y-3 text-justify">
-                        <p>
-                            This certificate provided foundational training in administrative support roles, focusing on essential workplace tools, 
-                            communication skills, and organizational systems. It covered calendar and email management, document preparation, 
-                            customer service, file organization, and task coordination.
-                        </p>
-                        
-                        <p>
-                            I gained hands-on experience with productivity tools like Microsoft Office and Google Workspace, as well as soft skills 
-                            for managing schedules, prioritizing tasks, and supporting teams in day-to-day operations.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Certification Item 2 -->
-            <div class="relative pl-8 timeline-item">
-                <div class="bg-white bg-opacity-5 rounded-xl p-5 backdrop-blur-sm border border-white border-opacity-10 card-hover">
-                    <div class="flex justify-between items-start mb-1.5">
-                        <h3 class="text-xl font-bold text-white">Administrative Professional Foundations</h3>
-                        <span class="text-sm bg-accent text-white px-3 py-0.5 rounded-full">May 2025</span>
-                    </div>
-                    <h4 class="text-accent font-medium mb-3">LinkedIn Learning</h4>
-                    
-                    <div class="text-gray-300 mt-3 space-y-3 text-justify">
-                        <p>
-                            This certificate provided structured training in administrative support functions, emphasizing core competencies in workplace communication, organizational systems, and productivity tools. The coursework included calendar and email management, document preparation, customer service protocols, records organization, and task coordination.
-                        </p>
-                        
-                        <p>
-                            Through this program, I gained practical experience using Microsoft Office and Google Workspace applications, and developed essential soft skills in time management, task prioritization, and schedule coordination. The training also reinforced the importance of professionalism, discretion, and proactive support within dynamic office environments.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-    
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-dark">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16 animate-on-scroll">
-                <h2 class="text-3xl md:text-4xl font-display font-bold mb-4">Get In Touch</h2>
-                <div class="w-20 h-1 bg-accent mx-auto mb-6 rounded-full"></div>
-                <p class="text-gray-400 max-w-2xl mx-auto">
-                    Interested in working together? Reach out and let's discuss how I can support your team.
-                </p>
-            </div>
-            
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                <div class="animate-on-scroll">
-                    <form class="space-y-6">
-                        <div>
-                            <label for="name" class="block text-gray-300 mb-2">Your Name</label>
-                            <input type="text" id="name" class="contact-input w-full py-3 px-4 focus:outline-none focus:ring-2 focus:ring-accent">
-                        </div>
-                        
-                        <div>
-                            <label for="email" class="block text-gray-300 mb-2">Email Address</label>
-                            <input type="email" id="email" class="contact-input w-full py-3 px-4 focus:outline-none focus:ring-2 focus:ring-accent">
-                        </div>
-                        
-                        <div>
-                            <label for="subject" class="block text-gray-300 mb-2">Subject</label>
-                            <input type="text" id="subject" class="contact-input w-full py-3 px-4 focus:outline-none focus:ring-2 focus:ring-accent">
-                        </div>
-                        
-                        <div>
-                            <label for="message" class="block text-gray-300 mb-2">Your Message</label>
-                            <textarea id="message" rows="5" class="contact-input w-full py-3 px-4 focus:outline-none focus:ring-2 focus:ring-accent"></textarea>
-                        </div>
-                        
-                        <button type="button" id="sendMessageBtn" 
-                           class="inline-block w-full bg-accent hover:bg-blue-500 text-white font-medium py-3 px-6 rounded-lg transition-all duration-300 shadow-lg hover:shadow-glow text-center btn-rounded">
-                            Send Message
-                        </button>
-                    </form>
-                </div>
-                
-                <div class="animate-on-scroll stagger-delay-1">
-                    <div class="bg-white bg-opacity-5 rounded-xl p-8 backdrop-blur-sm border border-white border-opacity-10 h-full">
-                        <h3 class="text-2xl font-display font-bold mb-6 text-white">Contact Information</h3>
-                        
-                        <div class="space-y-6">
-                            <div class="flex items-start">
-                                <div class="w-12 h-12 bg-accent bg-opacity-20 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
-                                    <i class="fas fa-envelope text-accent text-xl"></i>
-                                </div>
-                                <div>
-                                    <h4 class="text-lg font-bold text-white mb-1">Email</h4>
-                                    <a href="mailto:kennethjamesocon3@gmail.com" class="text-gray-300 hover:text-accent transition-colors">kennethjamesocon3@gmail.com</a>
-                                </div>
-                            </div>
-                            
-                            <div class="flex items-start">
-                                <div class="w-12 h-12 bg-accent bg-opacity-20 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
-                                    <i class="fas fa-phone-alt text-accent text-xl"></i>
-                                </div>
-                                <div>
-                                    <h4 class="text-lg font-bold text-white mb-1">Phone</h4>
-                                    <a href="tel:+639555132871" class="text-gray-300 hover:text-accent transition-colors">+63 955 513 2871</a>
-                                </div>
-                            </div>
-                            
-                            <div class="flex items-start">
-                                <div class="w-12 h-12 bg-accent bg-opacity-20 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
-                                    <i class="fas fa-map-marker-alt text-accent text-xl"></i>
-                                </div>
-                                <div>
-                                    <h4 class="text-lg font-bold text-white mb-1">Location</h4>
-                                    <p class="text-gray-300">Tagum City, Davao del Norte, Philippines 8100</p>
-                                </div>
-                            </div>
-                            
-                            <div class="flex items-start">
-                                <div class="w-12 h-12 bg-accent bg-opacity-20 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
-                                    <i class="fab fa-linkedin text-accent text-xl"></i>
-                                </div>
-                                <div>
-                                    <h4 class="text-lg font-bold text-white mb-1">LinkedIn</h4>
-                                    <a href="https://www.linkedin.com/in/kennethjamesocon" target="_blank" class="text-gray-300 hover:text-accent transition-colors">linkedin.com/in/kennethjamesocon</a>
-                                </div>
-                            </div>
-
-                            <div class="flex items-start">
-                                <div class="w-12 h-12 bg-accent bg-opacity-20 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
-                                    <i class="fas fa-briefcase text-accent text-xl"></i>
-                                </div>
-                                <div>
-                                    <h4 class="text-lg font-bold text-white mb-1">Upwork</h4>
-                                    <a href="https://upwork.com/freelancers/kennethjameso" target="_blank" class="text-gray-300 hover:text-accent transition-colors">upwork.com/freelancers/kennethjameso</a>
-                                </div>
-                            </div>
-                            
-                            <div class="pt-6">
-                                <h4 class="text-lg font-bold text-white mb-4">Connect With Me</h4>
-                                <div class="flex space-x-4">
-                                    <a href="https://www.linkedin.com/in/kennethjamesocon" target="_blank" class="w-12 h-12 bg-white bg-opacity-10 hover:bg-opacity-20 rounded-lg flex items-center justify-center transition-colors">
-                                        <i class="fab fa-linkedin-in text-white text-xl"></i>
-                                    </a>
-                                    <a href="https://upwork.com/freelancers/kennethjameso" target="_blank" class="w-12 h-12 bg-white bg-opacity-10 hover:bg-opacity-20 rounded-lg flex items-center justify-center transition-colors">
-                                        <i class="fas fa-briefcase text-white text-xl"></i>
-                                    </a>
-                                    <a href="mailto:kennethjamesocon3@gmail.com" target="_blank" class="w-12 h-12 bg-white bg-opacity-10 hover:bg-opacity-20 rounded-lg flex items-center justify-center transition-colors">
-                                        <i class="fas fa-envelope text-white text-xl"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Footer -->
-    <footer class="bg-dark py-16 border-t border-white border-opacity-10">
-        <div class="container mx-auto px-6">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
-                <div>
-                    <h3 class="text-xl font-display font-bold text-white mb-6">Kenneth James Ocon</h3>
-                    <p class="text-gray-400 mb-4 text-align-justify">
-                        Executive Assistant providing comprehensive administrative support with a focus on efficiency and attention to detail.
-                    </p>
-                    <div class="flex space-x-4">
-                        <a href="https://www.linkedin.com/in/kennethjamesocon" target="_blank" class="w-10 h-10 bg-white bg-opacity-10 hover:bg-opacity-20 rounded-full flex items-center justify-center transition-colors">
-                            <i class="fab fa-linkedin-in text-white"></i>
-                        </a>
-                        <a href="https://upwork.com/freelancers/kennethjameso" target="_blank" class="w-10 h-10 bg-white bg-opacity-10 hover:bg-opacity-20 rounded-full flex items-center justify-center transition-colors">
-<i class="fas fa-briefcase text-white"></i>
-</a>
-<a href="mailto:kennethjamesocon3@gmail.com" class="w-10 h-10 bg-white bg-opacity-10 hover:bg-opacity-20 rounded-full flex items-center justify-center transition-colors">
-<i class="fas fa-envelope text-white"></i>
-</a>
-</div>
-</div>
-<div>
-                <h3 class="text-lg font-bold text-white mb-6">Quick Links</h3>
-                <ul class="space-y-3">
-                    <li><a href="#home" class="text-gray-400 hover:text-accent transition-colors flex items-center">
-                        <i class="fas fa-chevron-right text-xs text-accent mr-2"></i> Home
-                    </a></li>
-                    <li><a href="#about" class="text-gray-400 hover:text-accent transition-colors flex items-center">
-                        <i class="fas fa-chevron-right text-xs text-accent mr-2"></i> About
-                    </a></li>
-                    <li><a href="#services" class="text-gray-400 hover:text-accent transition-colors flex items-center">
-                        <i class="fas fa-chevron-right text-xs text-accent mr-2"></i> Services
-                    </a></li>
-                    <li><a href="#contact" class="text-gray-400 hover:text-accent transition-colors flex items-center">
-                        <i class="fas fa-chevron-right text-xs text-accent mr-2"></i> Contact
-                    </a></li>
-                </ul>
-            </div>
-            
-            <div>
-                <h3 class="text-lg font-bold text-white mb-6">Services</h3>
-                <ul class="space-y-3">
-                    <li class="text-gray-400 flex items-center">
-                        <i class="fas fa-check-circle text-xs text-accent mr-2"></i> Administrative Support
-                    </li>
-                    <li class="text-gray-400 flex items-center">
-                        <i class="fas fa-check-circle text-xs text-accent mr-2"></i> Calendar Management
-                    </li>
-                    <li class="text-gray-400 flex items-center">
-                        <i class="fas fa-check-circle text-xs text-accent mr-2"></i> Communication
-                    </li>
-                    <li class="text-gray-400 flex items-center">
-                        <i class="fas fa-check-circle text-xs text-accent mr-2"></i> Tech Proficiency
-                    </li>
-                </ul>
-            </div>
-            
-            <div>
-                <h3 class="text-lg font-bold text-white mb-6">Contact</h3>
-                <ul class="space-y-3">
-                    <li class="text-gray-400 flex items-start">
-                        <i class="fas fa-map-marker-alt text-accent mt-1 mr-3 text-sm"></i>
-                        <span>Tagum City, Davao del Norte, Philippines 8100</span>
-                    </li>
-                    <li class="text-gray-400 flex items-start">
-                        <i class="fas fa-envelope text-accent mt-1 mr-3 text-sm"></i>
-                        <a href="mailto:kennethjamesocon3@gmail.com" class="hover:text-accent transition-colors">kennethjamesocon3@gmail.com</a>
-                    </li>
-                    <li class="text-gray-400 flex items-start">
-                        <i class="fas fa-phone-alt text-accent mt-1 mr-3 text-sm"></i>
-                        <a href="tel:+639555132871" class="hover:text-accent transition-colors">+63 955 513 2871</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        
-        <div class="pt-8 border-t border-white border-opacity-10 flex flex-col md:flex-row justify-between items-center">
-            <p class="text-gray-500 text-sm mb-4 md:mb-0">
-                &copy; 2023 Kenneth James Ocon. All rights reserved.
-            </p>
-            
-            <div class="flex space-x-6">
-                <a href="#" class="text-gray-500 hover:text-accent transition-colors text-sm">Privacy Policy</a>
-                <a href="#" class="text-gray-500 hover:text-accent transition-colors text-sm">Terms of Service</a>
-                <a href="#" class="text-gray-500 hover:text-accent transition-colors text-sm">Cookies</a>
-            </div>
-        </div>
-    </div>
+  </div>
 </footer>
 
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        // Hide loading screen after 2 seconds
-        setTimeout(function() {
-            document.querySelector('.loading-screen').classList.add('fade-in');
-            setTimeout(function() {
-                document.querySelector('.loading-screen').style.display = 'none';
-            }, 500);
-        }, 2000);
-        
-        // Scroll progress bar
-        const scrollProgress = document.getElementById('scrollProgress');
-        window.addEventListener('scroll', function() {
-            const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-            const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-            const scrollPercentage = (scrollTop / scrollHeight) * 100;
-            scrollProgress.style.width = scrollPercentage + '%';
-        });
-        
-        // Back to top button
-        const backToTop = document.getElementById('backToTop');
-        window.addEventListener('scroll', function() {
-            if (window.pageYOffset > 300) {
-                backToTop.classList.add('visible');
-            } else {
-                backToTop.classList.remove('visible');
-            }
-        });
-        
-        backToTop.addEventListener('click', function(e) {
-            e.preventDefault();
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-        
-        // Mobile menu toggle
-        const mobileMenuButton = document.getElementById('mobileMenuButton');
-        const mobileMenu = document.getElementById('mobileMenu');
-        
-        mobileMenuButton.addEventListener('click', function() {
-            mobileMenu.classList.toggle('hidden');
-        });
-        
-        // Close mobile menu when clicking on a link
-        document.querySelectorAll('#mobileMenu a').forEach(link => {
-            link.addEventListener('click', function() {
-                mobileMenu.classList.add('hidden');
-            });
-        });
-        
-        // Scroll animations
-        const animateElements = document.querySelectorAll('.animate-on-scroll');
-        
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        }, {
-            threshold: 0.1
-        });
-        
-        animateElements.forEach(element => {
-            observer.observe(element);
-        });
-        
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                
-                const targetId = this.getAttribute('href');
-                if (targetId === '#') return;
-                
-                const targetElement = document.querySelector(targetId);
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 80,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-        
-        // Update active nav link on scroll
-        const sections = document.querySelectorAll('section');
-        const navLinks = document.querySelectorAll('.nav-link');
-        
-        window.addEventListener('scroll', function() {
-            let current = '';
-            
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                
-                if (pageYOffset >= sectionTop - 100) {
-                    current = section.getAttribute('id');
-                }
-            });
-            
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href') === '#' + current) {
-                    link.classList.add('active');
-                }
-            });
-        });
+  // Mobile Navigation toggle controls
+  const burgerBtn = document.getElementById('burgerBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const closeMenuBtn = document.getElementById('closeMenuBtn');
+  const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
 
-        // Make the Contact Me button scroll to contact section
-        const contactMeBtn = document.querySelector('a[href="#contact"]');
-        if (contactMeBtn) {
-            contactMeBtn.addEventListener('click', function(e) {
-                e.preventDefault();
-                const contactSection = document.getElementById('contact');
-                if (contactSection) {
-                    window.scrollTo({
-                        top: contactSection.offsetTop - 80,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        }
+  function openMobileMenu() {
+    mobileMenu.classList.remove('translate-y-full');
+  }
 
-        // Make the Send Message button work with Gmail in a new tab
-        const sendMessageBtn = document.getElementById('sendMessageBtn');
-        if (sendMessageBtn) {
-            sendMessageBtn.addEventListener('click', function(e) {
-                const name = document.getElementById('name').value;
-                const email = document.getElementById('email').value;
-                const subject = document.getElementById('subject').value;
-                const message = document.getElementById('message').value;
-                
-                if (!name || !email || !message) {
-                    e.preventDefault();
-                    alert('Please fill in all required fields');
-                    return;
-                }
-                
-                // Construct the mailto URL with the form data
-                const mailtoUrl = `mailto:kennethjamesocon3@gmail.com?subject=${encodeURIComponent(subject || 'Contact Request')}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)}`;
-                
-                // Open in new tab
-                window.open(mailtoUrl, '_blank');
-                
-                // Reset form
-                document.getElementById('name').value = '';
-                document.getElementById('email').value = '';
-                document.getElementById('subject').value = '';
-                document.getElementById('message').value = '';
-                
-                // Show success message
-                alert('Thank you for your message! I will get back to you soon.');
-            });
-        }
+  function closeMobileMenu() {
+    mobileMenu.classList.add('translate-y-full');
+  }
 
-        // Add animation to skill bars when they come into view
-        const skillBars = document.querySelectorAll('.skill-progress');
-        const skillBarObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const width = entry.target.style.width;
-                    entry.target.style.width = '0';
-                    setTimeout(() => {
-                        entry.target.style.width = width;
-                    }, 100);
-                }
-            });
-        }, {
-            threshold: 0.5
-        });
+  burgerBtn.addEventListener('click', openMobileMenu);
+  closeMenuBtn.addEventListener('click', closeMobileMenu);
+  mobileNavLinks.forEach(link => link.addEventListener('click', closeMobileMenu));
 
-        skillBars.forEach(bar => {
-            skillBarObserver.observe(bar);
-        });
+  // Horizontal Projects Carousel custom button navigation actions
+  const projectsContainer = document.getElementById('projectsContainer');
+  const scrollLeftBtn = document.getElementById('scrollLeftBtn');
+  const scrollRightBtn = document.getElementById('scrollRightBtn');
+
+  scrollLeftBtn.addEventListener('click', () => {
+    projectsContainer.scrollBy({ left: -360, behavior: 'smooth' });
+  });
+
+  scrollRightBtn.addEventListener('click', () => {
+    projectsContainer.scrollBy({ left: 360, behavior: 'smooth' });
+  });
+
+  // Dark Mode Theme Controller configurations
+  const themeToggleBtnHeader = document.getElementById('themeToggleBtnHeader');
+
+  function updateTheme() {
+    if (document.documentElement.classList.contains('dark')) {
+      document.documentElement.classList.remove('dark');
+      localStorage.setItem('theme', 'light');
+    } else {
+      document.documentElement.classList.add('dark');
+      localStorage.setItem('theme', 'dark');
+    }
+  }
+
+  // Initialize theme from storage/preferences
+  const isDarkModeSaved = localStorage.getItem('theme') === 'dark';
+  if (isDarkModeSaved || (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    document.documentElement.classList.add('dark');
+  } else {
+    document.documentElement.classList.remove('dark');
+  }
+
+  themeToggleBtnHeader.addEventListener('click', updateTheme);
+
+  // Interactive Systems Pipeline Logic
+  const runPipelineBtn = document.getElementById('runPipelineBtn');
+  const terminalScreen = document.getElementById('terminalScreen');
+  const nodes = [
+    document.getElementById('flowNode1'),
+    document.getElementById('flowNode2'),
+    document.getElementById('flowNode3')
+  ];
+
+  function printToTerminal(text, type = 'info') {
+    const p = document.createElement('p');
+    const timestamp = new Date().toTimeString().split(' ')[0];
+    
+    if (type === 'success') {
+      p.className = 'text-emerald-400';
+      p.innerHTML = `<span class="text-executiveSlate-500">[${timestamp}]</span> <span class="text-emerald-300">✔</span> ${text}`;
+    } else if (type === 'warn') {
+      p.className = 'text-amber-400';
+      p.innerHTML = `<span class="text-executiveSlate-500">[${timestamp}]</span> <span class="text-amber-300">⚠</span> ${text}`;
+    } else {
+      p.className = 'text-executiveSlate-300';
+      p.innerHTML = `<span class="text-executiveSlate-500">[${timestamp}]</span> ${text}`;
+    }
+    
+    terminalScreen.appendChild(p);
+  }
+
+  let running = false;
+  runPipelineBtn.addEventListener('click', async () => {
+    if (running) return;
+    running = true;
+    runPipelineBtn.disabled = true;
+    runPipelineBtn.textContent = "Pipeline executing...";
+
+    // Reset UI elements
+    terminalScreen.innerHTML = "";
+    nodes.forEach(node => {
+      node.classList.remove('border-brandGold-500', 'bg-brandGold-50/20', 'dark:bg-brandGold-950/20');
     });
+
+    // Step 1 Trigger
+    nodes[0].classList.add('border-brandGold-500', 'bg-brandGold-50/20', 'dark:bg-brandGold-950/20');
+    printToTerminal("Incoming client-journey trigger received from GHL endpoint.", "info");
+    await new Promise(r => setTimeout(r, 1200));
+
+    // Step 2 Trigger
+    nodes[0].classList.remove('border-brandGold-500', 'bg-brandGold-50/20', 'dark:bg-brandGold-950/20');
+    nodes[1].classList.add('border-brandGold-500', 'bg-brandGold-50/20', 'dark:bg-brandGold-950/20');
+    printToTerminal("Initiating regex validations and database duplicate matches...", "info");
+    await new Promise(r => setTimeout(r, 1000));
+    printToTerminal("No duplicate entries identified. Schema format valid.", "success");
+    await new Promise(r => setTimeout(r, 1000));
+
+    // Step 3 Trigger
+    nodes[1].classList.remove('border-brandGold-500', 'bg-brandGold-50/20', 'dark:bg-brandGold-950/20');
+    nodes[2].classList.add('border-brandGold-500', 'bg-brandGold-50/20', 'dark:bg-brandGold-950/20');
+    printToTerminal("Executing Clay API company metadata queries...", "info");
+    await new Promise(r => setTimeout(r, 1400));
+    printToTerminal("Found company profile match. Enriching local CRM schema fields.", "success");
+    await new Promise(r => setTimeout(r, 800));
+
+    // Complete pipeline
+    nodes[2].classList.remove('border-brandGold-500', 'bg-brandGold-50/20', 'dark:bg-brandGold-950/20');
+    printToTerminal("Slack alert pushed to channel #ops-alerts. Execution successful. Exit code: 0", "success");
+
+    runPipelineBtn.disabled = false;
+    runPipelineBtn.textContent = "Run Automated Pipeline";
+    running = false;
+  });
+
+  // Dynamic Counter numeric animation
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function animateCount(el) {
+    const target = parseFloat(el.dataset.target);
+    const decimals = parseInt(el.dataset.decimals || '0', 10);
+    const suffix = el.dataset.suffix || '';
+    const duration = 1400;
+    const start = performance.now();
+
+    if (reduceMotion) {
+      el.textContent = target.toFixed(decimals) + suffix;
+      return;
+    }
+
+    function tick(now) {
+      const elapsed = Math.min((now - start) / duration, 1);
+      const eased = 1 - Math.pow(1 - elapsed, 3); // easeOutCubic
+      const value = target * eased;
+      el.textContent = value.toFixed(decimals) + suffix;
+      if (elapsed < 1) requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+  }
+
+  // Trigger counters when intersecting viewport
+  const statObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        document.querySelectorAll('.count').forEach(animateCount);
+        statObserver.disconnect();
+      }
+    });
+  }, { threshold: 0.2 });
+
+  const statsSection = document.querySelector('.count');
+  if (statsSection) {
+    statObserver.observe(statsSection.parentElement.parentElement);
+  } else {
+    // Fallback trigger if observer fails
+    document.querySelectorAll('.count').forEach(animateCount);
+  }
 </script>
-</body> </html> ```
+
+</body>
+</html>
