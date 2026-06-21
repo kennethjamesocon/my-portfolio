@@ -95,7 +95,7 @@
 <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-brandGold-500 text-white px-5 py-3 rounded-xl z-50 shadow-lg">Skip to content</a>
 
 <!-- STICKY HEADER -->
-<header class="fixed top-0 left-0 right-0 z-50 bg-white/50 dark:bg-executiveSlate-950/50 backdrop-blur-md border-b border-executiveSlate-100 dark:border-executiveSlate-900 transition-premium">
+<header class="fixed top-0 left-0 right-0 z-50 bg-white/70 dark:bg-executiveSlate-950/70 backdrop-blur-md border-b border-executiveSlate-100 dark:border-executiveSlate-900 transition-premium">
   <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
     <!-- Brand Logo Left -->
     <a href="#top" class="text-xl font-bold tracking-tight text-executiveSlate-950 dark:text-white flex items-center gap-2 group">
@@ -180,8 +180,11 @@
           </p>
 
           <p class="mt-4 text-xs text-brandGold-700 dark:text-brandGold-200 font-bold uppercase tracking-wider flex items-center gap-2 bg-brandGold-50/50 dark:bg-brandGold-900/10 py-2 px-4 rounded-lg w-max border border-brandGold-100 dark:border-brandGold-900/50">
-            <svg class="w-4 h-4 text-brandGold-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 0L10 18.9l-4.95-4.95zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"></path></svg>
-            <span>Available for Remote-Only Roles Worldwide</span>
+            <span class="relative flex h-2.5 w-2.5 shrink-0">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-green-500"></span>
+            </span>
+            <span>Available for Remote Roles: USA, Canada, UK, Germany, New Zealand, &amp; Australia</span>
           </p>
 
           <!-- CTAs -->
@@ -209,7 +212,7 @@
               onerror="this.onerror=null; this.src='https://placehold.co/600x750/FFFFFF/000000?text=Kenneth+James+Ocon';"
             >
             <!-- Overlay Metadata Badge -->
-            <div class="absolute bottom-8 left-8 right-8 z-20 bg-white/95 dark:bg-executiveSlate-950/95 backdrop-blur-md p-4 rounded-2xl border border-executiveSlate-200/50 dark:border-executiveSlate-800/80 flex items-center justify-between shadow-md">
+            <div class="absolute bottom-8 left-8 right-8 z-20 bg-white/60 dark:bg-executiveSlate-950/60 backdrop-blur-md p-4 rounded-2xl border border-executiveSlate-200/50 dark:border-executiveSlate-800/80 flex items-center justify-between shadow-md">
               <div>
                 <p class="text-[10px] font-bold uppercase tracking-wider text-brandGold-600 dark:text-brandGold-500">Remote Architect</p>
                 <p class="text-xs font-extrabold text-executiveSlate-950 dark:text-white mt-0.5">Systems &amp; Integrations</p>
@@ -231,116 +234,68 @@
         </p>
       </div>
       <div class="relative w-full overflow-hidden">
-        <div class="flex w-[200%] animate-infinite-scroll gap-12 items-center">
+        <div class="flex w-max animate-infinite-scroll gap-16 items-center">
           
           <!-- Marquee Item List (Set 1) -->
-          <div class="flex justify-around items-center gap-16 text-executiveSlate-500 dark:text-executiveSlate-400 font-extrabold text-xs tracking-wider shrink-0">
+          <div class="flex items-center gap-16 text-executiveSlate-500 dark:text-executiveSlate-400 font-extrabold text-xs tracking-wider shrink-0">
             <!-- GoHighLevel -->
             <span class="flex items-center gap-2">
-              <svg class="w-5 h-5 text-brandGold-500" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 2L2 22h20L12 2zm0 3.8L18.5 19H5.5L12 5.8z"/>
-              </svg> 
               GOHIGHLEVEL
             </span>
             <!-- HubSpot -->
             <span class="flex items-center gap-2">
-              <svg class="w-5 h-5 text-brandGold-500" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M18.8 10.3c-.6 0-1.1.2-1.5.6l-2.4-1.1c.1-.3.1-.5.1-.8 0-1.7-1.4-3-3-3s-3 1.4-3 3c0 .3 0 .5.1.8L6.7 10.9c-.4-.4-.9-.6-1.5-.6-1.1 0-2 .9-2 2s.9 2 2 2c.6 0 1.1-.2 1.5-.6l2.4 1.1c-.1.3-.1.5-.1.8 0 1.7 1.4 3 3 3s3-1.4 3-3c0-.3 0-.5-.1-.8l2.4-1.1c.4.4.9.6 1.5.6 1.1 0 2-.9 2-2s-.9-2-2-2zm-6.8-1.5c.6 0 1 .4 1 1s-.4 1-1 1-1-.4-1-1 .4-1 1-1zm0 8.4c-.6 0-1-.4-1-1s.4-1 1-1 1 .4 1 1-.4 1-1 1z"/>
-              </svg> 
               HUBSPOT
             </span>
             <!-- n8n -->
             <span class="flex items-center gap-2">
-              <svg class="w-5 h-5 text-brandGold-500" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 14h-2v-2h2v2zm0-4h-2V7h2v5z"/>
-              </svg> 
               N8N.IO
             </span>
             <!-- Make -->
             <span class="flex items-center gap-2">
-              <svg class="w-5 h-5 text-brandGold-500" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M19.5 3h-15C3.1 3 2 4.1 2 5.5v13C2 19.9 3.1 21 4.5 21h15c1.4 0 2.5-1.1 2.5-2.5v-13C22 4.1 20.9 3 19.5 3zm-9.2 12.8H7.7V8.2h2.6v7.6zm5.9 0H13.6V8.2h2.6v7.6z"/>
-              </svg> 
               MAKE
             </span>
             <!-- Airtable -->
             <span class="flex items-center gap-2">
-              <svg class="w-5 h-5 text-brandGold-500" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12.5 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5-10-3.1L2 17z"/>
-              </svg> 
               AIRTABLE
             </span>
             <!-- Zapier -->
             <span class="flex items-center gap-2">
-              <svg class="w-5 h-5 text-brandGold-500" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm1 11h3v-2h-3V8h-2v3H8v2h3v3h2v-3z"/>
-              </svg> 
               ZAPIER
             </span>
             <!-- Clay -->
             <span class="flex items-center gap-2">
-              <svg class="w-5 h-5 text-brandGold-500" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm3.1 13.5H8.9V8.5h6.2v7z"/>
-              </svg> 
               CLAY
             </span>
             <!-- Stripe API -->
             <span class="flex items-center gap-2">
-              <svg class="w-5 h-5 text-brandGold-500" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm-6 10H6v-2h8v2zm4-4H6V8h12v2z"/>
-              </svg> 
               STRIPE API
             </span>
           </div>
           
           <!-- Marquee Item List (Set 2 Duplicated) -->
-          <div class="flex justify-around items-center gap-16 text-executiveSlate-500 dark:text-executiveSlate-400 font-extrabold text-xs tracking-wider shrink-0">
+          <div class="flex items-center gap-16 text-executiveSlate-500 dark:text-executiveSlate-400 font-extrabold text-xs tracking-wider shrink-0">
             <span class="flex items-center gap-2">
-              <svg class="w-5 h-5 text-brandGold-500" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 2L2 22h20L12 2zm0 3.8L18.5 19H5.5L12 5.8z"/>
-              </svg> 
               GOHIGHLEVEL
             </span>
             <span class="flex items-center gap-2">
-              <svg class="w-5 h-5 text-brandGold-500" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M18.8 10.3c-.6 0-1.1.2-1.5.6l-2.4-1.1c.1-.3.1-.5.1-.8 0-1.7-1.4-3-3-3s-3 1.4-3 3c0 .3 0 .5.1.8L6.7 10.9c-.4-.4-.9-.6-1.5-.6-1.1 0-2 .9-2 2s.9 2 2 2c.6 0 1.1-.2 1.5-.6l2.4 1.1c-.1.3-.1.5-.1.8 0 1.7 1.4 3 3 3s3-1.4 3-3c0-.3 0-.5-.1-.8l2.4-1.1c.4.4.9.6 1.5.6 1.1 0 2-.9 2-2s-.9-2-2-2zm-6.8-1.5c.6 0 1 .4 1 1s-.4 1-1 1-1-.4-1-1 .4-1 1-1zm0 8.4c-.6 0-1-.4-1-1s.4-1 1-1 1 .4 1 1-.4 1-1 1z"/>
-              </svg> 
               HUBSPOT
             </span>
             <span class="flex items-center gap-2">
-              <svg class="w-5 h-5 text-brandGold-500" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 14h-2v-2h2v2zm0-4h-2V7h2v5z"/>
-              </svg> 
               N8N.IO
             </span>
             <span class="flex items-center gap-2">
-              <svg class="w-5 h-5 text-brandGold-500" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M19.5 3h-15C3.1 3 2 4.1 2 5.5v13C2 19.9 3.1 21 4.5 21h15c1.4 0 2.5-1.1 2.5-2.5v-13C22 4.1 20.9 3 19.5 3zm-9.2 12.8H7.7V8.2h2.6v7.6zm5.9 0H13.6V8.2h2.6v7.6z"/>
-              </svg> 
               MAKE
             </span>
             <span class="flex items-center gap-2">
-              <svg class="w-5 h-5 text-brandGold-500" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12.5 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5-10-3.1L2 17z"/>
-              </svg> 
               AIRTABLE
             </span>
             <span class="flex items-center gap-2">
-              <svg class="w-5 h-5 text-brandGold-500" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm1 11h3v-2h-3V8h-2v3H8v2h3v3h2v-3z"/>
-              </svg> 
               ZAPIER
             </span>
             <span class="flex items-center gap-2">
-              <svg class="w-5 h-5 text-brandGold-500" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm3.1 13.5H8.9V8.5h6.2v7z"/>
-              </svg> 
               CLAY
             </span>
             <span class="flex items-center gap-2">
-              <svg class="w-5 h-5 text-brandGold-500" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm-6 10H6v-2h8v2zm4-4H6V8h12v2z"/>
-              </svg> 
               STRIPE API
             </span>
           </div>
@@ -824,7 +779,7 @@
               <img 
                 src="https://lh3.googleusercontent.com/d/1MIpkUC1RmknT-YeoxcKFnowy7zMJMMNH=w200" 
                 alt="University of Mindanao Logo" 
-                class="w-16 h-16 object-contain rounded-2xl bg-white p-2 border border-executiveSlate-100"
+                class="w-28 h-28 object-contain rounded-2xl"
                 onerror="this.onerror=null; this.src='https://placehold.co/100x100/FFFFFF/000000?text=UM';"
               >
               <div>
@@ -883,6 +838,53 @@
                     <p class="text-[10px] text-executiveSlate-400 dark:text-executiveSlate-500">Google Academy &bull; 2025</p>
                   </div>
                 </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Areas of Competency (Education description expansion) -->
+          <div class="mt-12">
+            <p class="text-[10px] font-bold uppercase tracking-wider text-executiveSlate-400 dark:text-executiveSlate-500 mb-6">Academic &amp; Professional Competencies</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+              <!-- Operational Systems & Automation -->
+              <div class="p-7 bg-white dark:bg-executiveSlate-900 rounded-3xl border border-executiveSlate-100 dark:border-executiveSlate-800 shadow-[0_8px_30px_rgb(0,0,0,0.01)] hover:border-brandGold-500/40 transition-premium">
+                <p class="text-[10px] font-bold uppercase tracking-wider text-brandGold-600 dark:text-brandGold-400 mb-4">Operational Systems &amp; Automation</p>
+                <ul class="flex flex-col gap-2.5 text-xs sm:text-sm text-executiveSlate-600 dark:text-executiveSlate-300 font-light leading-relaxed">
+                  <li class="flex items-start gap-2.5"><span class="w-1 h-1 rounded-full bg-brandGold-500 mt-2 shrink-0"></span><span>Scalable Operational Systems Engineering</span></li>
+                  <li class="flex items-start gap-2.5"><span class="w-1 h-1 rounded-full bg-brandGold-500 mt-2 shrink-0"></span><span>Marketing Automation Architecture</span></li>
+                  <li class="flex items-start gap-2.5"><span class="w-1 h-1 rounded-full bg-brandGold-500 mt-2 shrink-0"></span><span>CRM Workflow Design &amp; Hygiene</span></li>
+                  <li class="flex items-start gap-2.5"><span class="w-1 h-1 rounded-full bg-brandGold-500 mt-2 shrink-0"></span><span>Automated Workflow Infrastructure</span></li>
+                  <li class="flex items-start gap-2.5"><span class="w-1 h-1 rounded-full bg-brandGold-500 mt-2 shrink-0"></span><span>AI-Native Operations Management</span></li>
+                  <li class="flex items-start gap-2.5"><span class="w-1 h-1 rounded-full bg-brandGold-500 mt-2 shrink-0"></span><span>Lead-to-Fulfillment Pipeline Development</span></li>
+                </ul>
+              </div>
+
+              <!-- Strategic & Executive Management -->
+              <div class="p-7 bg-white dark:bg-executiveSlate-900 rounded-3xl border border-executiveSlate-100 dark:border-executiveSlate-800 shadow-[0_8px_30px_rgb(0,0,0,0.01)] hover:border-brandGold-500/40 transition-premium">
+                <p class="text-[10px] font-bold uppercase tracking-wider text-brandGold-600 dark:text-brandGold-400 mb-4">Strategic &amp; Executive Management</p>
+                <ul class="flex flex-col gap-2.5 text-xs sm:text-sm text-executiveSlate-600 dark:text-executiveSlate-300 font-light leading-relaxed">
+                  <li class="flex items-start gap-2.5"><span class="w-1 h-1 rounded-full bg-brandGold-500 mt-2 shrink-0"></span><span>Strategic Planning &amp; Design</span></li>
+                  <li class="flex items-start gap-2.5"><span class="w-1 h-1 rounded-full bg-brandGold-500 mt-2 shrink-0"></span><span>Executive Project Management</span></li>
+                  <li class="flex items-start gap-2.5"><span class="w-1 h-1 rounded-full bg-brandGold-500 mt-2 shrink-0"></span><span>Fiscal Governance</span></li>
+                  <li class="flex items-start gap-2.5"><span class="w-1 h-1 rounded-full bg-brandGold-500 mt-2 shrink-0"></span><span>Business Unit Management</span></li>
+                  <li class="flex items-start gap-2.5"><span class="w-1 h-1 rounded-full bg-brandGold-500 mt-2 shrink-0"></span><span>Operational Integrity &amp; Efficiency Optimization</span></li>
+                  <li class="flex items-start gap-2.5"><span class="w-1 h-1 rounded-full bg-brandGold-500 mt-2 shrink-0"></span><span>Multi-Market Environment Oversight</span></li>
+                </ul>
+              </div>
+
+              <!-- Marketing & Analytics -->
+              <div class="p-7 bg-white dark:bg-executiveSlate-900 rounded-3xl border border-executiveSlate-100 dark:border-executiveSlate-800 shadow-[0_8px_30px_rgb(0,0,0,0.01)] hover:border-brandGold-500/40 transition-premium">
+                <p class="text-[10px] font-bold uppercase tracking-wider text-brandGold-600 dark:text-brandGold-400 mb-4">Marketing &amp; Analytics</p>
+                <ul class="flex flex-col gap-2.5 text-xs sm:text-sm text-executiveSlate-600 dark:text-executiveSlate-300 font-light leading-relaxed">
+                  <li class="flex items-start gap-2.5"><span class="w-1 h-1 rounded-full bg-brandGold-500 mt-2 shrink-0"></span><span>Integrated Marketing Communications</span></li>
+                  <li class="flex items-start gap-2.5"><span class="w-1 h-1 rounded-full bg-brandGold-500 mt-2 shrink-0"></span><span>Data-Driven Revenue Operations</span></li>
+                  <li class="flex items-start gap-2.5"><span class="w-1 h-1 rounded-full bg-brandGold-500 mt-2 shrink-0"></span><span>Behavioral Analytics</span></li>
+                  <li class="flex items-start gap-2.5"><span class="w-1 h-1 rounded-full bg-brandGold-500 mt-2 shrink-0"></span><span>Marketing Content Execution</span></li>
+                  <li class="flex items-start gap-2.5"><span class="w-1 h-1 rounded-full bg-brandGold-500 mt-2 shrink-0"></span><span>Product Innovation Strategy</span></li>
+                  <li class="flex items-start gap-2.5"><span class="w-1 h-1 rounded-full bg-brandGold-500 mt-2 shrink-0"></span><span>International Marketing</span></li>
+                </ul>
               </div>
 
             </div>
@@ -1040,8 +1042,12 @@
   </section>
 
   <!-- STRATEGY BOOKING PANEL -->
-  <section class="py-24 bg-brandGold-50/20 dark:bg-executiveSlate-900/30 border-t border-executiveSlate-100 dark:border-executiveSlate-900">
-    <div class="max-w-4xl mx-auto px-6 text-center">
+  <section class="relative py-24 overflow-hidden bg-white dark:bg-executiveSlate-950 border-t border-executiveSlate-100 dark:border-executiveSlate-900">
+    <!-- Soft ambient glow background, tuned for light & dark mode -->
+    <div class="absolute inset-0 pointer-events-none">
+      <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[680px] h-[680px] max-w-[140vw] rounded-full bg-brandGold-200/60 dark:bg-brandGold-500/15 blur-[110px]"></div>
+    </div>
+    <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
       <span class="inline-block py-1 px-3 bg-brandGold-50 dark:bg-brandGold-900/40 text-brandGold-700 dark:text-brandGold-200 text-xs font-bold uppercase rounded-md mb-6 border border-brandGold-200/30">Let's Work Together</span>
       <h2 class="text-3xl sm:text-5xl font-extrabold text-executiveSlate-950 dark:text-white tracking-tight leading-tight">
         Looking for a partner, or hiring for your next role?
