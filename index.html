@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kenneth James Ocon — Operations &amp; Systems Lead</title>
+  <title>Kenneth James Ocon | Operations &amp; Systems Lead</title>
   <meta name="description" content="Executive portfolio of Kenneth James Ocon. Re-architecting operational loops, high-integrity CRM schemas, and multi-entity automations. Built for remote scale.">
 
   <!-- Google tag (gtag.js) -->
@@ -98,6 +98,41 @@
     .dark .ticker-container::after {
       background: linear-gradient(90deg, #09090B 0%, transparent 15%, transparent 85%, #09090B 100%);
     }
+
+    /* Article reader typography */
+    .art-body { font-size: 1.0625rem; line-height: 1.8; color: #3F3F46; }
+    .dark .art-body { color: #D4D4D8; }
+    .art-body p { margin: 1.1rem 0; }
+    .art-body strong { color: #09090B; font-weight: 800; }
+    .dark .art-body strong { color: #FFFFFF; }
+    .art-h2 { font-size: 1.6rem; line-height: 1.2; font-weight: 800; letter-spacing: -0.01em; color: #09090B; margin: 2.6rem 0 0.6rem; padding-top: 1.6rem; border-top: 1px solid #E4E4E7; }
+    .dark .art-h2 { color: #FFFFFF; border-top-color: #27272A; }
+    .art-h3 { font-size: 1.2rem; font-weight: 800; color: #9E7E1D; margin: 1.8rem 0 0.4rem; }
+    .dark .art-h3 { color: #D4AF37; }
+    .art-ul, .art-ol { margin: 1rem 0 1.2rem; padding-left: 1.4rem; }
+    .art-ul { list-style: none; padding-left: 0; }
+    .art-ul li { position: relative; padding-left: 1.5rem; margin: 0.5rem 0; }
+    .art-ul li::before { content: ''; position: absolute; left: 0.25rem; top: 0.78em; width: 6px; height: 6px; border-radius: 9999px; background: #D4AF37; }
+    .art-ol { list-style: decimal; }
+    .art-ol li { margin: 0.5rem 0; padding-left: 0.3rem; }
+    .art-ol li::marker { color: #9E7E1D; font-weight: 800; }
+    .art-table-wrap { overflow-x: auto; margin: 1.4rem 0; border: 1px solid #E4E4E7; border-radius: 16px; }
+    .dark .art-table-wrap { border-color: #27272A; }
+    .art-table { width: 100%; border-collapse: collapse; font-size: 0.95rem; line-height: 1.5; }
+    .art-table th { text-align: left; background: #FCF7E8; color: #695310; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.06em; padding: 0.8rem 1rem; }
+    .dark .art-table th { background: rgba(212,175,55,0.12); color: #F6E9C4; }
+    .art-table td { padding: 0.75rem 1rem; border-top: 1px solid #F4F4F5; vertical-align: top; }
+    .dark .art-table td { border-top-color: #27272A; }
+    .art-table td:first-child { font-weight: 700; color: #18181B; white-space: nowrap; }
+    .dark .art-table td:first-child { color: #FFFFFF; }
+    .art-body code { background: #F4F4F5; color: #18181B; padding: 0.15rem 0.45rem; border-radius: 6px; font-size: 0.88em; word-break: break-all; }
+    .dark .art-body code { background: #27272A; color: #F4F4F5; }
+    .art-fig { margin: 1.8rem 0; }
+    .art-fig img { width: 100%; max-height: 380px; object-fit: cover; border-radius: 20px; }
+    .art-fig figcaption { font-size: 0.75rem; color: #71717A; margin-top: 0.5rem; text-align: right; }
+    .art-note { margin-top: 2.4rem !important; padding-top: 1.4rem; border-top: 1px solid #E4E4E7; font-size: 0.85rem; font-style: italic; color: #71717A; line-height: 1.6; }
+    .dark .art-note { border-top-color: #27272A; color: #A1A1AA; }
+    body.modal-open { overflow: hidden; }
   </style>
 </head>
 <body class="bg-white text-executiveSlate-800 font-sans transition-colors duration-500 dark:bg-executiveSlate-950 dark:text-executiveSlate-100 antialiased">
@@ -114,14 +149,15 @@
     </a>
 
     <!-- Centered Nav Menu -->
-    <nav class="hidden md:flex items-center gap-8 bg-executiveSlate-50/50 dark:bg-executiveSlate-900/50 px-8 py-2.5 rounded-full border border-executiveSlate-100 dark:border-executiveSlate-800/5 shadow-sm shadow-black/[0.01]">
-      <a href="#about" class="text-sm font-bold uppercase tracking-wider text-executiveSlate-600 dark:text-executiveSlate-300 hover:text-brandGold-500 dark:hover:text-brandGold-500 transition-premium">Intro</a>
-      <a href="#experience" class="text-sm font-bold uppercase tracking-wider text-executiveSlate-600 dark:text-executiveSlate-300 hover:text-brandGold-500 dark:hover:text-brandGold-500 transition-premium">Experience</a>
-      <a href="#projects" class="text-sm font-bold uppercase tracking-wider text-executiveSlate-600 dark:text-executiveSlate-300 hover:text-brandGold-500 dark:hover:text-brandGold-500 transition-premium">Projects</a>
-      <a href="#samples" class="text-sm font-bold uppercase tracking-wider text-executiveSlate-600 dark:text-executiveSlate-300 hover:text-brandGold-500 dark:hover:text-brandGold-500 transition-premium">Work Samples</a>
-      <a href="#stack" class="text-sm font-bold uppercase tracking-wider text-executiveSlate-600 dark:text-executiveSlate-300 hover:text-brandGold-500 dark:hover:text-brandGold-500 transition-premium">Stack</a>
-      <a href="#credentials" class="text-sm font-bold uppercase tracking-wider text-executiveSlate-600 dark:text-executiveSlate-300 hover:text-brandGold-500 dark:hover:text-brandGold-500 transition-premium">Credentials</a>
-      <a href="#testimonials" class="text-sm font-bold uppercase tracking-wider text-executiveSlate-600 dark:text-executiveSlate-300 hover:text-brandGold-500 dark:hover:text-brandGold-500 transition-premium">Reviews</a>
+    <nav class="hidden xl:flex items-center gap-5 2xl:gap-7 bg-executiveSlate-50/50 dark:bg-executiveSlate-900/50 px-8 py-2.5 rounded-full border border-executiveSlate-100 dark:border-executiveSlate-800/5 shadow-sm shadow-black/[0.01]">
+      <a href="#about" class="text-sm font-bold uppercase tracking-wider whitespace-nowrap text-executiveSlate-600 dark:text-executiveSlate-300 hover:text-brandGold-500 dark:hover:text-brandGold-500 transition-premium">Intro</a>
+      <a href="#experience" class="text-sm font-bold uppercase tracking-wider whitespace-nowrap text-executiveSlate-600 dark:text-executiveSlate-300 hover:text-brandGold-500 dark:hover:text-brandGold-500 transition-premium">Experience</a>
+      <a href="#projects" class="text-sm font-bold uppercase tracking-wider whitespace-nowrap text-executiveSlate-600 dark:text-executiveSlate-300 hover:text-brandGold-500 dark:hover:text-brandGold-500 transition-premium">Projects</a>
+      <a href="#samples" class="text-sm font-bold uppercase tracking-wider whitespace-nowrap text-executiveSlate-600 dark:text-executiveSlate-300 hover:text-brandGold-500 dark:hover:text-brandGold-500 transition-premium">Work Samples</a>
+      <a href="#articles" class="text-sm font-bold uppercase tracking-wider whitespace-nowrap text-executiveSlate-600 dark:text-executiveSlate-300 hover:text-brandGold-500 dark:hover:text-brandGold-500 transition-premium">Articles</a>
+      <a href="#stack" class="text-sm font-bold uppercase tracking-wider whitespace-nowrap text-executiveSlate-600 dark:text-executiveSlate-300 hover:text-brandGold-500 dark:hover:text-brandGold-500 transition-premium">Stack</a>
+      <a href="#credentials" class="text-sm font-bold uppercase tracking-wider whitespace-nowrap text-executiveSlate-600 dark:text-executiveSlate-300 hover:text-brandGold-500 dark:hover:text-brandGold-500 transition-premium">Credentials</a>
+      <a href="#testimonials" class="text-sm font-bold uppercase tracking-wider whitespace-nowrap text-executiveSlate-600 dark:text-executiveSlate-300 hover:text-brandGold-500 dark:hover:text-brandGold-500 transition-premium">Reviews</a>
     </nav>
 
     <!-- Top Right Call to Action & Theme -->
@@ -133,20 +169,20 @@
         <svg class="w-4 h-4 block dark:hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
       </button>
 
-      <a href="https://calendly.com/kennethjamesocon3/new-meeting" target="_blank" rel="noopener" class="bg-brandGold-500 hover:bg-brandGold-600 active:scale-95 text-white font-bold text-[13px] uppercase tracking-wider py-3.5 px-6 rounded-full transition-premium shadow-md shadow-brandGold-500/15 flex items-center gap-2">
+      <a href="https://calendly.com/kennethjamesocon3/new-meeting" target="_blank" rel="noopener" class="bg-brandGold-500 hover:bg-brandGold-600 active:scale-95 text-white font-bold text-[13px] uppercase tracking-wider py-3.5 px-6 rounded-full transition-premium shadow-md shadow-brandGold-500/15 flex items-center gap-2 whitespace-nowrap">
         <span>Book a strategy call</span>
         <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
       </a>
 
       <!-- Mobile Burger -->
-      <button id="burgerBtn" class="md:hidden p-2 text-executiveSlate-600 dark:text-executiveSlate-300 hover:text-executiveSlate-950 dark:hover:text-white focus:outline-none" aria-label="Toggle Navigation Menu">
+      <button id="burgerBtn" class="xl:hidden p-2 text-executiveSlate-600 dark:text-executiveSlate-300 hover:text-executiveSlate-950 dark:hover:text-white focus:outline-none" aria-label="Toggle Navigation Menu">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path></svg>
       </button>
     </div>
   </div>
 </header>
 
-<div id="mobileMenu" class="fixed inset-0 z-40 bg-white/98 dark:bg-executiveSlate-950/98 backdrop-blur-lg flex flex-col justify-between p-8 transform translate-y-full transition-transform duration-500 ease-out md:hidden">
+<div id="mobileMenu" class="fixed inset-0 z-40 bg-white/98 dark:bg-executiveSlate-950/98 backdrop-blur-lg flex flex-col justify-between p-8 transform translate-y-full transition-transform duration-500 ease-out xl:hidden">
   <div class="flex items-center justify-between mt-12">
     <span class="text-sm font-extrabold text-executiveSlate-950 dark:text-white tracking-widest">PORTFOLIO</span>
     <button id="closeMenuBtn" class="p-2 text-executiveSlate-600 dark:text-executiveSlate-300" aria-label="Close Menu">
@@ -158,6 +194,7 @@
     <a href="#experience" class="mobile-nav-link text-2xl font-bold text-executiveSlate-800 dark:text-white hover:text-brandGold-500">Timeline</a>
     <a href="#projects" class="mobile-nav-link text-2xl font-bold text-executiveSlate-800 dark:text-white hover:text-brandGold-500">Projects</a>
     <a href="#samples" class="mobile-nav-link text-2xl font-bold text-executiveSlate-800 dark:text-white hover:text-brandGold-500">Work Samples</a>
+    <a href="#articles" class="mobile-nav-link text-2xl font-bold text-executiveSlate-800 dark:text-white hover:text-brandGold-500">Articles</a>
     <a href="#stack" class="mobile-nav-link text-2xl font-bold text-executiveSlate-800 dark:text-white hover:text-brandGold-500">Tech Stack</a>
     <a href="#credentials" class="mobile-nav-link text-2xl font-bold text-executiveSlate-800 dark:text-white hover:text-brandGold-500">Credentials</a>
     <a href="#testimonials" class="mobile-nav-link text-2xl font-bold text-executiveSlate-800 dark:text-white hover:text-brandGold-500">Reviews</a>
@@ -241,7 +278,7 @@
             <!-- High-Fidelity Portfolio Photo Frame -->
             <img 
               src="https://lh3.googleusercontent.com/d/18AdZBsRuzA1JhhuJSCwqON7CFVzs06qJ=w800" 
-              alt="Kenneth James Ocon — Portrait Photo" 
+              alt="Kenneth James Ocon, Portrait Photo" 
               class="w-full aspect-[4/5] object-cover rounded-2xl transition-all duration-700 group-hover:scale-102"
               onerror="this.onerror=null; this.src='https://placehold.co/600x750/FFFFFF/000000?text=Kenneth+James+Ocon';"
             >
@@ -500,7 +537,7 @@
                 <div id="flowNode1" class="flex items-center gap-4 p-4 bg-white dark:bg-executiveSlate-950 rounded-2xl border border-executiveSlate-100 dark:border-executiveSlate-800 transition-premium">
                   <span class="w-8 h-8 rounded-full bg-brandGold-100 dark:bg-brandGold-900/30 flex items-center justify-center text-brandGold-600 font-extrabold text-sm">1</span>
                   <div>
-                    <p class="text-[12.5px] font-bold uppercase text-executiveSlate-400 dark:text-executiveSlate-500">Step 1 — Webhook Triggers</p>
+                    <p class="text-[12.5px] font-bold uppercase text-executiveSlate-400 dark:text-executiveSlate-500">Step 1: Webhook Triggers</p>
                     <p class="text-sm font-semibold text-executiveSlate-800 dark:text-executiveSlate-200">Parse Inbound Payload Schema</p>
                   </div>
                 </div>
@@ -508,7 +545,7 @@
                 <div id="flowNode2" class="flex items-center gap-4 p-4 bg-white dark:bg-executiveSlate-950 rounded-2xl border border-executiveSlate-100 dark:border-executiveSlate-800 transition-premium">
                   <span class="w-8 h-8 rounded-full bg-brandGold-100 dark:bg-brandGold-900/30 flex items-center justify-center text-brandGold-600 font-extrabold text-sm">2</span>
                   <div>
-                    <p class="text-[12.5px] font-bold uppercase text-executiveSlate-400 dark:text-executiveSlate-500">Step 2 — Data Validation</p>
+                    <p class="text-[12.5px] font-bold uppercase text-executiveSlate-400 dark:text-executiveSlate-500">Step 2: Data Validation</p>
                     <p class="text-sm font-semibold text-executiveSlate-800 dark:text-executiveSlate-200">Run Duplicate Schema Filter</p>
                   </div>
                 </div>
@@ -516,7 +553,7 @@
                 <div id="flowNode3" class="flex items-center gap-4 p-4 bg-white dark:bg-executiveSlate-950 rounded-2xl border border-executiveSlate-100 dark:border-executiveSlate-800 transition-premium">
                   <span class="w-8 h-8 rounded-full bg-brandGold-100 dark:bg-brandGold-900/30 flex items-center justify-center text-brandGold-600 font-extrabold text-sm">3</span>
                   <div>
-                    <p class="text-[12.5px] font-bold uppercase text-executiveSlate-400 dark:text-executiveSlate-500">Step 3 — Metadata Enrichment</p>
+                    <p class="text-[12.5px] font-bold uppercase text-executiveSlate-400 dark:text-executiveSlate-500">Step 3: Metadata Enrichment</p>
                     <p class="text-sm font-semibold text-executiveSlate-800 dark:text-executiveSlate-200">Push to GHL &amp; Slack Alert Routing</p>
                   </div>
                 </div>
@@ -568,7 +605,7 @@
         <!-- Experience Item 1 -->
         <div class="p-8 sm:p-10 bg-white dark:bg-executiveSlate-900 rounded-3xl border border-executiveSlate-100 dark:border-executiveSlate-800/80 transition-premium hover:shadow-lg dark:hover:shadow-brandGold-500/[0.02] hover:border-brandGold-200/50 dark:hover:border-brandGold-500/30 flex flex-col md:flex-row gap-8 justify-between">
           <div class="md:w-1/4">
-            <span class="inline-block py-1 px-3 bg-brandGold-50 dark:bg-brandGold-900/10 text-brandGold-700 dark:text-brandGold-200 text-sm font-bold uppercase rounded border border-brandGold-200/20">2025 — 2026</span>
+            <span class="inline-block py-1 px-3 bg-brandGold-50 dark:bg-brandGold-900/10 text-brandGold-700 dark:text-brandGold-200 text-sm font-bold uppercase rounded border border-brandGold-200/20">2025 to 2026</span>
             <p class="text-sm font-extrabold text-executiveSlate-400 dark:text-executiveSlate-500 mt-3">SalesElite Consulting Group LLC</p>
           </div>
           <div class="md:w-3/4">
@@ -601,7 +638,7 @@
         <!-- Experience Item 2 -->
         <div class="p-8 sm:p-10 bg-white dark:bg-executiveSlate-900 rounded-3xl border border-executiveSlate-100 dark:border-executiveSlate-800/80 transition-premium hover:shadow-lg dark:hover:shadow-brandGold-500/[0.02] hover:border-brandGold-200/50 dark:hover:border-brandGold-500/30 flex flex-col md:flex-row gap-8 justify-between">
           <div class="md:w-1/4">
-            <span class="inline-block py-1 px-3 bg-brandGold-50 dark:bg-brandGold-900/10 text-brandGold-700 dark:text-brandGold-200 text-sm font-bold uppercase rounded border border-brandGold-200/20">2023 — 2025</span>
+            <span class="inline-block py-1 px-3 bg-brandGold-50 dark:bg-brandGold-900/10 text-brandGold-700 dark:text-brandGold-200 text-sm font-bold uppercase rounded border border-brandGold-200/20">2023 to 2025</span>
             <p class="text-sm font-extrabold text-executiveSlate-400 dark:text-executiveSlate-500 mt-3">Independent Contractor</p>
           </div>
           <div class="md:w-3/4">
@@ -630,7 +667,7 @@
         <!-- Experience Item 3 -->
         <div class="p-8 sm:p-10 bg-white dark:bg-executiveSlate-900 rounded-3xl border border-executiveSlate-100 dark:border-executiveSlate-800/80 transition-premium hover:shadow-lg dark:hover:shadow-brandGold-500/[0.02] hover:border-brandGold-200/50 dark:hover:border-brandGold-500/30 flex flex-col md:flex-row gap-8 justify-between">
           <div class="md:w-1/4">
-            <span class="inline-block py-1 px-3 bg-brandGold-50 dark:bg-brandGold-900/10 text-brandGold-700 dark:text-brandGold-200 text-sm font-bold uppercase rounded border border-brandGold-200/20">2022 — 2023</span>
+            <span class="inline-block py-1 px-3 bg-brandGold-50 dark:bg-brandGold-900/10 text-brandGold-700 dark:text-brandGold-200 text-sm font-bold uppercase rounded border border-brandGold-200/20">2022 to 2023</span>
             <p class="text-sm font-extrabold text-executiveSlate-400 dark:text-executiveSlate-500 mt-3">Independent Contractor</p>
           </div>
           <div class="md:w-3/4">
@@ -871,10 +908,92 @@
 
       <!-- View more prompt -->
       <p class="mt-10 text-center text-sm text-executiveSlate-500 dark:text-executiveSlate-400 font-normal">
-        These are only a handful of highlights — <a href="https://drive.google.com/drive/folders/1KS3LcQ8y7fai-T1EGRtTqAIAPgrB_DQf?usp=sharing" target="_blank" rel="noopener" class="font-bold text-brandGold-600 dark:text-brandGold-400 hover:text-brandGold-700 dark:hover:text-brandGold-300 underline underline-offset-2 transition-premium">click here to view the entire work sample library</a>.
+        These are only a handful of highlights. <a href="https://drive.google.com/drive/folders/1KS3LcQ8y7fai-T1EGRtTqAIAPgrB_DQf?usp=sharing" target="_blank" rel="noopener" class="font-bold text-brandGold-600 dark:text-brandGold-400 hover:text-brandGold-700 dark:hover:text-brandGold-300 underline underline-offset-2 transition-premium">click here to view the entire work sample library</a>.
       </p>
     </div>
   </section>
+
+  <!-- ARTICLES / BLOG -->
+  <section id="articles" class="py-24 border-t border-executiveSlate-100 dark:border-executiveSlate-900 bg-white dark:bg-executiveSlate-950">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="max-w-3xl mb-4">
+        <p class="text-sm font-extrabold uppercase tracking-widest text-brandGold-500">04 / Insights</p>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-executiveSlate-950 dark:text-white mt-4 tracking-tight leading-none">
+          Articles &amp; Insights
+        </h2>
+        <p class="text-base text-executiveSlate-600 dark:text-executiveSlate-300 mt-4 font-semibold leading-relaxed">
+          Practical writing on real estate and property operations.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+
+        <!-- Article 1 -->
+        <article>
+          <button type="button" data-article="aspen-second-home" class="article-card group w-full text-left bg-white dark:bg-executiveSlate-900 rounded-3xl border border-executiveSlate-100 dark:border-executiveSlate-800 shadow-[0_8px_30px_rgb(0,0,0,0.01)] hover:shadow-lg hover:-translate-y-1 hover:border-brandGold-500/40 transition-premium overflow-hidden flex flex-col focus:outline-none focus-visible:ring-2 focus-visible:ring-brandGold-500">
+            <div class="relative aspect-[16/10] overflow-hidden bg-gradient-to-br from-brandGold-100 to-executiveSlate-200 dark:from-executiveSlate-800 dark:to-executiveSlate-900">
+              <img src="https://images.unsplash.com/photo-1524429656589-6633a470097c?auto=format&fit=crop&w=1200&q=80" alt="Mountain lake at sunset beneath alpine peaks" loading="lazy" class="w-full h-full object-cover transition-all duration-700 group-hover:scale-105" onerror="this.style.display='none'">
+              <span class="absolute top-4 left-4 py-1 px-3 bg-white/90 dark:bg-executiveSlate-950/80 backdrop-blur text-brandGold-700 dark:text-brandGold-200 text-[11px] font-extrabold uppercase tracking-wider rounded-full">Real Estate</span>
+            </div>
+            <div class="p-8 flex flex-col flex-1">
+              <p class="text-[12.5px] font-bold uppercase tracking-wider text-executiveSlate-400 dark:text-executiveSlate-500">October 2026 &bull; 6 min read</p>
+              <h3 class="text-xl sm:text-2xl font-extrabold text-executiveSlate-950 dark:text-white mt-3 leading-tight">Buying a Second Home in Aspen, CO: 7 Things Every Buyer Should Consider</h3>
+              <p class="text-sm text-executiveSlate-600 dark:text-executiveSlate-300 mt-3 leading-relaxed">From choosing between Aspen and Snowmass Village to understanding short-term rental rules and the true cost of ownership, a practical guide for mountain home buyers.</p>
+              <div class="mt-6 pt-6 border-t border-executiveSlate-100 dark:border-executiveSlate-800 flex items-center justify-between">
+                <span class="flex items-center gap-3">
+                  <span class="w-8 h-8 rounded-full bg-brandGold-500/10 dark:bg-brandGold-500/20 flex items-center justify-center text-brandGold-600 dark:text-brandGold-500 text-xs font-extrabold">K</span>
+                  <span class="text-sm font-bold text-executiveSlate-800 dark:text-executiveSlate-200">Kenneth James Ocon</span>
+                </span>
+                <span class="text-[12.5px] font-bold uppercase tracking-wider text-brandGold-600 dark:text-brandGold-400 inline-flex items-center gap-1.5">Read Article
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                </span>
+              </div>
+            </div>
+          </button>
+        </article>
+
+        <!-- Article 2 -->
+        <article>
+          <button type="button" data-article="mountain-home-readiness" class="article-card group w-full text-left bg-white dark:bg-executiveSlate-900 rounded-3xl border border-executiveSlate-100 dark:border-executiveSlate-800 shadow-[0_8px_30px_rgb(0,0,0,0.01)] hover:shadow-lg hover:-translate-y-1 hover:border-brandGold-500/40 transition-premium overflow-hidden flex flex-col focus:outline-none focus-visible:ring-2 focus-visible:ring-brandGold-500">
+            <div class="relative aspect-[16/10] overflow-hidden bg-gradient-to-br from-brandGold-100 to-executiveSlate-200 dark:from-executiveSlate-800 dark:to-executiveSlate-900">
+              <img src="https://images.unsplash.com/photo-1484255877288-39571777fade?auto=format&fit=crop&w=1200&q=80" alt="Snow-covered mountain chalet in winter" loading="lazy" class="w-full h-full object-cover transition-all duration-700 group-hover:scale-105" onerror="this.style.display='none'">
+              <span class="absolute top-4 left-4 py-1 px-3 bg-white/90 dark:bg-executiveSlate-950/80 backdrop-blur text-brandGold-700 dark:text-brandGold-200 text-[11px] font-extrabold uppercase tracking-wider rounded-full">Property Operations</span>
+            </div>
+            <div class="p-8 flex flex-col flex-1">
+              <p class="text-[12.5px] font-bold uppercase tracking-wider text-executiveSlate-400 dark:text-executiveSlate-500">October 2026 &bull; 6 min read</p>
+              <h3 class="text-xl sm:text-2xl font-extrabold text-executiveSlate-950 dark:text-white mt-3 leading-tight">A Better Way to Manage a Mountain Home: A Seasonal Property Readiness Checklist for Aspen Homeowners</h3>
+              <p class="text-sm text-executiveSlate-600 dark:text-executiveSlate-300 mt-3 leading-relaxed">A documented system for property records, seasonal maintenance, vendor coordination, and owner reporting that keeps a seasonal home protected year-round.</p>
+              <div class="mt-6 pt-6 border-t border-executiveSlate-100 dark:border-executiveSlate-800 flex items-center justify-between">
+                <span class="flex items-center gap-3">
+                  <span class="w-8 h-8 rounded-full bg-brandGold-500/10 dark:bg-brandGold-500/20 flex items-center justify-center text-brandGold-600 dark:text-brandGold-500 text-xs font-extrabold">K</span>
+                  <span class="text-sm font-bold text-executiveSlate-800 dark:text-executiveSlate-200">Kenneth James Ocon</span>
+                </span>
+                <span class="text-[12.5px] font-bold uppercase tracking-wider text-brandGold-600 dark:text-brandGold-400 inline-flex items-center gap-1.5">Read Article
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                </span>
+              </div>
+            </div>
+          </button>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ARTICLE READER MODAL -->
+  <div id="articleModal" class="fixed inset-0 z-[60] hidden" role="dialog" aria-modal="true" aria-labelledby="articleModalTitle">
+    <div id="articleBackdrop" class="absolute inset-0 bg-executiveSlate-950/70 backdrop-blur-sm opacity-0 transition-opacity duration-300"></div>
+    <div class="absolute inset-0 overflow-y-auto" id="articleScroller">
+      <div class="min-h-full flex items-start sm:items-center justify-center p-0 sm:p-6 lg:p-10">
+        <div id="articlePanel" class="relative w-full max-w-4xl bg-white dark:bg-executiveSlate-900 sm:rounded-4xl border border-executiveSlate-100 dark:border-executiveSlate-800 shadow-2xl overflow-hidden opacity-0 translate-y-6 scale-[0.98] transition-all duration-300">
+          <button id="articleCloseBtn" type="button" class="absolute top-4 right-4 z-20 p-2.5 rounded-full bg-white/90 dark:bg-executiveSlate-950/80 backdrop-blur border border-executiveSlate-200 dark:border-executiveSlate-800 text-executiveSlate-700 dark:text-executiveSlate-200 hover:text-brandGold-500 hover:border-brandGold-500 transition-premium" aria-label="Close article">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path></svg>
+          </button>
+          <div id="articleModalBody"></div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- INFRASTRUCTURE STACK -->
   <section id="stack" class="py-24 border-t border-executiveSlate-100 dark:border-executiveSlate-900 bg-white dark:bg-executiveSlate-950">
@@ -882,7 +1001,7 @@
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
         
         <div class="lg:col-span-12">
-          <p class="text-sm font-extrabold uppercase tracking-widest text-brandGold-500">04 / Tools &amp; Methodologies</p>
+          <p class="text-sm font-extrabold uppercase tracking-widest text-brandGold-500">05 / Tools &amp; Methodologies</p>
           <h2 class="text-3xl sm:text-4xl font-extrabold text-executiveSlate-950 dark:text-white mt-4 tracking-tight leading-none mb-12">
             Core Expertise
           </h2>
@@ -997,7 +1116,7 @@
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
         
         <div class="lg:col-span-12">
-          <p class="text-sm font-extrabold uppercase tracking-widest text-brandGold-500">05 / Credentials</p>
+          <p class="text-sm font-extrabold uppercase tracking-widest text-brandGold-500">06 / Credentials</p>
           <h2 class="text-3xl sm:text-4xl font-extrabold text-executiveSlate-950 dark:text-white mt-4 tracking-tight leading-none mb-12">
             Education &amp; Professional Badges
           </h2>
@@ -1015,7 +1134,7 @@
               <div>
                 <p class="text-[12.5px] font-bold uppercase tracking-wider text-executiveSlate-400 dark:text-executiveSlate-500">University of Mindanao</p>
                 <p class="text-base font-extrabold text-executiveSlate-950 dark:text-white mt-0.5">B.S. Business Administration</p>
-                <p class="text-sm text-executiveSlate-500 dark:text-executiveSlate-400 font-normal mt-0.5">Major in Marketing Management (2023 — 2027)</p>
+                <p class="text-sm text-executiveSlate-500 dark:text-executiveSlate-400 font-normal mt-0.5">Major in Marketing Management (2023 to 2027)</p>
               </div>
             </div>
 
@@ -1129,12 +1248,12 @@
   <section id="verification" class="py-24 border-t border-executiveSlate-100 dark:border-executiveSlate-900 bg-white dark:bg-executiveSlate-950">
     <div class="max-w-7xl mx-auto px-6">
       <div class="max-w-3xl mb-4">
-        <p class="text-sm font-extrabold uppercase tracking-widest text-brandGold-500">06 / Due Diligence</p>
+        <p class="text-sm font-extrabold uppercase tracking-widest text-brandGold-500">07 / Due Diligence</p>
         <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-executiveSlate-950 dark:text-white mt-4 tracking-tight leading-none">
           Verification &amp; Documentation
         </h2>
         <p class="text-base text-executiveSlate-600 dark:text-executiveSlate-300 mt-4 font-semibold leading-relaxed">
-          Everything a hiring team needs to vet fit, fast — one click, no forms to fill out.
+          Everything a hiring team needs to vet fit, fast, with one click and no forms to fill out.
         </p>
       </div>
 
@@ -1208,7 +1327,7 @@
   <section id="testimonials" class="py-24 border-t border-executiveSlate-100 dark:border-executiveSlate-900 bg-white dark:bg-executiveSlate-950">
     <div class="max-w-7xl mx-auto px-6">
       <div class="max-w-3xl mb-16">
-        <p class="text-sm font-extrabold uppercase tracking-widest text-brandGold-500">07 / Executive References</p>
+        <p class="text-sm font-extrabold uppercase tracking-widest text-brandGold-500">08 / Executive References</p>
         <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-executiveSlate-950 dark:text-white mt-4 tracking-tight leading-none">
           Trusted by operations leads and founders.
         </h2>
@@ -1425,6 +1544,92 @@
 </footer>
 
 <script>
+const ARTICLES = {"aspen-second-home": {"title": "Buying a Second Home in Aspen, CO: 7 Things Every Buyer Should Consider", "category": "Real Estate", "date": "October 2026", "read": "6 min read", "hero": "https://images.unsplash.com/photo-1524429656589-6633a470097c?auto=format&fit=crop&w=1800&q=80", "alt": "Mountain lake at sunset beneath alpine peaks", "credit": "Photo by Mike Scheid on Unsplash", "body": "<p>Aspen, Colorado, offers more than a beautiful mountain setting. It provides access to four renowned ski areas, year-round outdoor recreation, a distinctive dining and cultural scene, and a residential market shaped by limited mountain land and highly desirable locations.<\/p>\n<p>For buyers considering a second home in Aspen, the decision involves more than finding a property with impressive views or convenient ski access. Ownership requires understanding the local market, evaluating ongoing expenses, considering property management, and determining how the home will fit into a long-term ownership strategy.<\/p>\n<p>Whether you are considering a mountain residence for personal use, a family retreat, or a potential investment, here are seven important considerations before purchasing.<\/p>\n<figure class=\"art-fig\"><img src=\"https://images.unsplash.com/photo-1581278968429-f3bc2a29a1dc?auto=format&fit=crop&w=1400&q=80\" alt=\"Snow-capped peaks rising above evergreen forest\" loading=\"lazy\" onerror=\"this.parentNode.style.display='none'\"><figcaption>Photo by Caleb Kastein on Unsplash<\/figcaption><\/figure><h2 class=\"art-h2\">1. Understand the Different Areas of Aspen and Snowmass<\/h2>\n<p>Location plays a significant role in the ownership experience.<\/p>\n<p>Aspen and Snowmass Village offer different residential environments, even though they are part of the same broader mountain destination.<\/p>\n<p>Aspen is known for its established downtown, luxury residences, dining, shopping, cultural attractions, and proximity to Aspen Mountain. Buyers who prioritize walkability and access to town amenities may find these characteristics particularly appealing.<\/p>\n<p>Snowmass Village offers a different experience, with a mountain-oriented setting, resort access, and a variety of residential communities. Some buyers are drawn to its ski-oriented lifestyle and the opportunity to enjoy a more resort-focused environment.<\/p>\n<p>Other surrounding communities and neighborhoods may offer different property configurations, privacy levels, access considerations, and ownership opportunities.<\/p>\n<p>Before narrowing your search, consider:<\/p>\n<ul class=\"art-ul\">\n<li>How frequently will you use the property?<\/li>\n<li>Is proximity to skiing or downtown amenities important?<\/li>\n<li>Do you prefer a private residential setting or a resort community?<\/li>\n<li>Will family members or guests regularly use the home?<\/li>\n<li>How important is convenient access during winter weather?<\/li>\n<\/ul>\n<p>The right location should support how you actually intend to use the property.<\/p>\n<h2 class=\"art-h2\">2. Evaluate the Full Cost of Ownership<\/h2>\n<p>The purchase price is only one component of owning a second home.<\/p>\n<p>Mountain properties can involve additional expenses related to maintenance, seasonal preparation, utilities, insurance, property taxes, and professional management.<\/p>\n<p>Before making an offer, develop a realistic ownership budget.<\/p>\n<p>Consider reviewing:<\/p>\n<ul class=\"art-ul\">\n<li>Property taxes and applicable assessments.<\/li>\n<li>Homeowners insurance and additional coverage requirements.<\/li>\n<li>Heating, electricity, water, and other utilities.<\/li>\n<li>Snow removal, landscaping, and exterior maintenance.<\/li>\n<li>Routine repairs and preventative maintenance.<\/li>\n<li>Homeowners association fees, where applicable.<\/li>\n<li>Property management and housekeeping services.<\/li>\n<li>Furnishings, equipment, and replacement reserves.<\/li>\n<\/ul>\n<p>For properties that will remain unoccupied for extended periods, it is particularly important to understand how maintenance and inspections will be handled between visits.<\/p>\n<p>A comprehensive ownership budget helps buyers evaluate affordability beyond the initial transaction.<\/p>\n<h2 class=\"art-h2\">3. Review Property Management Requirements Before Purchasing<\/h2>\n<p>A second home requires attention even when the owner is not physically present.<\/p>\n<p>This is particularly relevant in mountain communities, where changing weather conditions, freezing temperatures, snowfall, and seasonal occupancy can create additional maintenance requirements.<\/p>\n<p>Depending on the property, owners may benefit from coordinating services such as:<\/p>\n<ul class=\"art-ul\">\n<li>Routine property inspections.<\/li>\n<li>Heating and plumbing checks.<\/li>\n<li>Snow removal and exterior maintenance.<\/li>\n<li>Housekeeping and property preparation.<\/li>\n<li>Vendor scheduling and repair coordination.<\/li>\n<li>Key and access management.<\/li>\n<li>Emergency response arrangements.<\/li>\n<\/ul>\n<p>Buyers should also determine whether an existing property management arrangement can continue after closing or whether a new service provider will be needed.<\/p>\n<p>The goal is to establish a reliable system for protecting the property and maintaining its condition throughout the year.<\/p>\n<h2 class=\"art-h2\">4. Understand Aspen's Short-Term Rental Regulations<\/h2>\n<p>Some buyers consider renting their second home when they are not using it. However, rental potential should never be assumed based solely on a property's location or previous rental activity.<\/p>\n<p>The City of Aspen and unincorporated Pitkin County have separate short-term rental regulatory frameworks.<\/p>\n<p>Within Aspen city limits, residential properties rented for periods of fewer than 30 days generally require the appropriate short-term rental permit and business licensing. Aspen has different permit categories, including Classic, Owner-Occupied, and Lodging Exempt permits.<\/p>\n<p>Certain permit types are subject to restrictions, including eligibility requirements and potential permit availability limitations in capped zones.<\/p>\n<p>Properties outside Aspen city limits may instead fall under Pitkin County's short-term rental regulations.<\/p>\n<p>These distinctions make property-specific due diligence essential.<\/p>\n<p>Before purchasing a property with rental intentions, buyers should:<\/p>\n<ol class=\"art-ol\">\n<li>Confirm whether the property is within Aspen city limits or unincorporated Pitkin County.<\/li>\n<li>Identify the applicable short-term rental regulations.<\/li>\n<li>Verify the property's zoning and rental eligibility.<\/li>\n<li>Review existing permits and licensing requirements.<\/li>\n<li>Confirm applicable homeowners association or condominium restrictions.<\/li>\n<li>Evaluate potential operating expenses and tax obligations.<\/li>\n<\/ol>\n<p>An existing rental history does not automatically guarantee that a permit or rental arrangement will transfer to a new owner.<\/p>\n<p>Buyers should verify current requirements directly with the appropriate local authorities and qualified legal or tax professionals.<\/p>\n<h2 class=\"art-h2\">5. Look Beyond the Interior and Evaluate the Property's Condition<\/h2>\n<p>A property's appearance is important, but its underlying condition deserves equal attention.<\/p>\n<p>Mountain homes can have property-specific considerations related to elevation, weather exposure, access, and building systems.<\/p>\n<p>During due diligence, buyers should pay attention to:<\/p>\n<ul class=\"art-ul\">\n<li>Roof condition and snow-load considerations.<\/li>\n<li>Heating systems and insulation.<\/li>\n<li>Plumbing and freeze protection.<\/li>\n<li>Windows, doors, and exterior materials.<\/li>\n<li>Drainage and water management.<\/li>\n<li>Driveways and winter accessibility.<\/li>\n<li>Decks, patios, and outdoor structures.<\/li>\n<li>Any available maintenance and improvement records.<\/li>\n<\/ul>\n<p>A qualified home inspector and other appropriate specialists can help identify issues that may not be immediately visible during a property tour.<\/p>\n<p>Understanding the property's condition before closing can help buyers plan future maintenance and avoid unexpected expenses.<\/p>\n<h2 class=\"art-h2\">6. Consider How the Property Fits Your Long-Term Goals<\/h2>\n<p>Not every second-home purchase serves the same purpose.<\/p>\n<p>Some buyers prioritize personal enjoyment and family use. Others are interested in long-term ownership, portfolio diversification, or potential rental income where permitted.<\/p>\n<p>These objectives can influence the type of property worth considering.<\/p>\n<p>For example, a buyer seeking a private family retreat may prioritize space, privacy, and a particular residential setting. Someone who values convenient access to restaurants, shopping, and skiing may place greater importance on location and accessibility.<\/p>\n<p>Buyers should establish their priorities before comparing properties.<\/p>\n<p>Useful questions include:<\/p>\n<ul class=\"art-ul\">\n<li>Is this primarily a lifestyle purchase or an investment?<\/li>\n<li>How many weeks per year will the property be occupied?<\/li>\n<li>Will the property need to accommodate extended family?<\/li>\n<li>Are future renovations or improvements anticipated?<\/li>\n<li>How long do you expect to own the property?<\/li>\n<li>What level of ongoing management are you comfortable coordinating?<\/li>\n<\/ul>\n<p>Clear ownership objectives make it easier to evaluate opportunities based on suitability rather than appearance alone.<\/p>\n<h2 class=\"art-h2\">7. Work With Local Professionals Who Understand the Market<\/h2>\n<p>Purchasing property in Aspen involves multiple considerations that benefit from local knowledge.<\/p>\n<p>A qualified real estate professional can help buyers understand available properties, neighborhood characteristics, market conditions, and transaction considerations.<\/p>\n<p>Depending on the property and purchase objectives, buyers may also need assistance from:<\/p>\n<ul class=\"art-ul\">\n<li>Real estate attorneys.<\/li>\n<li>Tax professionals.<\/li>\n<li>Mortgage and financing specialists.<\/li>\n<li>Home inspectors.<\/li>\n<li>Insurance providers.<\/li>\n<li>Property managers.<\/li>\n<li>Land-use and planning professionals.<\/li>\n<\/ul>\n<p>A coordinated team can help buyers evaluate the property from different perspectives before making a significant financial commitment.<\/p>\n<h2 class=\"art-h2\">Finding the Right Second Home in Aspen<\/h2>\n<p>Buying a second home in Aspen is an important lifestyle and financial decision. The strongest purchase decisions begin with a clear understanding of the buyer's objectives, the property's condition, its ongoing ownership requirements, and the local regulations that may affect its use.<\/p>\n<p>A well-chosen property should not only meet your expectations today but also support your plans for ownership in the years ahead.<\/p>\n<p>If you are considering buying a home in Aspen or Snowmass Village, working with a knowledgeable local real estate team can help you explore available opportunities and make a more informed decision.<\/p>\n<p><strong>Interested in exploring Aspen and Snowmass real estate?<\/strong> Connect with a local real estate professional to discuss your property goals, preferred locations, and next steps.<\/p><p class=\"art-note\">This article is provided for general educational purposes and is not legal, tax, investment, or property-specific advice. Short-term rental regulations and requirements should be verified with the applicable local authority before purchasing or operating a rental property.<\/p>"}, "mountain-home-readiness": {"title": "A Better Way to Manage a Mountain Home: A Seasonal Property Readiness Checklist for Aspen Homeowners", "category": "Property Operations", "date": "October 2026", "read": "6 min read", "hero": "https://images.unsplash.com/photo-1484255877288-39571777fade?auto=format&fit=crop&w=1800&q=80", "alt": "Snow-covered mountain chalet in winter", "credit": "Photo by Toa Heftiba on Unsplash", "body": "<p>Owning a home in Aspen or Snowmass Village is an opportunity to enjoy the mountain lifestyle throughout the year. However, maintaining a property in a seasonal environment requires consistent attention, even when the owner is away.<\/p>\n<p>A home that sits unoccupied for several weeks or months still needs monitoring, preventative maintenance, and coordination with reliable service providers.<\/p>\n<p>Without a documented system, important responsibilities can become scattered across emails, text messages, vendor conversations, and personal reminders.<\/p>\n<p>A structured property readiness process helps homeowners and property managers stay organized, identify potential issues early, and maintain a consistent standard of care.<\/p>\n<p>Here is a practical approach to organizing seasonal property management.<\/p>\n<figure class=\"art-fig\"><img src=\"https://images.unsplash.com/photo-1677219810381-b6b63ecb0354?auto=format&fit=crop&w=1400&q=80\" alt=\"Snowy Rocky Mountain range with pine trees in the foreground\" loading=\"lazy\" onerror=\"this.parentNode.style.display='none'\"><figcaption>Photo by Duong Vu on Unsplash<\/figcaption><\/figure><h2 class=\"art-h2\">1. Establish a Centralized Property Record<\/h2>\n<p>Every managed property should have one reliable source of information.<\/p>\n<p>Rather than storing important details across multiple spreadsheets and email conversations, create a centralized property record that authorized team members can reference.<\/p>\n<p>A property record should include:<\/p>\n<div class=\"art-table-wrap\"><table class=\"art-table\">\n<thead>\n<tr>\n<th>Information<\/th>\n<th>Details to Maintain<\/th>\n<\/tr>\n<\/thead>\n<tbody>\n<tr>\n<td>Property identification<\/td>\n<td>Property name, address, internal property ID<\/td>\n<\/tr>\n<tr>\n<td>Ownership<\/td>\n<td>Authorized owner and representative contacts<\/td>\n<\/tr>\n<tr>\n<td>Property details<\/td>\n<td>Bedrooms, bathrooms, square footage, key features<\/td>\n<\/tr>\n<tr>\n<td>Access<\/td>\n<td>Authorized access procedures and key-control records<\/td>\n<\/tr>\n<tr>\n<td>Utilities<\/td>\n<td>Service providers and account references<\/td>\n<\/tr>\n<tr>\n<td>Systems<\/td>\n<td>Heating, plumbing, security, and other equipment<\/td>\n<\/tr>\n<tr>\n<td>Vendors<\/td>\n<td>Approved contractors and service contacts<\/td>\n<\/tr>\n<tr>\n<td>Documents<\/td>\n<td>Inspection reports, warranties, manuals, and service records<\/td>\n<\/tr>\n<tr>\n<td>Maintenance<\/td>\n<td>Recurring tasks, last service date, next due date<\/td>\n<\/tr>\n<tr>\n<td>Emergency procedures<\/td>\n<td>Escalation contacts and response instructions<\/td>\n<\/tr>\n<\/tbody>\n<\/table><\/div>\n<p>Sensitive information, including passwords, access codes, and financial credentials, should not be stored in an unsecured spreadsheet. Use approved secure systems with role-based access.<\/p>\n<p>The objective is to make property information easy to locate without compromising client confidentiality.<\/p>\n<h2 class=\"art-h2\">2. Create a Seasonal Maintenance Schedule<\/h2>\n<p>A seasonal maintenance calendar helps ensure that recurring responsibilities are not forgotten.<\/p>\n<p>Instead of relying on memory, organize tasks around the property's operating needs and local conditions.<\/p>\n<h3 class=\"art-h3\">Before Winter<\/h3>\n<p>Winter preparation should focus on heating reliability, freeze prevention, safe access, and emergency readiness.<\/p>\n<p>Recommended coordination items include:<\/p>\n<ul class=\"art-ul\">\n<li>Confirm that heating systems have received appropriate servicing.<\/li>\n<li>Review plumbing and freeze-protection procedures.<\/li>\n<li>Inspect weatherstripping, windows, and exterior doors.<\/li>\n<li>Confirm snow removal arrangements and service expectations.<\/li>\n<li>Review roof and drainage maintenance requirements with qualified professionals.<\/li>\n<li>Test approved security and monitoring systems.<\/li>\n<li>Confirm emergency vendor availability.<\/li>\n<li>Prepare an updated winter emergency contact sheet.<\/li>\n<\/ul>\n<h3 class=\"art-h3\">During Winter<\/h3>\n<p>Winter property monitoring should focus on maintaining safe operating conditions and responding promptly to issues.<\/p>\n<p>A recurring inspection schedule may include:<\/p>\n<ul class=\"art-ul\">\n<li>Reviewing available temperature and system alerts.<\/li>\n<li>Checking for signs of water leaks or unusual conditions.<\/li>\n<li>Confirming that access routes are maintained.<\/li>\n<li>Reviewing completed snow removal services.<\/li>\n<li>Coordinating repairs and vendor visits.<\/li>\n<li>Documenting any property concerns.<\/li>\n<li>Providing owners with updates when attention is required.<\/li>\n<\/ul>\n<h3 class=\"art-h3\">Before Summer<\/h3>\n<p>As winter transitions into warmer months, attention shifts toward exterior conditions, seasonal systems, and outdoor maintenance.<\/p>\n<p>Recommended items include:<\/p>\n<ul class=\"art-ul\">\n<li>Inspecting exterior surfaces and accessible drainage areas.<\/li>\n<li>Coordinating qualified inspections for any winter-related damage.<\/li>\n<li>Scheduling landscaping and grounds maintenance.<\/li>\n<li>Checking outdoor lighting and approved equipment.<\/li>\n<li>Reviewing irrigation requirements, where applicable.<\/li>\n<li>Confirming seasonal vendor schedules.<\/li>\n<li>Updating the property inventory after any replacements or repairs.<\/li>\n<\/ul>\n<h3 class=\"art-h3\">During Summer<\/h3>\n<p>Summer maintenance should focus on consistent upkeep and preparing for future seasonal transitions.<\/p>\n<p>This may include landscaping coordination, exterior cleaning, routine system checks, maintenance follow-ups, and documenting completed services.<\/p>\n<p>All maintenance should be assigned according to the property's actual systems, professional recommendations, and owner-approved requirements.<\/p>\n<h2 class=\"art-h2\">3. Maintain a Vendor and Service Provider Directory<\/h2>\n<p>Property management often involves coordinating several service providers.<\/p>\n<p>A centralized vendor directory makes it easier to identify who is responsible for a particular service and whether a scheduled job has been completed.<\/p>\n<p>A practical vendor tracker should include:<\/p>\n<div class=\"art-table-wrap\"><table class=\"art-table\">\n<thead>\n<tr>\n<th>Field<\/th>\n<th>Purpose<\/th>\n<\/tr>\n<\/thead>\n<tbody>\n<tr>\n<td>Vendor ID<\/td>\n<td>Unique reference number<\/td>\n<\/tr>\n<tr>\n<td>Company / Contact<\/td>\n<td>Business name and primary contact<\/td>\n<\/tr>\n<tr>\n<td>Service Category<\/td>\n<td>HVAC, plumbing, housekeeping, landscaping, etc.<\/td>\n<\/tr>\n<tr>\n<td>Contact Information<\/td>\n<td>Approved phone number and email<\/td>\n<\/tr>\n<tr>\n<td>Assigned Property<\/td>\n<td>Property or properties serviced<\/td>\n<\/tr>\n<tr>\n<td>Service Frequency<\/td>\n<td>One-time, monthly, seasonal, or as needed<\/td>\n<\/tr>\n<tr>\n<td>Last Service Date<\/td>\n<td>Most recent completed visit<\/td>\n<\/tr>\n<tr>\n<td>Next Scheduled Date<\/td>\n<td>Upcoming appointment<\/td>\n<\/tr>\n<tr>\n<td>Status<\/td>\n<td>Active, Pending, Completed, or On Hold<\/td>\n<\/tr>\n<tr>\n<td>Notes<\/td>\n<td>Scope, follow-up items, and relevant observations<\/td>\n<\/tr>\n<\/tbody>\n<\/table><\/div>\n<p>Every vendor assignment should have a clear scope, expected completion date, and confirmation process.<\/p>\n<p>For example, a heating system inspection should not simply be marked as scheduled. The record should eventually show whether the vendor attended, whether the service was completed, whether a report was received, and whether additional work was recommended.<\/p>\n<h2 class=\"art-h2\">4. Use a Documented Maintenance Request Process<\/h2>\n<p>A maintenance request should move through a consistent workflow.<\/p>\n<p>Without a defined process, requests can remain unresolved because nobody knows who owns the next step.<\/p>\n<p>A simple process can follow these stages:<\/p>\n<p><strong>Step 1: Receive and Record<\/strong><\/p>\n<p>Record the reported issue, property, date received, person reporting it, and any supporting photographs or documents.<\/p>\n<p><strong>Step 2: Assess and Prioritize<\/strong><\/p>\n<p>Determine whether the request is routine, time-sensitive, or an emergency. Escalate safety-related and urgent issues according to the property's approved emergency procedures.<\/p>\n<p><strong>Step 3: Obtain Authorization<\/strong><\/p>\n<p>Confirm the appropriate owner or authorized representative's approval when required before proceeding with non-emergency work.<\/p>\n<p><strong>Step 4: Assign a Vendor<\/strong><\/p>\n<p>Contact the appropriate approved service provider and confirm the scope, availability, and expected completion date.<\/p>\n<p><strong>Step 5: Track Completion<\/strong><\/p>\n<p>Update the maintenance record with the appointment date, service outcome, invoice or report reference, and any remaining work.<\/p>\n<p><strong>Step 6: Close the Request<\/strong><\/p>\n<p>Verify completion, file supporting documents, update the property's maintenance history, and communicate the outcome to the appropriate contact.<\/p>\n<p>A maintenance request should only be marked complete when the work has been verified and any necessary follow-up has been recorded.<\/p>\n<h2 class=\"art-h2\">5. Keep Property Inventory and Furnishings Accountable<\/h2>\n<p>For furnished homes, inventory management is another important part of maintaining property standards.<\/p>\n<p>A simple inventory tracker can help document furnishings, appliances, equipment, and household supplies.<\/p>\n<p>Consider tracking:<\/p>\n<ul class=\"art-ul\">\n<li>Item name and category.<\/li>\n<li>Assigned property and room.<\/li>\n<li>Quantity.<\/li>\n<li>Purchase or installation date, when available.<\/li>\n<li>Condition.<\/li>\n<li>Warranty information, where applicable.<\/li>\n<li>Replacement or maintenance requirements.<\/li>\n<li>Last verification date.<\/li>\n<\/ul>\n<p>For example, if a property has multiple guest bedrooms, the inventory should identify the furnishings and essential items associated with each room.<\/p>\n<p>This makes it easier to identify missing items, coordinate replacements, and maintain consistent property presentation.<\/p>\n<p>Photographic documentation can also help establish a useful reference for future inspections.<\/p>\n<h2 class=\"art-h2\">6. Build a Simple Weekly Property Operations Report<\/h2>\n<p>Homeowners should not have to request multiple updates to understand the status of their property.<\/p>\n<p>A short, consistent weekly report can provide visibility into completed work, outstanding responsibilities, and decisions requiring attention.<\/p>\n<p>A useful report can follow three headings:<\/p>\n<h3 class=\"art-h3\">Done<\/h3>\n<ul class=\"art-ul\">\n<li>Completed maintenance visits.<\/li>\n<li>Confirmed vendor services.<\/li>\n<li>Updated property records.<\/li>\n<li>Completed inspections.<\/li>\n<li>Filed service reports and invoices.<\/li>\n<\/ul>\n<h3 class=\"art-h3\">Open<\/h3>\n<ul class=\"art-ul\">\n<li>Pending repairs.<\/li>\n<li>Upcoming maintenance appointments.<\/li>\n<li>Vendor responses awaiting confirmation.<\/li>\n<li>Items requiring additional inspection.<\/li>\n<li>Outstanding documentation.<\/li>\n<\/ul>\n<h3 class=\"art-h3\">Needs a Decision<\/h3>\n<ul class=\"art-ul\">\n<li>Repairs requiring owner authorization.<\/li>\n<li>Replacement recommendations.<\/li>\n<li>Unexpected expenses.<\/li>\n<li>Changes to previously approved work.<\/li>\n<li>Scheduling decisions affecting property access.<\/li>\n<\/ul>\n<p>Each outstanding item should have an assigned owner, next action, and target date.<\/p>\n<p>This keeps the report concise while making accountability visible.<\/p>\n<h2 class=\"art-h2\">7. Maintain a Reliable Property Management Document System<\/h2>\n<p>Good property management depends on accurate records.<\/p>\n<p>A recommended Google Drive structure for an individual property might look like this:<\/p>\n<p><strong>Property Name<\/strong>\n- 01 - Ownership &amp; Property Information\n- 02 - Inspections &amp; Maintenance\n- 03 - Vendors &amp; Service Agreements\n- 04 - Furnishings &amp; Inventory\n- 05 - Utilities &amp; Subscriptions\n- 06 - Insurance &amp; Warranties\n- 07 - Financial &amp; Expense Records\n- 08 - Owner Communications\n- 09 - Seasonal Checklists\n- 10 - Historical Records<\/p>\n<p>Use consistent file naming conventions so documents can be located quickly.<\/p>\n<p>For example:<\/p>\n<p><code>PROPERTYID_YYYY-MM-DD_DOCUMENT-TYPE_VENDOR<\/code><\/p>\n<p>An example:<\/p>\n<p><code>ASP-001_2026-10-15_HVAC-SERVICE_REPORT<\/code><\/p>\n<p>Access should be limited to authorized personnel, and sensitive documents should follow the company's confidentiality and retention policies.<\/p>\n<h2 class=\"art-h2\">A More Organized Approach to Property Ownership<\/h2>\n<p>A well-maintained mountain home is supported by more than occasional inspections and reactive repairs. It requires a documented operating system that connects property records, maintenance schedules, vendor coordination, inventory, and owner communication.<\/p>\n<p>When these responsibilities are organized in one consistent workflow, property managers can spend less time searching for information and more time ensuring that important tasks are completed.<\/p>\n<p>For homeowners, that means better visibility and fewer surprises. For property management teams, it means clearer accountability, more reliable follow-through, and a repeatable standard of service.<\/p>\n<p><strong>The goal is simple: every property should have a clear record, every recurring responsibility should have an owner, and every outstanding issue should have a documented next step.<\/strong><\/p><p class=\"art-note\">Actual maintenance schedules, inspection procedures, emergency protocols, and vendor authorization requirements should be tailored to each property&#x27;s systems, owner instructions, and applicable professional recommendations.<\/p>"}};
+
+  // Article reader modal
+  (function () {
+    const modal = document.getElementById('articleModal');
+    const backdrop = document.getElementById('articleBackdrop');
+    const panel = document.getElementById('articlePanel');
+    const scroller = document.getElementById('articleScroller');
+    const bodyEl = document.getElementById('articleModalBody');
+    const closeBtn = document.getElementById('articleCloseBtn');
+    let lastFocus = null;
+    let closeTimer = null;
+
+    function esc(s) {
+      return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+    }
+
+    function render(a) {
+      return '' +
+        '<div class="relative aspect-[16/8] sm:aspect-[16/7] bg-gradient-to-br from-brandGold-100 to-executiveSlate-200 dark:from-executiveSlate-800 dark:to-executiveSlate-900">' +
+          '<img src="' + esc(a.hero) + '" alt="' + esc(a.alt) + '" class="w-full h-full object-cover" onerror="this.style.display=\'none\'">' +
+          '<div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>' +
+          '<span class="absolute bottom-3 right-4 text-[11px] text-white/80">' + esc(a.credit) + '</span>' +
+        '</div>' +
+        '<div class="px-6 sm:px-12 pt-8 pb-12">' +
+          '<span class="inline-block py-1 px-3 bg-brandGold-50 dark:bg-brandGold-900/20 text-brandGold-700 dark:text-brandGold-200 text-[11px] font-extrabold uppercase tracking-wider rounded-full border border-brandGold-200/40">' + esc(a.category) + '</span>' +
+          '<h2 id="articleModalTitle" class="text-2xl sm:text-4xl font-extrabold tracking-tight text-executiveSlate-950 dark:text-white mt-4 leading-tight">' + esc(a.title) + '</h2>' +
+          '<div class="mt-6 pb-6 border-b border-executiveSlate-100 dark:border-executiveSlate-800 flex flex-wrap items-center gap-x-4 gap-y-2">' +
+            '<span class="w-10 h-10 rounded-full bg-brandGold-500/10 dark:bg-brandGold-500/20 flex items-center justify-center text-brandGold-600 dark:text-brandGold-500 text-sm font-extrabold">K</span>' +
+            '<span><span class="block text-sm font-extrabold text-executiveSlate-950 dark:text-white">By Kenneth James Ocon</span>' +
+            '<span class="block text-[12.5px] text-executiveSlate-500 dark:text-executiveSlate-400">' + esc(a.date) + ' &bull; ' + esc(a.read) + '</span></span>' +
+          '</div>' +
+          '<div class="art-body">' + a.body + '</div>' +
+        '</div>';
+    }
+
+    function openArticle(id, trigger) {
+      const a = ARTICLES[id];
+      if (!a) return;
+      clearTimeout(closeTimer);
+      lastFocus = trigger || document.activeElement;
+      bodyEl.innerHTML = render(a);
+      modal.classList.remove('hidden');
+      document.body.classList.add('modal-open');
+      scroller.scrollTop = 0;
+      requestAnimationFrame(() => {
+        backdrop.classList.remove('opacity-0');
+        panel.classList.remove('opacity-0', 'translate-y-6', 'scale-[0.98]');
+      });
+      closeBtn.focus({ preventScroll: true });
+      try { history.replaceState(null, '', '#article-' + id); } catch (e) {}
+    }
+
+    function closeArticle() {
+      if (modal.classList.contains('hidden')) return;
+      backdrop.classList.add('opacity-0');
+      panel.classList.add('opacity-0', 'translate-y-6', 'scale-[0.98]');
+      closeTimer = setTimeout(() => {
+        modal.classList.add('hidden');
+        document.body.classList.remove('modal-open');
+        bodyEl.innerHTML = '';
+        if (lastFocus && lastFocus.focus) lastFocus.focus({ preventScroll: true });
+      }, 300);
+      try { history.replaceState(null, '', '#articles'); } catch (e) {}
+    }
+
+    document.querySelectorAll('.article-card').forEach(card => {
+      card.addEventListener('click', () => openArticle(card.dataset.article, card));
+    });
+    closeBtn.addEventListener('click', closeArticle);
+    scroller.addEventListener('click', (e) => { if (!panel.contains(e.target)) closeArticle(); });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeArticle();
+      if (e.key === 'Tab' && !modal.classList.contains('hidden')) {
+        const f = panel.querySelectorAll('a[href], button');
+        if (!f.length) return;
+        const first = f[0], last = f[f.length - 1];
+        if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+        else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+      }
+    });
+    // Deep link support, e.g. index.html#article-aspen-second-home
+    const m = location.hash.match(/^#article-(.+)$/);
+    if (m && ARTICLES[m[1]]) window.addEventListener('load', () => openArticle(m[1]));
+  })();
+
   // Mobile Navigation toggle controls
   const burgerBtn = document.getElementById('burgerBtn');
   const mobileMenu = document.getElementById('mobileMenu');
@@ -1530,11 +1735,11 @@
     [
       ['info', 'Stripe webhook received: charge.succeeded · event_id evt_3P9x...'],
       ['info', 'Verifying Stripe signature header against endpoint secret...'],
-      ['success', 'Signature valid. Idempotency key not seen before — processing.'],
+      ['success', 'Signature valid. Idempotency key not seen before. Processing.'],
       ['info', 'Mapping Stripe metadata to QuickBooks Online Chart of Accounts via Make scenario "Stripe→QBO Sync"...'],
       ['warn', 'Customer record not found in QBO. Falling back to auto-create-customer branch.'],
       ['success', 'New QBO customer created and linked. customer_id cached for future syncs.'],
-      ['info', 'Posting journal entry: Revenue — Recurring Services...'],
+      ['info', 'Posting journal entry: Revenue: Recurring Services...'],
       ['success', 'Ledger entry posted. Running balance reconciled to the cent.'],
       ['info', 'Verifying reconciliation delta against Stripe payout report...'],
       ['success', 'Delta: $0.00. Zero-loss reconciliation confirmed.'],
@@ -1543,7 +1748,7 @@
     [
       ['info', 'Scheduled trigger fired: n8n cron node "Daily CRM Hygiene Sweep" (06:00 UTC).'],
       ['info', 'Scanning Airtable "Leads" table for duplicate email/phone fingerprints...'],
-      ['warn', '3 duplicate candidates flagged — running fuzzy-match confidence scoring.'],
+      ['warn', '3 duplicate candidates flagged. Running fuzzy-match confidence scoring.'],
       ['success', '3/3 duplicates confirmed and merged. Source-of-truth record preserved.'],
       ['info', 'Cross-checking merged records against HubSpot contact list via batch API...'],
       ['success', 'HubSpot sync complete. 3 contacts updated, 0 errors.'],
