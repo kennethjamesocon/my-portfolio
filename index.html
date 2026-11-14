@@ -13,14 +13,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="theme-color" content="#07070A">
 <meta name="color-scheme" content="dark light">
 <title>Kenneth James Ocon | Operations &amp; Systems Lead</title>
-<meta name="description" content="One operator who runs business operations through AI engineering: CRM, automations, reconciliation and reporting that replace nine specialist hires. Open to one client.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2307070A'/%3E%3Ctext x='32' y='45' font-size='38' font-weight='800' text-anchor='middle' fill='%23D4AF37' font-family='Arial'%3EK%3C/text%3E%3C/svg%3E">
+<meta name="description" content="One operator who runs business operations through AI engineering: CRM, automations, reconciliation and reporting that replace nine specialist hires.">
 <meta name="author" content="Kenneth James Ocon">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Kenneth James Ocon | Operations & Systems Lead">
-<meta property="og:description" content="One operator, AI-engineered operations, thousands saved in payroll. Open to one client.">
+<meta property="og:description" content="One operator, AI-engineered operations, thousands saved in payroll.">
 <meta property="og:image" content="https://lh3.googleusercontent.com/d/18AdZBsRuzA1JhhuJSCwqON7CFVzs06qJ=w1200">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Kenneth James Ocon | Operations &amp; Systems Lead">
+<meta name="twitter:description" content="One operator, AI-engineered operations.">
+<meta name="twitter:image" content="https://lh3.googleusercontent.com/d/18AdZBsRuzA1JhhuJSCwqON7CFVzs06qJ=w1200">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Kenneth James Ocon","jobTitle":"Operations & Systems Lead","email":"mailto:kennethjamesocon3@gmail.com","image":"https://lh3.googleusercontent.com/d/18AdZBsRuzA1JhhuJSCwqON7CFVzs06qJ=w800","sameAs":["https://linkedin.com/in/kennethjamesocon"],"alumniOf":{"@type":"CollegeOrUniversity","name":"University of Mindanao"},"knowsAbout":["Executive operations","AI engineering","CRM automation","GoHighLevel","HubSpot","n8n","Make","Airtable","Property operations"]}</script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-76SYTQHS0S"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-76SYTQHS0S');
@@ -54,6 +58,7 @@ window.addEventListener('DOMContentLoaded',sweep);window.addEventListener('load'
 
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<!-- TODO (production): replace this CDN with a compiled file: npx tailwindcss -o tw.css --minify, then <link rel="stylesheet" href="tw.css"> -->
 <script src="https://cdn.tailwindcss.com"></script>
 <script>tailwind.config={darkMode:'class',future:{hoverOnlyWhenSupported:true},theme:{extend:{colors:{gold:{50:'#FDFBF7',100:'#FCF7E8',200:'#F6E9C4',500:'#D4AF37',600:'#C5A028',700:'#9E7E1D'}},fontFamily:{sans:['"Plus Jakarta Sans"','sans-serif']}}}}</script>
 <style>
@@ -72,7 +77,7 @@ section[id]{scroll-margin-top:calc(3.5rem + env(safe-area-inset-top,0px))}.nl{tr
 .eyebrow{font-size:.75rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:#D4AF37}
 .h2{font-size:clamp(1.9rem,4vw,2.9rem);font-weight:800;letter-spacing:-.02em;line-height:1.05;margin-top:.6rem}
 .btn{display:inline-flex;align-items:center;gap:.5rem;font-weight:700;font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;padding:.9rem 1.6rem;border-radius:999px;transition:all .3s;position:relative;overflow:hidden}
-.btn-p{background:linear-gradient(135deg,#D4AF37,#C5A028);color:#fff;box-shadow:0 8px 24px -8px rgba(212,175,55,.6)}
+.btn-p{background:linear-gradient(135deg,#D4AF37,#C5A028);color:#1A1405;box-shadow:0 8px 24px -8px rgba(212,175,55,.6)}
 @media(hover:hover){.btn-p:hover{transform:translateY(-2px);box-shadow:0 12px 30px -8px rgba(212,175,55,.8)}}
 .btn-g{border:1px solid var(--bd);background:var(--card);backdrop-filter:blur(10px)}@media(hover:hover){.btn-g:hover{border-color:#D4AF37;color:#D4AF37;transform:translateY(-2px)}}
 .chip{font-size:.75rem;font-weight:600;padding:.25rem .7rem;border-radius:999px;border:1px solid var(--bd);background:var(--card)}
@@ -135,6 +140,12 @@ a,button,summary{touch-action:manipulation;-webkit-tap-highlight-color:transpare
 .stl,.std{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 @media(max-width:639px){.std{white-space:normal}}
 .stp::before{bottom:calc(50% + 10.5px)}.stp::after{top:calc(50% + 10.5px)}
+
+/* upgrades: proof tiles, light-mode contrast */
+.rtile small{display:block;font-size:10px;font-weight:500;opacity:.75;margin-top:2px}
+html:not(.dark) .text-gold-500,html:not(.dark) .eyebrow,html:not(.dark) .rtile-r{color:#7A5C0A}
+html:not(.dark) .btn-g:hover{color:#7A5C0A;border-color:#7A5C0A}
+html:not(.dark) .phead .text-gold-500,html:not(.dark) #term .text-gold-500,html:not(.dark) #kpi{color:#D4AF37}
 </style>
 </head>
 <body class="font-sans antialiased">
@@ -165,10 +176,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <section id="about" class="py-8 lg:py-12">
 <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-12 gap-10 items-center">
 <div class="lg:col-span-7 rv">
-<p class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-gold-500 mb-3"><span class="relative flex h-2 w-2"><span class="animate-ping absolute h-full w-full rounded-full bg-green-400 opacity-75"></span><span class="relative rounded-full h-2 w-2 bg-green-500"></span></span>Open to one client only*</p>
-<h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.05]">One operator. <span class="text-gold-500">Your entire marketing, finance, and operations department.</span></h1>
-<p class="mt-5 text-lg mut max-w-xl leading-relaxed">I'm Kenneth James Ocon. I run business operations through AI engineering by wiring Claude directly into your CRM, billing, creative, and project tools. Instead of hiring and managing nine separate specialists, you get one high-leverage operator who builds systems that run your executive ops, leads, projects, payments, and content on autopilot.</p>
-<div class="mt-[21px] max-w-xl"><p class="text-[11px] font-bold uppercase tracking-wider mut mb-[8px]">One operator replaces nine hires</p><div class="grid grid-cols-3 gap-[8px]"><span class="rtile">Executive Operations Lead</span><span class="rtile">AI &amp; Workflow Automation Engineer</span><span class="rtile">CRM Admin</span><span class="rtile">Project Manager</span><span class="rtile">Business Operations Coordinator</span><span class="rtile">Marketing Operations Lead</span><span class="rtile">Social Media &amp; Content Strategist</span><span class="rtile">Graphic Designer</span><span class="rtile">Bookkeeper</span><span class="rtile rtile-r col-span-3">= 1 Operator, one salary</span></div></div>
+<p class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-gold-500 mb-3"><span class="relative flex h-2 w-2"><span class="animate-ping absolute h-full w-full rounded-full bg-green-400 opacity-75"></span><span class="relative rounded-full h-2 w-2 bg-green-500"></span></span>Available for new projects</p>
+<h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.05]">One operator. <span class="text-gold-500">Your entire marketing and operations department.</span></h1>
+<p class="mt-5 text-lg mut max-w-xl leading-relaxed">I am Kenneth James Ocon. I design and run the operating system behind a business: leads, billing, projects, content and reporting, wired together with Claude, n8n, Make and your CRM. You get one accountable operator instead of nine hand-offs, and a company that runs the same way every day.</p>
+<div class="mt-[21px] max-w-xl"><p class="text-[11px] font-bold uppercase tracking-wider mut mb-[8px]">One operator replaces nine hires, each with proof</p><div class="grid grid-cols-3 gap-[8px]">
+<span class="rtile" style="flex-direction:column"><b>Executive Operations Lead</b><small>20% lower overhead</small></span>
+<span class="rtile" style="flex-direction:column"><b>AI &amp; Workflow Automation Engineer</b><small>$8,000 recovered from broken syncs</small></span>
+<span class="rtile" style="flex-direction:column"><b>CRM Admin</b><small>99.8% data integrity</small></span>
+<span class="rtile" style="flex-direction:column"><b>Project Manager</b><small>125+ deliverables, 100% on time</small></span>
+<span class="rtile" style="flex-direction:column"><b>Business Operations Coordinator</b><small>95%+ SOP adoption</small></span>
+<span class="rtile" style="flex-direction:column"><b>Marketing Operations Lead</b><small>15% better efficiency</small></span>
+<span class="rtile" style="flex-direction:column"><b>Social Media &amp; Content Strategist</b><small>500+ assets shipped</small></span>
+<span class="rtile" style="flex-direction:column"><b>Graphic Designer</b><small>Canva &amp; CapCut creatives</small></span>
+<span class="rtile" style="flex-direction:column"><b>Revenue Reconciliation</b><small>Stripe to QuickBooks workflow</small></span>
+<span class="rtile rtile-r col-span-3">= 1 Operator, one salary</span></div></div>
 <div class="mt-7 flex flex-wrap gap-3">
 <a href="https://calendly.com/kennethjamesocon3/new-meeting" target="_blank" rel="noopener" class="btn btn-p w-full sm:w-auto justify-center">Book a Free Strategy Call <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg></a>
 <a href="mailto:kennethjamesocon3@gmail.com" class="btn btn-g w-full sm:w-auto justify-center">Email your bottleneck</a>
@@ -181,7 +202,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </section>
 
 <!-- RESULTS -->
-<section class="pb-4"><div class="max-w-7xl mx-auto px-6 grid sm:grid-cols-2 lg:grid-cols-4 gap-[13px]" id="stats"></div></section>
+<section class="pb-4"><div class="max-w-7xl mx-auto px-6 grid sm:grid-cols-2 lg:grid-cols-4 gap-[13px]" id="stats"></div><div class="max-w-7xl mx-auto px-6 mt-3 text-xs mut">Figures come from client work at SalesElite Consulting (2025 to 2026) and earlier engagements. Method and scope available on request.</div></section>
 
 <!-- EXPERIENCE -->
 <section id="experience" class="sec"><div class="max-w-7xl mx-auto px-6">
@@ -190,30 +211,40 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <!-- PROJECTS -->
 <section id="projects" class="sec"><div class="max-w-7xl mx-auto px-6">
-<div class="flex items-end justify-between gap-6 rv"><div><p class="eyebrow">PROJECTS</p><h2 class="h2">Problems solved, with the blueprint.</h2><p class="mut mt-2 text-sm">Each build has an execution map. <a href="#demo" class="text-gold-500 font-bold">Live demo</a> · <a href="#diagrams" class="text-gold-500 font-bold">Logic maps</a></p></div>
+<div class="flex items-end justify-between gap-6 rv"><div><p class="eyebrow">PROJECTS</p><h2 class="h2">Problems solved, with the blueprint.</h2><p class="mut mt-2 text-sm">Each build has an execution map. <a href="#systems" class="text-gold-500 font-bold">Live demo</a> · <a href="#diagrams" class="text-gold-500 font-bold">Logic maps</a></p></div>
 </div>
 <div id="pc" class="grid md:grid-cols-2 lg:grid-cols-3 md:[&>*:last-child]:col-span-2 lg:[&>*:last-child]:col-span-1 gap-[13px] mt-[21px]"></div></div></section>
 
-<!-- LIVE DEMO -->
-<section id="demo" class="sec"><div class="max-w-7xl mx-auto px-6">
-<div class="max-w-3xl rv"><p class="eyebrow">LIVE DEMO</p><h2 class="h2">Watch the full stack work together.</h2><p class="mut mt-3">Every workflow here mirrors a diagram in Logical Mapping below. Run one, or run the full stack end to end. Every run shows how your leads, payments and records move between tools with validation, error handling and alerts built in.</p></div>
+<!-- SYSTEMS: live demo + logical mapping merged -->
+<section id="systems" class="sec"><div class="max-w-7xl mx-auto px-6">
+<div class="max-w-3xl rv"><p class="eyebrow">SYSTEMS</p><h2 class="h2">Watch the stack work, then open the blueprint.</h2><p class="mut mt-3">Every workflow here mirrors a diagram in the logic maps below. Run one, or run the full stack end to end. Every run shows how your leads, payments and records move between tools with validation, error handling and alerts built in.</p></div>
 <div class="glass mt-[21px] tile-xl rv">
 <div id="tabs" class="flex flex-wrap gap-2 mb-6"></div>
 <div class="grid lg:grid-cols-2 gap-[21px]">
 <div><div id="steps" class="flex flex-col gap-[8px]"></div>
-<div class="mt-4 flex flex-wrap gap-3"><button id="run" class="btn btn-p">Run this workflow</button><button id="runAll" class="btn btn-g">Run full stack</button><button id="stop" class="btn btn-g hidden">Stop</button></div><p class="text-xs mut mt-3">Each step runs for 7 seconds so you can follow the process.</p></div>
+<div class="mt-4 flex flex-wrap gap-3"><button id="run" class="btn btn-p">Run this workflow</button><button id="runAll" class="btn btn-g">Run full stack</button><button id="stop" class="btn btn-g hidden">Stop</button></div><p class="text-xs mut mt-3">Each step runs for 7 seconds so you can follow the process.</p><span class="chip inline-block mt-3 text-gold-500">Simulated workflow. Mirrors a real build, no live client data.</span></div>
 <div class="rounded-2xl p-5 font-mono text-sm min-h-[377px] max-h-[377px] flex flex-col" style="background:#05050A;border:1px solid rgba(255,255,255,.1)">
 <div class="flex justify-between pb-3 mb-3 text-[12px] font-bold uppercase tracking-wider text-zinc-500" style="border-bottom:1px solid rgba(255,255,255,.1)"><span>Integration logs</span><span id="kpi" class="text-gold-500"></span></div>
 <div id="term" class="flex flex-col gap-1.5 overflow-y-auto sn flex-1 text-zinc-300 break-words text-[13px] sm:text-sm"><p class="text-zinc-500">// Ready. Choose a workflow and press run.</p></div></div>
-</div></div></div></section>
-
-<!-- DIAGRAMS -->
-<section id="diagrams" class="sec"><div class="max-w-7xl mx-auto px-6">
+</div></div>
+<div id="diagrams" class="mt-16">
 <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 rv"><div class="max-w-2xl"><p class="eyebrow">LOGICAL MAPPING</p><h2 class="h2">See exactly how each system is wired.</h2><p class="mut mt-3">Every build starts as a logic map: triggers, validation, data destinations and failure paths. Claude is the central hub for prompts and multi-platform integration. Open any diagram to see the blueprint.</p></div>
 <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=70" alt="" aria-hidden="true" class="hidden md:block w-56 h-28 object-cover rounded-2xl opacity-80" loading="lazy"></div>
-<div id="dg" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-[13px] mt-[21px]"></div></div></section>
+<div id="dg" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-[13px] mt-[21px]"></div></div></div></section>
 
 <div class="max-w-7xl mx-auto px-6 pb-6"><div class="glass tile-s flex flex-col md:flex-row items-center justify-between gap-4"><div><p class="font-extrabold text-lg">Replace 9 specialist hires with 1 operator.</p><p class="text-sm mut">Executive operations, marketing, automation, CRM, project management and reporting in one person, saving you thousands every month.</p></div><a href="https://calendly.com/kennethjamesocon3/new-meeting" target="_blank" rel="noopener" class="btn btn-p shrink-0">Map my automation plan</a></div></div>
+
+<!-- PAYROLL MATH -->
+<section id="savings" class="sec"><div class="max-w-7xl mx-auto px-6"><div class="max-w-3xl rv"><p class="eyebrow">PAYROLL MATH</p><h2 class="h2">What nine hires cost versus one operator.</h2><p class="mut mt-3">Illustrative monthly salaries. Edit any figure or untick roles you would not hire.</p></div><div id="calc" class="glass tile-xl mt-[21px]"></div></div></section>
+
+<!-- OFFER -->
+<section id="offer" class="sec"><div class="max-w-7xl mx-auto px-6"><div class="max-w-3xl rv"><p class="eyebrow">OFFER</p><h2 class="h2">Three ways to work together.</h2></div>
+<div class="grid md:grid-cols-3 gap-[13px] mt-[21px]">
+<div class="glass tile rv"><p class="eyebrow">01 &bull; Audit</p><h3 class="font-extrabold text-lg mt-2">Operations Audit</h3><p class="text-sm mut mt-2">A written audit and logic map of your tools, bottlenecks and savings.</p><p class="text-xs font-bold text-gold-500 mt-4">About 1 week</p></div>
+<div class="glass tile rv"><p class="eyebrow">02 &bull; Build</p><h3 class="font-extrabold text-lg mt-2">System Build</h3><p class="text-sm mut mt-2">One workflow family built, tested on sample data and handed off with SOPs.</p><p class="text-xs font-bold text-gold-500 mt-4">About 2 to 4 weeks</p></div>
+<div class="glass tile rv"><p class="eyebrow">03 &bull; Run</p><h3 class="font-extrabold text-lg mt-2">Monthly Operator Retainer</h3><p class="text-sm mut mt-2">I run operations, reporting and improvements on an ongoing basis.</p><p class="text-xs font-bold text-gold-500 mt-4">Month to month</p></div></div>
+<div class="glass tile mt-[13px] rv"><p class="eyebrow">How we start</p><ol class="grid sm:grid-cols-4 gap-3 mt-3 text-sm"><li><b>1. Book a call.</b><br><span class="mut">30 minutes on your bottlenecks.</span></li><li><b>2. Audit.</b><br><span class="mut">Tools, owners, failure points.</span></li><li><b>3. Approve the map.</b><br><span class="mut">Scope and metrics agreed first.</span></li><li><b>4. Build and hand off.</b><br><span class="mut">Tested, documented, yours.</span></li></ol></div></div></section>
+
 <!-- SAMPLES -->
 <section id="samples" class="sec"><div class="max-w-7xl mx-auto px-6">
 <div class="max-w-3xl rv"><p class="eyebrow">WORK SAMPLES</p><h2 class="h2">Real deliverables you can open now.</h2></div>
@@ -222,14 +253,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <!-- ARTICLES -->
 <section id="articles" class="sec"><div class="max-w-7xl mx-auto px-6">
-<div class="max-w-3xl rv"><p class="eyebrow">BLOGS</p><h2 class="h2">Practical writing on property operations.</h2></div>
+<div class="max-w-3xl rv"><p class="eyebrow">BLOGS</p><h2 class="h2">Field notes on AI-driven operations.</h2></div>
 <div id="ar" class="grid md:grid-cols-2 gap-[21px] mt-[21px]"></div></div></section>
 
 <!-- STACK -->
 <section id="stack" class="sec"><div class="max-w-7xl mx-auto px-6">
 <div class="max-w-3xl rv"><p class="eyebrow">STACK</p><h2 class="h2">The stack behind your results.</h2></div>
 <div id="sk" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-[13px] mt-[21px]"></div></div></section>
-
 
 <!-- CREDENTIALS -->
 <section id="credentials" class="sec"><div class="max-w-7xl mx-auto px-6">
@@ -247,7 +277,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- REVIEWS -->
 <section id="testimonials" class="sec"><div class="max-w-7xl mx-auto px-6">
 <div class="max-w-3xl rv"><p class="eyebrow">REVIEWS</p><h2 class="h2">Trusted by operations leads and founders.</h2></div>
-<div id="rf" class="grid md:grid-cols-2 lg:grid-cols-3 gap-[13px] mt-[21px] items-stretch"></div></div></section>
+<div id="rf" class="grid md:grid-cols-2 lg:grid-cols-3 gap-[13px] mt-[21px] items-stretch"></div><p class="mt-4 text-center text-sm mut">References available on request.</p></div></section>
 
 <!-- FAQ -->
 <section id="faq" class="sec"><div class="max-w-7xl mx-auto px-6">
@@ -269,8 +299,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </main>
 
 <footer class="py-8" style="border-top:1px solid var(--bd)"><div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row justify-between gap-4 text-sm mut">
-<div>&copy; 2026 Kenneth James Ocon. All Rights Reserved &bull; <b>v2.9.4</b></div>
-<div>*I am currently accepting only one client. Once a partnership is finalized, this portfolio will no longer be available for viewing.</div></div></footer>
+<div>&copy; 2026 Kenneth James Ocon. All Rights Reserved &bull; <b>v3.1.0</b></div>
+</div></footer>
 
 <!-- MODAL -->
 <div id="md" class="fixed inset-0 z-[60] hidden" role="dialog" aria-modal="true"><div id="mb" class="absolute inset-0 bg-black/70 backdrop-blur-sm"></div>
@@ -284,7 +314,7 @@ const IC={bolt:'M13 10V3L4 14h7v7l9-11h-7z',chat:'M8 12h.01M12 12h.01M16 12h.01M
 const ic=(k,c='w-6 h-6')=>`<svg class="${c}" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="${IC[k]}"/></svg>`;
 const arr='<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M7 7h10v10"/></svg>';
 const star='<svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>';
-const NAV=[['about','INTRO'],['experience','EXPERIENCE'],['projects','PROJECTS'],['samples','WORK SAMPLES'],['articles','BLOGS'],['stack','STACK'],['credentials','CREDENTIALS'],['testimonials','REVIEWS'],['faq','FAQ']];
+const NAV=[['projects','PROJECTS'],['systems','SYSTEMS'],['offer','OFFER'],['articles','WRITING'],['testimonials','REVIEWS'],['faq','FAQ']];
 $('#nav').innerHTML=NAV.map(([h,t])=>`<a href="#${h}" class="nl text-[11px] font-bold uppercase tracking-wide mut hover:text-gold-500 transition whitespace-nowrap">${t}</a>`).join('');
 $('#mnav').innerHTML=NAV.map(([h,t])=>`<a href="#${h}" class="block py-1 hover:text-gold-500">${t}</a>`).join('');
 const mm=$('#mm'),bg=$('#burger'),BI='<svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>',XI='<svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>';
@@ -297,7 +327,7 @@ $('#theme').onclick=()=>{const d=document.documentElement.classList.toggle('dark
 const TICK=['GOHIGHLEVEL','HUBSPOT','N8N.IO','MAKE','AIRTABLE','ZAPIER','CLAY','STRIPE API'];
 $('#tick').innerHTML=[0,1].map(()=>`<div class="flex gap-14 shrink-0">${TICK.map(t=>`<span>${t}</span>`).join('')}</div>`).join('').repeat(2);
 
-const STATS=[['100%','Deliverables on time','125+ concurrent milestones managed with zero SLA misses','bolt'],['$1.2M+','Revenue reconciled','Stripe-to-QuickBooks ledger matches with 0% margin error','bar'],['99.8%','Clean customer data','Duplicate-proof Airtable and CRM records','ok'],['90%','Faster lead response','Webhook tuning and instant sales alerts','chat']];
+const STATS=[['100%','Deliverables on time','125+ concurrent milestones, zero SLA misses (SalesElite, 2025 to 2026)','bolt'],['$1.2M+','Revenue reconciled','Stripe payout reports matched to QuickBooks with 0% delta','bar'],['99.8%','Clean customer data','Measured by duplicate-filter audits on Airtable and CRM records','ok'],['90%','Faster lead response','Webhook tuning and instant sales alerts','chat']];
 $('#stats').innerHTML=STATS.map(([n,t,d,i],k)=>`<div data-bg="${k+2}" class="glass tile rv"><div class="text-gold-500">${ic(i)}</div><p class="text-3xl font-extrabold mt-2 tracking-tight">${n}</p><p class="text-xs font-bold uppercase tracking-wider text-gold-500 mt-2">${t}</p><p class="text-sm mut mt-1">${d}</p></div>`).join('');
 
 /* Workflows: used by demo, diagrams, and project execution maps */
@@ -344,21 +374,30 @@ const EX=[['2025 to 2026','SalesElite Consulting Group LLC','Operations & System
 ['2022 to 2023','Independent Contractor','Digital Growth Specialist','You get funnels and tracking that turn traffic into pipeline.',['WordPress funnels lifted landing page conversions <b>22%</b>.','Synced web and relational databases, cutting lead-routing latency to <b>zero</b>.','Layout fixes from drop-off analysis improved pipeline efficiency <b>14%</b>.','SOPs and handoffs reached <b>95%+ system adoption</b>.','Clean Meta Pixel and GTM setups kept <b>100% attribution accuracy</b>.']]];
 $('#exp').innerHTML=EX.map((e,k)=>`<div data-bg="${k+3}" class="glass tile rv"><div class="flex items-center justify-between gap-2"><span class="chip text-gold-500">${e[0]}</span><span class="text-xs font-bold mut text-right">${e[1]}</span></div><h3 class="text-lg font-extrabold mt-3 leading-tight">${e[2]}</h3><p class="text-gold-500 text-xs font-semibold mt-1">${e[3]}</p><ul class="mt-3 grid gap-2 text-[13px] mut lg:max-h-56 lg:overflow-y-auto sn">${e[4].map(b=>`<li class="flex gap-2"><span class="w-1.5 h-1.5 rounded-full bg-gold-500 mt-1.5 shrink-0"></span><span>${b}</span></li>`).join('')}</ul></div>`).join('');
 
-/* Projects: each tile has a blurred photo header plus a blurred tile background, matching the process tiles */
+/* Projects */
 const PR=[['P.01','Real-Time Lead Enrichment & Validation Engine','lead','Manual lead profiling slowed sales and polluted the CRM.','Webhooks capture each lead, custom JavaScript/Regex standardizes it, and Clay enriches it before routing.','90% faster lead response with standardized CRM fields and instant sequences.',['n8n','GoHighLevel API','Clay API','Slack','JavaScript']],
 ['P.02','Zero-Loss Stripe-to-QuickBooks Pipeline','rev','Manual ledger entry created errors across recurring revenue.','Stripe event metadata maps straight to the QuickBooks Chart of Accounts through error-tolerant Make routes.','$1.2M+ reconciled annually with 0% margin error and a real-time ledger.',['Make','Stripe API','QuickBooks Online','Slack']],
 ['P.03','Multi-Entity Real Estate & Construction Blueprint','ops','Real estate, land and construction ran in disconnected tools.','Relational Airtable schemas with nested tagging connect Follow Up Boss, QuickBooks and n8n into one command center.','Schedules synced with vendor payments, 12+ hours saved weekly, live margin tracking.',['Airtable','Follow Up Boss','QuickBooks Online','n8n']]];
+const CAV=['Measured as webhook receipt to Slack alert on client lead flow.','Measured as the delta between Stripe payout reports and QuickBooks entries. Period and client scope on request.','Hours saved estimated from task time before versus after automation.'];
+const SHOT=['','',''];/* paste a sanitized screenshot URL per project to show a real artifact */
 $('#pc').innerHTML=PR.map((p,i)=>{const M=[[['90%','Faster lead response'],['Zero','Sequence latency']],[['$1.2M+','Reconciled yearly'],['0%','Margin error']],[['12+ hrs','Saved weekly'],['Live','Margin tracking']]][i],IM=['photo-1551288049-bebda4e38f71','photo-1554224155-6726b3ff858f','photo-1486406146926-c627a92ad1ab'][i];
 return `<article data-bg="${i+3}" class="glass overflow-hidden flex flex-col rv"><div class="phead"><img src="https://images.unsplash.com/${IM}?auto=format&fit=crop&w=800&q=60" alt="" aria-hidden="true" loading="lazy"><div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/35 to-black/10"></div><span class="absolute top-2.5 left-4 text-[11px] font-bold uppercase tracking-wider text-gold-500">Project ${p[0]}</span><div class="absolute inset-x-0 bottom-0 px-4 pb-3 flex gap-6">${M.map(m=>`<div><p class="text-3xl font-extrabold text-gold-500 leading-none">${m[0]}</p><p class="text-[10px] font-bold uppercase tracking-wider text-white/90 mt-1">${m[1]}</p></div>`).join('')}</div></div>
-<div class="tile-s flex flex-col flex-1 justify-between"><div><h3 class="font-extrabold leading-tight">${p[1]}</h3><p class="text-[13px] mut mt-2"><b class="fg">Problem:</b> ${p[3]}</p><p class="text-[13px] mut mt-1.5"><b class="fg">Execution:</b> ${p[4]}</p><p class="text-[13px] font-bold text-gold-500 mt-2">${p[5]}</p><div class="flex flex-wrap gap-1.5 mt-3">${p[6].map(c=>`<span class="chip !text-[11px] !px-2 !py-0.5">${c}</span>`).join('')}</div></div>
+<div class="tile-s flex flex-col flex-1 justify-between"><div><h3 class="font-extrabold leading-tight">${p[1]}</h3><p class="text-[13px] mut mt-2"><b class="fg">Problem:</b> ${p[3]}</p><p class="text-[13px] mut mt-1.5"><b class="fg">Execution:</b> ${p[4]}</p><p class="text-[13px] font-bold text-gold-500 mt-2">${p[5]}</p><p class="text-[11px] mut mt-1">${CAV[i]}</p>${SHOT[i]?`<figure class="mt-3"><img src="${SHOT[i]}" alt="Sanitized screenshot of ${p[1]}" loading="lazy" class="rounded-xl w-full"><figcaption class="text-[11px] mut mt-1">Sanitized screenshot, client data removed.</figcaption></figure>`:''}<div class="flex flex-wrap gap-1.5 mt-3">${p[6].map(c=>`<span class="chip !text-[11px] !px-2 !py-0.5">${c}</span>`).join('')}</div></div>
 <div class="grid grid-cols-2 gap-2 mt-4"><button data-d="${p[2]}" class="btn btn-p w-full justify-center !px-2 !py-2.5 !text-[11px] whitespace-nowrap">Execution map</button><a href="https://calendly.com/kennethjamesocon3/new-meeting" target="_blank" rel="noopener" class="btn btn-g w-full justify-center !px-2 !py-2.5 !text-[11px] whitespace-nowrap">Build this for me</a></div></div></article>`}).join('');
 
+/* Payroll calculator */
+const RATE=null;/* set your real monthly rate in USD, e.g. 3000 */
+const CALC=[['Executive Operations Lead',6500],['AI & Workflow Automation Engineer',7000],['CRM Admin',4500],['Project Manager',6000],['Business Operations Coordinator',4000],['Marketing Operations Lead',5500],['Social Media & Content Strategist',4000],['Graphic Designer',4000],['Revenue Reconciliation',3500]];
+const fm=n=>'$'+Math.round(n).toLocaleString('en-US');
+$('#calc').innerHTML=`<div class="grid lg:grid-cols-5 gap-[21px]"><div class="lg:col-span-3 grid gap-2">${CALC.map((r,i)=>`<label class="rtile !justify-start gap-3 !text-left"><input type="checkbox" checked data-c="${i}" class="accent-yellow-600"><span class="flex-1">${r[0]}</span><span class="mut">$</span><input type="number" min="0" step="100" value="${r[1]}" data-s="${i}" class="w-24 bg-transparent rounded-lg px-2 py-1 text-right" style="border:1px solid var(--bd)" aria-label="Monthly salary for ${r[0]}"></label>`).join('')}</div><div class="lg:col-span-2 glass tile flex flex-col justify-between"><div><p class="eyebrow">Monthly comparison</p><p class="text-xs mut mt-3">Specialists you would otherwise hire</p><p id="cT" class="text-3xl font-extrabold"></p><p id="cTY" class="text-xs mut mt-1"></p><label for="cR" class="block text-xs mut mt-4">Kenneth's monthly rate (USD)</label><input id="cR" type="number" min="0" step="100" value="${RATE??''}" placeholder="Enter rate" class="w-full mt-1 bg-transparent rounded-lg px-3 py-2" style="border:1px solid var(--bd)"></div><div class="mt-4"><p class="text-xs mut">You save per month</p><p id="cS" class="text-4xl font-extrabold text-gold-500">-</p><p id="cA" class="text-sm mut mt-1"></p></div></div></div>`;
+const upd=()=>{let t=0;document.querySelectorAll('[data-c]').forEach(c=>{if(c.checked)t+=+document.querySelector('[data-s="'+c.dataset.c+'"]').value||0});const r=+$('#cR').value||0,s=Math.max(t-r,0);$('#cT').textContent=fm(t)+'/mo';$('#cTY').textContent=t?'About '+fm(t*12)+' per year in payroll':'';$('#cS').textContent=r?fm(s):'Enter a rate';$('#cA').textContent=r&&t?'About '+fm(s*12)+' saved per year ('+Math.round(s/t*100)+'% less)':'Enter a rate to see yearly savings'};
+$('#calc').addEventListener('input',upd);$('#calc').addEventListener('change',upd);upd();
 
 /* Samples */
 const SM=[['Automations','bolt','1PyP9tvttgzt4iQEdMlPwJMkLmjrGFAih?usp=drive_link'],['Communication','chat','1anU4GEIyng0zBmQ_JqYNjZa99Q5FTTg0?usp=drive_link'],['Graphic Designs','img','1zpqCVWMgLAXMl7IuLca-5QZ-kaPSnKde?usp=drive_link'],['Reconciliation','doc','1c0FHDd8urmTnnGGDGQzYGyHnHh4o1Hay?usp=drive_link'],['SOP','ok','1yN8b1RoZJTGIv-vnssr8--f4f65QOqwU?usp=drive_link'],['Operations & Reporting','bar','1doW-1b0OvX92FH-cKeUn7IRm2uTgC-fA?usp=sharing']];
 $('#sm').innerHTML=SM.map(s=>`<a href="https://drive.google.com/drive/folders/${s[2]}" target="_blank" rel="noopener" class="glass tile-s flex flex-col items-center text-center hover:-translate-y-1 rv"><span class="w-12 h-12 rounded-2xl bg-gold-500/10 text-gold-500 flex items-center justify-center mb-3">${ic(s[1],'w-6 h-6')}</span><h3 class="font-extrabold text-sm">${s[0]}</h3></a>`).join('');
 
-/* Articles: professional, SEO-structured, each with hero + inline images, TL;DR, FAQ and schema */
+/* Articles */
 const U=(id,w=1200)=>`https://images.unsplash.com/${id}?auto=format&fit=crop&w=${w}&q=75`;
 const fig=(id,alt,cap)=>`<figure><img src="${U(id)}" alt="${alt}" width="1200" height="600" loading="lazy"><figcaption class="mut">${cap}</figcaption></figure>`;
 const sec=(h,...p)=>`<h2>${h}</h2>${p.map(x=>x.startsWith('<')?x:`<p>${x}</p>`).join('')}`;
@@ -366,46 +405,55 @@ const ul=a=>`<ul>${a.map(x=>`<li>${x}</li>`).join('')}</ul>`;
 const tldr=t=>`<div class="tldr"><p><b>Key takeaway:</b> ${t}</p></div>`;
 const faq=a=>`<h2>Frequently asked questions</h2>${a.map(f=>`<details><summary>${f[0]}</summary><p>${f[1]}</p></details>`).join('')}`;
 const ARTICLES={
-"aspen-second-home":{title:"Buying a Second Home in Aspen, CO: 7 Things Every Buyer Should Consider",seoTitle:"Buying a Second Home in Aspen, CO: 7 Buyer Considerations",category:"Real Estate",date:"October 2026",iso:"2026-10-15",read:"7 min read",
-hero:U('photo-1542314831-068cd1dbfeeb',800),alt:"Luxury mountain home surrounded by snow-covered peaks in Aspen, Colorado",credit:"Photo via Unsplash",fb:"Aspen+Real+Guide",
-kw:["buying a second home in Aspen","Aspen real estate","Snowmass Village homes","Aspen short-term rental rules","mountain home ownership costs","Pitkin County property"],
-desc:"A practical guide to buying a second home in Aspen, CO: neighborhoods, true ownership costs, short-term rental rules, inspections and the team you need.",
-faqs:[["Is it better to buy in Aspen or Snowmass Village?","It depends on how you plan to use the home. Aspen offers a walkable downtown and dining, while Snowmass Village is closer to ski-in access and a resort setting. Compare access, seasonality and rental rules before choosing."],["Can I rent out a second home in Aspen?","Possibly, but rules differ between the City of Aspen, Pitkin County and Snowmass Village, and HOAs may add restrictions. Confirm zoning, permit and licensing requirements with the local authority before relying on rental income."],["What does it cost to keep a mountain home each year?","Beyond the mortgage, plan for property taxes, insurance, utilities, snow removal, maintenance, HOA dues and property management. Request actual figures from the seller and your management provider rather than estimating."],["Do I need a property manager for a seasonal home?","Most owners who are away for long periods benefit from one. A manager handles inspections, freeze protection, vendor coordination and owner reporting between visits."]],
-body:tldr('A successful Aspen second-home purchase balances location, full ownership costs, rental regulations, property condition and local expertise. Decide your goals first, then verify every assumption in writing.')
-+sec('Why Aspen buyers need a plan, not just a budget','Aspen is one of the most sought-after mountain markets in the United States, and a second home here is as much an operational commitment as a financial one. Buyers who plan for how the property will be used, maintained and managed avoid the most common surprises. The seven considerations below follow the order most buyers need to decide them.')
-+fig('photo-1506905925346-21bda4d32df4','Mountain valley landscape representing Aspen and Snowmass areas','Location shapes how often and how easily you will use the home.')
-+sec('1. Understand the different areas of Aspen and Snowmass','Location shapes the ownership experience. Downtown Aspen is walkable and close to restaurants and galleries, while Snowmass Village offers resort-style access and a quieter setting. Match the area to how often you will visit, who will use the home and how you want to travel to the slopes in winter and trails in summer.')
-+sec('2. Evaluate the full cost of ownership','The purchase price is only the beginning. Build a complete annual budget:',ul(['Property taxes and homeowner insurance','Utilities, heating and snow removal','Routine maintenance and seasonal service contracts','HOA or association fees and special assessments','Property management and owner reporting']),'Ask for twelve months of actual utility and service records so your budget reflects real figures.')
-+sec('3. Review property management requirements','Unoccupied mountain homes need regular inspections, freeze protection and coordinated vendors between visits. A documented management plan protects the property and gives you a clear record of what was done and when. For a deeper look, read the <a href="#articles" data-a="mountain-home-readiness">seasonal property readiness checklist</a>.')
-+fig('photo-1560518883-ce09059eeffa','House with a for-sale sign and keys representing a home purchase','Verify rental and ownership rules before you make an offer.')
-+sec("4. Understand Aspen's short-term rental regulations",'The City of Aspen and unincorporated Pitkin County have separate rules, and Snowmass Village has its own. Verify zoning, permits, licensing, tax obligations and HOA restrictions before assuming any rental income. Put the answers in writing and have your attorney confirm them.')
-+sec("5. Evaluate the property's condition",'Mountain properties face snow load, freeze-thaw cycles and limited winter access. Commission inspections by qualified specialists covering:',ul(['Roof structure and snow-load performance','Heating, ventilation and plumbing systems','Drainage, foundation and exterior envelope','Winter road access and parking']))
-+sec('6. Consider your long-term goals','Decide whether this is a lifestyle purchase, an investment or a blend of both before comparing properties. Your goal affects the neighborhood, the floor plan, the management model and your exit strategy.')
-+fig('photo-1521791136064-7986c2920216','Professionals shaking hands after agreeing on a property transaction','A coordinated local team reduces surprises at every stage.')
-+sec('7. Work with local professionals','A coordinated team of a local real estate agent, real estate attorney, tax adviser, inspector and property manager brings the local knowledge that general guides cannot. Share the same goals and timeline with everyone so advice stays consistent.')
-+sec('Pre-offer checklist',ul(['Define how many weeks per year you will use the home','Get a written ownership-cost estimate','Confirm rental rules with the local authority and HOA','Schedule specialist inspections','Line up a management and maintenance plan before closing']))
+"stripe-quickbooks":{title:"How to Reconcile Stripe to QuickBooks Automatically",seoTitle:"Automate Stripe to QuickBooks Reconciliation (Step by Step)",category:"Finance Automation",date:"November 2026",iso:"2026-11-15",read:"6 min read",
+hero:U('photo-1554224155-6726b3ff858f',800),alt:"Calculator and financial reports on a desk",credit:"Photo via Unsplash",fb:"Stripe+QuickBooks",
+kw:["Stripe QuickBooks automation","payment reconciliation","Make scenario","chart of accounts mapping","idempotency"],
+desc:"A step-by-step pattern for turning every Stripe charge into a correct QuickBooks entry, then proving it with a payout check and exception alerts.",
+faqs:[["Why reconcile against payouts instead of charges?","Payouts are what actually reach the bank. Comparing them to ledger entries catches fees, refunds, disputes and timing gaps that charge-level matching hides."],["What should happen to a customer that does not exist in QuickBooks?","Create it automatically when the match is unambiguous, and send anything uncertain to a review queue so a person confirms it before it is posted."],["Should fees be booked per charge or per payout?","Pick one and apply it everywhere. Per payout is usually simpler to audit because it mirrors the bank deposit."]],
+body:tldr('Verify each Stripe event, map its metadata to your chart of accounts, post the entry once, then compare the day against the payout report and alert on any difference.')
++sec('Why manual ledger entry fails','Copying payments into accounting software works until volume grows. Then three problems appear: entries go to the wrong account, refunds and fees get forgotten, and nobody can say with confidence that the books match the bank. Automation fixes the first two. A reconciliation check fixes the third.')
++sec('The pipeline, step by step',ul(['<b>Receive and verify.</b> Accept the Stripe webhook and check its signature before doing anything else.','<b>Deduplicate.</b> Store the event ID and ignore repeats, because webhooks can arrive more than once.','<b>Map.</b> Translate product, plan and payment type into a chart-of-accounts category using a lookup table, not hard-coded logic.','<b>Post.</b> Find or create the QuickBooks customer, then create the entry with the Stripe charge ID as the reference.','<b>Reconcile.</b> Compare the entries for a payout against Stripe payout report and calculate the difference.','<b>Alert.</b> Send exceptions to Slack with a link to the record.']))
++fig('photo-1460925895917-afdab827c52f','Analytics dashboard on a laptop screen','A daily difference of zero is the signal that the books and the bank agree.')
++sec('Design for failure','Every step can fail, so decide in advance what happens when it does. Retry temporary errors with backoff. Block duplicates with the event ID. Send anything unresolved to a review queue rather than guessing. A reconciliation that fails quietly is worse than no automation at all, because it creates false confidence.')
++sec('What to measure','Track three numbers weekly: entries posted automatically, exceptions raised, and the payout difference. A healthy system has a high first number, a small and shrinking second number, and a third that stays at zero.')
 +faq([])
-+'<p>Planning a purchase and want an operations-ready management system from day one? <a href="https://calendly.com/kennethjamesocon3/new-meeting" target="_blank" rel="noopener">Book a call</a>.</p><p><i>General educational content, not legal, tax or investment advice. Verify rental rules and regulations with local authorities and licensed professionals.</i></p>'},
-"mountain-home-readiness":{title:"A Better Way to Manage a Mountain Home: A Seasonal Property Readiness Checklist for Aspen Homeowners",seoTitle:"Mountain Home Seasonal Readiness Checklist for Aspen Owners",category:"Property Operations",date:"October 2026",iso:"2026-10-22",read:"7 min read",
-hero:U('photo-1512917774080-9991f1c4c750',800),alt:"Modern mountain chalet exterior in winter prepared for the season",credit:"Photo via Unsplash",fb:"Property+Operations",
-kw:["mountain home maintenance checklist","seasonal property management","Aspen homeowner checklist","vacation home operations","vendor management system","property maintenance reporting"],
-desc:"A documented system for property records, seasonal maintenance, vendor coordination and weekly owner reporting that keeps a seasonal mountain home protected year-round.",
-faqs:[["How often should a seasonal mountain home be inspected?","Frequency depends on the property and season, but unoccupied homes typically need regular scheduled checks, with extra attention before and during winter. Document each visit with notes and photos."],["What should a weekly owner report include?","A short summary organized as Done, Open and Needs a Decision, with an owner and date on every open item, so the homeowner can see status at a glance."],["What is the best way to store property documents?","Use one secure, shared folder structure with consistent file names that include property code, date, document type and a short description."],["Why use a documented maintenance request process?","It ensures every request is received, prioritized, authorized, assigned, tracked and closed with verification, so nothing is forgotten or duplicated."]],
-body:tldr('A reliable mountain home runs on five documented systems: a central property record, a seasonal schedule, a vendor directory, a maintenance request process and a weekly owner report.')
-+sec('Why systems matter for seasonal homes','A seasonal home is empty for long stretches, so problems can grow unseen. The owners who stay ahead rely on documented processes instead of memory or scattered text messages. This checklist turns property care into a repeatable operation that works whether you are on site or thousands of miles away. It builds on the ownership planning covered in <a href="#articles" data-a="aspen-second-home">our Aspen second-home buyer guide</a>.')
-+sec('1. Establish a centralized property record','Keep one source of truth for the property. Include:',ul(['Ownership, access and emergency contact details','Systems and equipment: heating, water, electrical, appliances','Vendor contacts, warranties and manuals','Emergency procedures such as shut-off locations']),'Store it securely with role-based access so only the right people can view sensitive details.')
-+fig('photo-1454165804606-c3d57bc86b40','Organized property documents and records on a desk','A single organized record removes guesswork for owners, managers and vendors.')
-+sec('2. Create a seasonal maintenance schedule','Organize tasks into four windows: before winter, during winter, before summer and during summer. Base the schedule on the property\'s actual systems, such as heating servicing, roof and gutter checks, snow-removal arrangements, irrigation start-up and exterior care.')
-+sec('3. Maintain a vendor directory','Track scope, service frequency, last service date and next scheduled date for every provider: HVAC, plumbing, snow removal, cleaning, landscaping and security. A current directory makes emergencies faster to resolve.')
-+fig('photo-1581578731548-c64695cc6952','Maintenance technician servicing home equipment','Scheduled service from known vendors prevents costly emergencies.')
-+sec('4. Use a documented maintenance request process','Every request follows the same path: receive, prioritize, authorize, assign, track and close with verification. Use photos and notes to confirm completion. This creates an audit trail that supports warranty claims and insurance conversations.')
-+sec('5. Keep inventory accountable','Log furnishings and equipment by room, with condition, purchase details and warranty dates. A clear inventory simplifies insurance claims, replacements and turnover.')
-+sec('6. Build a weekly operations report','Send the owner a brief report with three headings: <b>Done</b>, <b>Open</b> and <b>Needs a Decision</b>. Give each item an owner and a date so status is never a question.')
-+fig('photo-1551288049-bebda4e38f71','Dashboard showing weekly operations reporting and task status','A consistent report format keeps owners informed without extra back-and-forth.')
-+sec('7. Maintain a reliable document system','Use a consistent folder structure and naming convention such as <code>ASP-001_2026-10-15_HVAC-SERVICE_REPORT</code> (property code, date, document type). Consistent names make documents searchable and audits simple.')
-+sec('Quick readiness checklist',ul(['Property record complete and shared with the right people','Seasonal schedule assigned with due dates','Vendor directory current','Request process live and tracked','Weekly report scheduled']))
++'<p>Want this built for your business? <a href="https://calendly.com/kennethjamesocon3/new-meeting" target="_blank" rel="noopener">Book a call</a>.</p><p><i>General educational content, not accounting advice.</i></p>'},
+"replace-ops-team":{title:"Replacing a Three-Person Ops Team with n8n and Claude",seoTitle:"Replace Manual Ops Work with n8n and Claude",category:"AI Operations",date:"November 2026",iso:"2026-11-12",read:"6 min read",
+hero:U('photo-1551288049-bebda4e38f71',800),alt:"Dashboard showing automated operations reporting",credit:"Photo via Unsplash",fb:"n8n+Claude",
+kw:["n8n automation","Claude operations","workflow automation","SOP design","operations audit"],
+desc:"Which operations tasks automate well, where a human must stay in the loop, and how to roll it out without breaking live data.",
+faqs:[["Which tasks should stay human?","Anything irreversible or sensitive: approvals, payments above a set limit, and client-facing exceptions."],["How do you test before going live?","Run the workflow on sample records, including duplicates and malformed inputs, then switch to live data with alerts watching the first runs."],["Does automation remove the need for SOPs?","No. It makes them more important. A workflow only runs as well as the process it encodes, so write the SOP first."]],
+body:tldr('Automate the repeatable middle (intake, routing, enrichment, reporting), keep people on approvals and exceptions, and prove every workflow on sample data before it touches live records.')
++sec('Where the hours actually go','Most operations teams do not lose time on hard problems. They lose it on repeatable ones: moving data between tools, chasing status updates, formatting reports and fixing records that were entered inconsistently. These tasks share two traits: a clear trigger and a clear output. That makes them ideal to automate.')
++sec('Step 1: audit before you build','List every recurring task with its owner, trigger, frequency and what breaks when it is late. Rank them by hours spent and by how predictable the rules are. The top of that list is your first release. Anything that depends on judgment stays human for now.')
++sec('Step 2: give each tool one job',ul(['<b>n8n or Make</b> move data, route events, retry failures and raise alerts.','<b>Claude</b> classifies requests, drafts copy, scores leads and summarizes reports.','<b>Your CRM and ledger</b> remain the source of truth, written to only after validation.']))
++fig('photo-1518770660439-4636190af475','Circuit board representing connected systems','Each tool does one job, and the hand-offs between them are explicit.')
++sec('Step 3: keep a person in the loop where it matters','Let automation prepare the decision and let a person make it. A Claude draft that a human approves is faster than writing from scratch and safer than sending unreviewed. Payments, contracts and client-facing exceptions should always pass through an approval step.')
++sec('Step 4: roll out safely','Draw the logic map and agree it with the owner. Build on sample data. Launch with alerts on the first runs. Hand off with an SOP and a walkthrough so the team can run it without you.')
 +faq([])
-+'<p>Want this system built and automated for your property portfolio? <a href="https://calendly.com/kennethjamesocon3/new-meeting" target="_blank" rel="noopener">Book a strategy call</a>.</p><p><i>Tailor schedules and protocols to each property and to the owner\'s instructions.</i></p>'}};
++'<p>Want an audit of your own operations? <a href="https://calendly.com/kennethjamesocon3/new-meeting" target="_blank" rel="noopener">Book a call</a>.</p>'},
+"lead-validation":{title:"Stop Paying for Bad Leads: A Validation and Enrichment Pipeline for Your CRM",seoTitle:"CRM Lead Validation and Enrichment Workflow",category:"CRM Automation",date:"November 2026",iso:"2026-11-09",read:"5 min read",
+hero:U('photo-1486406146926-c627a92ad1ab',800),alt:"Modern office building representing a growing sales team",credit:"Photo via Unsplash",fb:"CRM+Leads",
+kw:["lead validation","CRM data quality","lead enrichment","GoHighLevel","duplicate prevention"],
+desc:"How to capture, clean, deduplicate and enrich every inbound lead before it reaches your sales team, so speed and data quality improve together.",
+faqs:[["What counts as a duplicate lead?","A match on a normalized email or phone number is the usual rule. Normalize first (lowercase, strip spaces and punctuation) or near-duplicates will slip through."],["Does enrichment slow down response time?","Run it in parallel with the first alert. Sales gets notified immediately and the enriched profile fills in seconds later."],["What should happen to an invalid lead?","Tag it, hold any automated sequence and post it to a review channel. Never delete without a record of why."]],
+body:tldr('Validate and normalize each lead the moment it arrives, block duplicates, enrich in the background, and alert sales instantly. Clean data and fast response reinforce each other.')
++sec('The hidden cost of messy leads','Bad data quietly taxes every team. Sales calls the same person twice, marketing emails a dead address, and reports double count the same contact. Each is small. Together they erode trust in the CRM, and a CRM nobody trusts stops being used.')
++sec('The pipeline',ul(['<b>Capture</b> the form or webhook payload and confirm required fields exist.','<b>Normalize</b> emails, phone formats, names and source tags with simple rules.','<b>Deduplicate</b> against existing records before creating anything.','<b>Enrich</b> company and role data from an enrichment provider.','<b>Route and notify</b> by territory or segment, and start the right sequence.']))
++sec('Failure paths matter','Decide what happens to invalid, duplicate and bounced leads before launch. A tagged record, a held sequence and a Slack note give the team context without blocking good leads behind a bad one.')
++faq([])
++'<p>Want cleaner leads and faster response? <a href="https://calendly.com/kennethjamesocon3/new-meeting" target="_blank" rel="noopener">Book a call</a>.</p>'},
+"ai-in-ops":{title:"Where Claude Belongs in Your Operations (and Where It Does Not)",seoTitle:"Using Claude in Business Operations: A Practical Guide",category:"AI Operations",date:"November 2026",iso:"2026-11-05",read:"5 min read",
+hero:U('photo-1518770660439-4636190af475',800),alt:"Abstract network representing AI connected to business tools",credit:"Photo via Unsplash",fb:"Claude+Ops",
+kw:["Claude in operations","AI workflow","prompt engineering","human in the loop","AI governance"],
+desc:"A practical split of operations work into what AI handles well, what needs a human, and how to wire the two together safely.",
+faqs:[["Can AI write directly to my CRM or ledger?","It can, but it should not do so unchecked. Validate its output against rules first, and require approval for sensitive actions."],["How do I keep outputs consistent?","Use a written brand-voice or policy prompt, fixed output formats and a review step for anything customer-facing."]],
+body:tldr('Use Claude for language-heavy, pattern-based work such as classifying, drafting and summarizing. Keep people on decisions with money, contracts or clients attached, and validate every output before it is saved.')
++sec('A simple test for AI-suitable work','Ask three questions. Is the task mostly reading or writing? Is a wrong answer easy to catch? Is there a clear rule or example of a good result? If the answer to all three is yes, it is a strong candidate. Triage, first drafts, lead scoring notes and weekly summaries all pass.')
++sec('What should stay human',ul(['Approvals and payments above an agreed limit','Contract and legal wording','Sensitive client conversations','Final sign-off on anything public']))
++sec('Wiring it safely','Put Claude inside a workflow, not beside it. The workflow supplies clean inputs, checks the output against rules and writes to your systems only after validation. When something looks wrong, it goes to a person with the context attached.')
++faq([])
++'<p>Want AI wired into your operations responsibly? <a href="https://calendly.com/kennethjamesocon3/new-meeting" target="_blank" rel="noopener">Book a call</a>.</p>'}};
 /* inject FAQ HTML from each article's faqs */
 Object.values(ARTICLES).forEach(a=>{a.body=a.body.replace('<h2>Frequently asked questions</h2>',faq(a.faqs))});
 $('#ar').innerHTML=Object.entries(ARTICLES).map(([id,a])=>`<button data-a="${id}" class="group glass text-left tile-s flex flex-col rv" aria-label="Read article: ${a.title}"><div class="relative overflow-hidden aspect-[1.618/1] rounded-[13px] mb-[13px]"><img src="${a.hero}" alt="${a.alt}" data-ph="${a.category}" width="800" height="450" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"><span class="absolute top-3 left-3 chip backdrop-blur" style="background:var(--bg)">${a.category}</span></div><p class="text-xs font-bold uppercase tracking-wider mut"><time datetime="${a.iso}">${a.date}</time> · ${a.read}</p><h3 class="text-lg font-extrabold mt-1.5 leading-tight">${a.title}</h3><p class="text-sm mut mt-1.5">${a.desc}</p></button>`).join('');
@@ -433,7 +481,8 @@ $('#vf').innerHTML=VF.map(v=>`<a href="https://drive.google.com/drive/folders/${
 
 /* Reviews */
 const RF=[['M','Marcel • CEO & Founder','SalesElite Consulting (Miami, FL)','Kenneth is a rare operations architect who doesn\'t just manage systems; he engineers predictable business growth. By auditing our multi-platform integration layers, he single-handedly recovered over $8K in leaking revenue by fixing broken webhooks and API syncs with zero downtime. His automation of our client-journey pipelines was a game-changer, reclaiming over 15 hours of my executive cognitive bandwidth every week.'],['J','Jeff • Head of Operations','SalesElite Consulting Group','Bringing Kenneth into our operational layer was one of the highest-leverage decisions we made this year. He standardized daily execution routines across decentralized teams, cutting overhead costs by 20% while building highly scalable operational structures. Managing 125 concurrent deliverables is immense, yet he maintained a flawless 100% SLA.'],['L','Lewis • Director of Marketing Operations','Creative & Operations Contract Hub','Kenneth acts as the vital connective tissue between high-level creative vision and rigorous technical execution. He successfully engineered our end-to-end digital pipeline, seamlessly deploying over 500 multi-channel creative assets with a flawless 100% on-time SLA.'],['J','Jason • CEO & Founder','Digital Growth Systems','Kenneth fundamentally transformed our digital acquisition frameworks from the ground up. He developed and deployed conversion-optimized WordPress funnel frameworks that immediately boosted our visitor-to-lead landing page conversions by 22%. By syncing secure, automated pipelines between our web environments and relational databases, he successfully eliminated all lead-routing latency.'],['A','Andrea • Operations & Growth Manager','Digital Growth Consulting','Working alongside Kenneth was an absolute masterclass in technical execution and operational clarity. He brought immense precision to our data layers by auditing and maintaining clean tracking configurations across Meta Pixel and GTM to preserve 100% attribution accuracy. What truly sets him apart is his focus on scalability.']];
-$('#rf').innerHTML=RF.map(r=>`<div class="glass tile flex flex-col justify-between rv"><div><div class="flex gap-1 text-gold-500">${star.repeat(5)}</div><blockquote class="mt-4 text-sm mut italic leading-relaxed">"${r[3]}"</blockquote></div><div class="mt-6 flex items-center gap-3"><div class="w-10 h-10 rounded-full bg-gold-500/15 text-gold-500 flex items-center justify-center font-extrabold text-sm">${r[0]}</div><div><p class="text-sm font-bold">${r[1]}</p><p class="text-[11px] text-gold-500 font-semibold uppercase tracking-wider">${r[2]}</p></div></div></div>`).join('');
+const RFX=[['$8K+ recovered, 15+ exec hours a week',''],['20% lower overhead, 100% SLA',''],['500+ assets, 100% on time',''],['+22% landing page conversion',''],['100% attribution accuracy','']];/* put each reviewer's LinkedIn URL in the second slot */
+$('#rf').innerHTML=RF.map((r,i)=>`<div class="glass tile flex flex-col justify-between rv"><div><div class="flex gap-1 text-gold-500">${star.repeat(5)}</div><blockquote class="mt-4 text-sm mut italic leading-relaxed">"${r[3]}"</blockquote><p class="mt-3"><span class="chip text-gold-500">Outcome: ${RFX[i][0]}</span></p></div><div class="mt-6 flex items-center gap-3"><div class="w-10 h-10 rounded-full bg-gold-500/15 text-gold-500 flex items-center justify-center font-extrabold text-sm">${r[0]}</div><div><p class="text-sm font-bold">${r[1]}</p><p class="text-[11px] text-gold-500 font-semibold uppercase tracking-wider">${r[2]}</p>${RFX[i][1]?`<a href="${RFX[i][1]}" target="_blank" rel="noopener" class="text-[11px] font-bold underline">Verify on LinkedIn</a>`:''}</div></div></div>`).join('');
 
 /* Modal (inline, no new tabs) */
 const md=$('#md');let lf=null;
@@ -455,7 +504,8 @@ NAV.forEach(([h])=>{const e=document.getElementById(h);e&&sp.observe(e)});
 /* Entrance animations */
 const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}}),{threshold:.01,rootMargin:'0px 0px -4% 0px'});
 document.querySelectorAll('.rv').forEach((el,i)=>{el.style.transitionDelay=(i%4)*70+'ms';io.observe(el)});
-document.addEventListener('click',e=>{const b=e.target.closest('a[href="https://calendly.com/kennethjamesocon3/new-meeting" target="_blank" rel="noopener"]');if(!b)return;e.preventDefault();closeM();setM(false);const t=document.getElementById('book');setTimeout(()=>t&&t.scrollIntoView({behavior:'smooth',block:'start'}),60)});
+/* GA event tracking for key clicks */
+document.addEventListener('click',e=>{const a=e.target.closest('a[href]');if(!a||!window.gtag)return;const u=a.href,t=u.includes('calendly.com')?'book_call':u.startsWith('mailto:')?'email_click':u.includes('linkedin.com')?'linkedin_click':u.includes('drive.google.com')?'sample_open':null;if(t)gtag('event',t,{link_url:u,link_text:(a.textContent||'').trim().slice(0,60)})});
 </script>
 </body>
 </html>
